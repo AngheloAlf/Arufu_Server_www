@@ -20,15 +20,32 @@ require("models/Personajes.php");
         <div id="conteneur">
             <?php include("includes/header.phtml"); ?>
             <div id="contenu">
-                <div id="left">
+                <div id="left"> <!--Left nav-->
                     <?php include("includes/nav.phtml"); ?>
                 </div>
-                <div id="right"><!-- COLONNE DE DROITE -->
-                    <?php include("url/home.phtml"); ?>
-                </div> <!-- FIN CONTENU -->
 
+                <div id="right"><!-- Columna central -->
+                    <?php
+                    //include("url/home.phtml");
+                    if($ruta = getRutaActual()){
+
+                        if(file_exists("url/".$ruta.".phtml")){
+                            include("url/".$ruta.".phtml");
+                        }
+                        else{
+                            echo "not found";
+                            //TODO: 404
+                        }
+                    }
+                    else{
+                        include("url/home.phtml");
+                    }
+
+                    ?>
+                </div>
             </div>
-            <div id="pied">
+
+            <div id="pied"><!--Footer-->
                 <?php include("includes/footer.phtml"); ?>
             </div>
         </div>
