@@ -1,0 +1,51 @@
+/*copyright by kitgraphiquegratuit.org*/  
+
+body,html   {background:url(../images/fond.jpg);background-attachment: fixed;margin:0;padding:0}
+#conteneur  {margin:0 auto 0 auto;position:relative;width:960px;}		
+#contenu    {background:url(../images/fond_conteneur.png);margin:0 auto 0 auto;position:relative;width:960px;}
+#header     {width:960px;height:173px;background:url(../images/header.png);}
+#evaluation	a{width:140px;height:140px;position:absolute;right:10px;outline:none}
+#pied       {width:960px;height:121px;background:url(../images/pied.png) no-repeat top;clear:both}
+#left       {width: 235px;float: left;color:#000;margin:0 0 0 20px;text-align:center}	 	 
+#right      {margin:0 0 0 270px;width:670px;color: #3b3b3b;font:12px "trebuchet ms";} 
+
+ul            {width:235px;margin:0;padding:0;}
+ul li         {list-style-type: none;}
+ul li a       {width:180px;display: block;color: #c06a03;font:14px "trebuchet ms";text-decoration: none;height:25px;line-height:25px;padding:0 0 0 5px;margin:0 0 0 7px;outline:none;border-bottom:1px solid;}
+ul li a:hover {text-decoration: none;color: #8d4d00;} 	  
+
+.haut_menu   	  {width:235px;height:20px;background:url(../images/haut_menu.jpg) no-repeat;text-align:center;padding:0;font:bold 15px "trebuchet ms";color: #fff;}
+.fond_menu   	  {width:235px;background:url(../images/fond_menu.jpg) repeat-y;padding:0;color: #3b3b3b;font:11px "trebuchet ms";text-align:center}
+.bas_menu   	  {width:235px;height:20px;background:url(../images/bas_menu.jpg)}
+
+.s_haut_menu   	  {width:235px;height:26px;background:url(../images/s_haut_menu.jpg) no-repeat;text-align:center;padding:7px 0 0 0;font:bold italic 13px "trebuchet ms";color: #fff;}
+.s_fond_menu   	  {width:220px;background:url(../images/s_fond_menu.jpg) repeat-y;padding:0 0 0 15px;color: #3b3b3b;font:11px "trebuchet ms";text-align:left}
+.s_bas_menu   	  {width:235px;height:20px;background:url(../images/s_bas_menu.jpg)}
+
+.haut_ng  	  {width:660px;height:16px;background:url(../images/haut_ng.jpg);text-align:center;}
+.fond_ng   	  {width:633px;background:url(../images/fond_ng.jpg);padding:0 12px 0 15px;color: #202020;font:11px "trebuchet ms";}
+.bas_ng   	  {width:660px;height:16px;background:url(../images/bas_ng.jpg) no-repeat;}
+
+.news_gauche   {float: left;margin:0;padding:0;width:320px}
+.news_droite   {margin:0 0 0 330px;}	
+.separateur    {clear: both;visibility: hidden;}
+Span		   {color:#ff6f00;text-decoration:none;outline:none;font:bold 14px "trebuchet ms";}	
+img, p, h1, h2, h3, h4, h5, h6, Span, object, table, td, tr{border:0;margin:0;padding:0} 
+
+td   {width:211px;text-align:center}
+
+h1 {color:#8dc538;text-decoration:none;outline:none;font:bold 18px "trebuchet ms";text-align:center}	
+h2 {color:#f79620;text-decoration:none;outline:none;font:bold 16px "trebuchet ms";text-align:center}		 
+
+a                   {color:#ff6f00;text-decoration:underline;outline:none;font:bold 12px "trebuchet ms"}	 
+a:hover             {color:#fff}		
+form				{color:#3b3b3b;text-decoration:none;outline:none;font:12px "trebuchet ms";margin:0;padding:0}	
+
+#copyleft          {float:left;font:bold 11px "trebuchet ms";color:#8d8d8d;margin:82px 0 0 24px;text-decoration:none;outline:none;}
+#copyleft a        {font:bold italic 11px "trebuchet ms";color:#8d8d8d;text-decoration:none;}		 
+#copyleft a:hover  {color:#ff6f00;}
+
+#copyright          {float:right;font:bold 11px "trebuchet ms";color:#8d8d8d;margin:82px 24px 0 0;text-decoration:none;outline:none;}
+#copyright a        {font:bold italic 11px "trebuchet ms";color:#8d8d8d;text-decoration:none;}		 
+#copyright a:hover  {color:#ff6f00;}
+
