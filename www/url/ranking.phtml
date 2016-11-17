@@ -24,6 +24,9 @@
                     Personaje
                 </th>
                 <th>
+                    Clase
+                </th>
+                <th>
                     Nivel
                 </th>
                 <th>
@@ -37,6 +40,9 @@
                         echo $value["name"];
                     echo "</td>";
                     echo "<td>";
+                        echo getClase($value["class"]);
+                    echo "</td>";
+                    echo "<td>";
                         echo $value["level"];
                     echo "</td>";
                     echo "<td>";
@@ -48,7 +54,7 @@
         </table>
 
         <br/>
-        
+
     </div>
 </div>
 

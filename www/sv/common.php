@@ -22,4 +22,35 @@ function getServerStatus($ip, $puerto){
     return @fsockopen($ip, $puerto, $errno, $errstr, 1) >= 1;
 }
 
+function getClase($idClase){
+    switch($idClase){
+        case 1:
+            return "Feca";
+        case 2:
+            return "Osamodas";
+        case 3:
+            return "Anutrof";
+        case 4:
+            return "Sram";
+        case 5:
+            return "Xelor";
+        case 6:
+            return "Zurcarák";
+        case 7:
+            return "Aniripsa";
+        case 8:
+            return "Yopuka";
+        case 9:
+            return "Ocra";
+        case 10:
+            return "Sadida";
+        case 11:
+            return "Sacrógrito";
+        case 12:
+            return "Pandawa";
+        default:
+            return "NULL";
+    }
+}
+
 ?>
