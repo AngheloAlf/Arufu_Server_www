@@ -1,0 +1,3 @@
+I.u[20000] = {n: "Dofus Esmeralda Lvl", t: 23, d: "Mientras mas poderoso sea el portador de este huevo de dragon, mayor sera el poder que emita.", ep: 1, g: 2, l: 6, wd: true, fm: true, w: 5, p: 100000000};
+I.u[20001] = {n: "Dofus Púrpura Lvl", t: 23, d: "Mientras mas poderoso sea el portador de este huevo de dragon, mayor sera el poder que emita.", ep: 1, g: 1, l: 6, wd: true, fm: true, w: 5, p: 100000000};
+I.u[20051] = {n: "Dolmanax", t: 23, d: "Este dofus cambia de color según las estaciones del año. Caliente y dorado en verano; frío como el hielo en invierno. Lo puso un dragón enamorado de un vendedor ambulante que se presentó en su caverna para colarle un viejo calendario.", ep: 1, g: 20, l: 6, wd: true, fm: true, w: 5, p: 500000};

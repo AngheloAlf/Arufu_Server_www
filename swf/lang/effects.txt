@@ -1,0 +1,4 @@
+E[1000] = {d: "+#1{~1~2 a }#2 a la vitalidad dependiendo del nivel", c: 11, o: "+", j: true};
+E[1001] = {d: "Bonus de vitalidad por cada #1{~1~2 a }#2 nivel(es)", c: 11, o: "+", j: true};
+E[1002] = {d: "Aumenta los daños en un #1{~1~2 a }#2% dependiendo del nivel", c: 17, o: "+", j: true};
+E[1003] = {d: "Bonus de daños% por cada #1{~1~2 a }#2 nivel(es)", c: 17, o: "+", j: true};

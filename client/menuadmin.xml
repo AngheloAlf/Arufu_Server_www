@@ -1,0 +1,2464 @@
+<commands>
+	<item type="startup" label="StartUp">
+		<item type="sendChat" command="/console" />
+		<item type="sendCommand" command="/debug" />
+		<item type="sendChat" command="/debug" />
+	
+
+
+   </item>
+        <item type="static" label="MenuAdministrador" />
+	<item type="static" label="Acciones Sobre el Jugador" />
+	<item type="menu" label="Advertir">
+		<item type="sendChat" label="Aviso 1" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+		<item type="sendChat" label="Aviso 2" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+                <item type="sendChat" label="Aviso 3" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+                <item type="sendChat" label="Aviso De Canal Comercio!" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+		<item type="sendChat" label="Aviso De Canal Canal Reclutamiento !" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+
+</item>
+	<item type="menu" label="Informaciones">
+		<item type="static" label="Nombre Del Jugador: %p" command="%p" />
+		<item type="static" label="Nombre Del Gremio: %g" command="%g" />
+		<item type="static" label="Numero Del Mapa Actual!: %m" command="%m" />
+		<item type="static" label="Numero De la Casilla Actual!: %c" command="%c" />
+		<item type="static" label=" ~ " command="" />
+		<item type="static" label="Hoy Es Dia: %d" command="%d" />
+		<item type="static" label="Hora Actual!: %h" command="%h" />
+		<item type="static" label="Hora Oficial De Dofus: %t" command="%t" />
+		<item type="static" label="Mi Nombre!: %n" command="%n" />
+		<item type="static" label=" ~ " command="" />
+		<item type="static" label="Version Del Juego: %v" command="%v" />
+		<item type="static" label="Nombre Del Servidor: %s" command="%s" />
+	</item>
+	<item type="sendCommand" label="Activar Las Agresiones" command="TOOGLEAGGRO %p" />
+        <item type="sendCommand" label="Desactivar Las Agresiones" command="TOOGLEAGGRO %p" />
+	<item type="menu" label="Seccion De Sanciones">
+		<item type="static" label="Sanciones Graves" />
+		<item type="sendCommand" label="Enviar a La Prision De Asatrub" command="TELEPORT 7601 199 %p" />
+		<item type="sendCommand" label="Kickear Del Servidor" command="KICK %p" />
+		<item type="sendCommand" label="Ban Permanente" command="BANEAR %p" />
+		<item type="static" label="Silenciar" />
+		<item type="sendCommand" label="1 minuto" command="MUTE %p 60" />
+		<item type="sendCommand" label="5 Minutos" command="MUTE %p 300" />
+		<item type="sendCommand" label="10 Minutos" command="MUTE %p 600" />
+		<item type="sendCommand" label="1 Hora" command="MUTE %p 3600" />
+		<item type="sendCommand" label="Infinitivamente Asta Nuevo Aviso" command="MUTE %p 0" />
+		<!--item type="sendCommand" label="Empecher de parler pour une duree donnee" command="Mute %p %s" />DofuRuano Server: dofuruano.sytes.net<!--%s = nom du serv-->
+		<item type="sendCommand" label="Desactivar El Silencio A un Jugador" command="DESMUTE %p" />
+		<item type="static" label="Alagos" />
+		<item type="sendChat" label="Anunciar Un Alago" command="DofuRuano Server: dofuruano.sytes.net %p !" />
+		<item type="sendChat" label="Reclutar Para El Gremio" command="DofuRuano Server: dofuruano.sytes.net %p !" />
+	</item>
+	<item type="menu" label="Regalar">
+		<item type="menu" label="Rango">
+			<item type="sendCommand" label="Jugador Normal" command="ADMIN 0 %p" />
+			<item type="sendCommand" label="Animador [Creador De Eventos]" command="ADMIN 1 %p" />
+			<item type="sendCommand" label="Moderador" command="ADMIN 2 %p" />
+			<item type="sendCommand" label="Game Master" command="ADMIN 3 %p" />
+			<item type="sendCommand" label="Administrador" command="ADMIN 4 %p" />
+		</item>
+		<item type="menu" label="Kamas">
+			<item type="sendCommand" label="100K" command="KAMAS 100 %p" />
+			<item type="sendCommand" label="1 000 Kamas" command="KAMAS 1000 %p" />
+			<item type="sendCommand" label="10 000 Kamas" command="KAMAS 10000 %p" />
+			<item type="sendCommand" label="100 000 Kamas" command="KAMAS 100000 %p" />
+			<item type="sendCommand" label="1 MK" command="KAMAS 1000000 %p" />
+			<item type="sendCommand" label="10 MK" command="KAMAS 10000000 %p" />
+			<item type="sendCommand" label="100 MK" command="KAMAS 100000000 %p" />
+		</item><!--@todo Donner l'item directement (batch) ?-->
+		<item type="menu" label="Aprender Un Oficio">
+			<item type="sendCommand" label="Alquimista" command="APRENDEROFICIO 26 %p" />
+			<item type="menu" label="Recolector">
+				<item type="sendCommand" label="Lenyador" command="APRENDEROFICIO 2 %p" />
+				<item type="sendCommand" label="Minero" command="APRENDEROFICIO 24 %p" />
+				<item type="sendCommand" label="Campesino" command="APRENDEROFICIO 28 %p" />
+				<item type="sendCommand" label="Pescador" command="APRENDEROFICIO 36 %p" />
+				<item type="sendCommand" label="Cazador" command="APRENDEROFICIO 41 %p" />
+			</item>
+			<item type="menu" label="Partes de Set">
+				<item type="sendCommand" label="Panadero" command="APRENDEROFICIO 25 %p" />
+				<item type="sendCommand" label="Carnicero " command="APRENDEROFICIO 56 %p" />
+				<item type="sendCommand" label="Pescadero" command="LEARNJOB 58 %p" />
+				<item type="static" label="Equipamento" />
+				<item type="sendCommand" label="Zapatero" command="APRENDEROFICIO 15 %p" />
+				<item type="sendCommand" label="Joyero" command="APRENDEROFICIO 16 %p" />
+				<item type="sendCommand" label="Tailleur" command="APRENDEROFICIO 27 %p" />
+				<item type="static" label="Otro" />
+				<item type="sendcommand" label=" Manitas" command="LEARNJOB 65 %p" />
+				<item type="static" label="Forjadores" />
+				<item type="sendCommand" label="Espadas" command="APRENDEROFICIO 11 %p" />
+				<item type="sendCommand" label="Martillos" command="APRENDEROFICIO 14 %p" />
+				<item type="sendCommand" label="Dagas" command="APRENDEROFICIO 17 %p" />
+				<item type="sendCommand" label="Palas" command="APRENDEROFICIO 20 %p" />
+				<item type="sendCommand" label="Hachas" command="APRENDEROFICIO 31 %p" />
+				<item type="static" label="Talleres" />
+				<item type="sendCommand" label="Forjador De Arcos" command="APRENDEROFICIO 13 %p" />
+				<item type="sendCommand" label="Forjador de bastones" command="APRENDEROFICIO 18 %p" />
+				<item type="sendCommand" label="Forjador de Varitas" command="APRENDEROFICIO 19 %p" />
+			</item>
+			<item type="menu" label="Magie">
+				<item type="static" label="Equipement" />
+				<item type="sendCommand" label="Cordomage - 7495" command="APRENDEROFICIO 62 %p" />
+				<item type="sendCommand" label="Joaillomage - 7493" command="APRENDEROFICIO 63 %p" />
+				<item type="sendCommand" label="Costumage - 7494" command="APRENDEROFICIO 64 %p" />
+				<item type="static" label="Forgemage" />
+				<item type="sendCommand" label="Forgemage de Dague - 1520" command="APRENDEROFICIO 43 %p" />
+				<item type="sendCommand" label="Forgemage d'Epee - 1339" command="APRENDEROFICIO 44 %p" />
+				<item type="sendCommand" label="Forgemage de Marteau - 1561" command="APRENDEROFICIO 45 %p" />
+				<item type="sendCommand" label="Forgemage de Pelle - 1560" command="APRENDEROFICIO 46 %p" />
+				<item type="sendCommand" label="Forgemage de Hache - 1562" command="APRENDEROFICIO 47 %p" />
+				<item type="static" label="Sculptemage" />
+				<item type="sendCommand" label="Sculptemage d'Arc - 1561" command="APRENDEROFICIO 48 %p" />
+				<item type="sendCommand" label="Sculptemage de Baguette - 1564" command="APRENDEROFICIO 49 %p" />
+				<item type="sendCommand" label="Sculptemage de Baton - 1565" command="APRENDEROFICIO 50 %p" />
+			</item>
+		</item>
+		<item type="menu" label="Nivel">
+			<item type="sendCommand" label="50" command="NIVEL 50 %p" />
+			<item type="sendCommand" label="100" command="NIVEL 100 %p" />
+			<item type="sendCommand" label="150" command="NIVEL 150 %p" />
+			<item type="sendCommand" label="175" command="NIVEL 175 %p" />
+			<item type="sendCommand" label="200" command="NIVEL 200 %p" />
+		</item>
+		<item type="menu" label="Puntos de Stats">
+			<item type="sendCommand" label="5-1" command="CAPITAL 5 %p" />
+			<item type="sendCommand" label="50-10" command="CAPITAL 50 %p" />
+			<item type="sendCommand" label="495-99" command="CAPITAL 495 %p" />
+			<item type="sendCommand" label="500-100" command="CAPITAL 500 %p" />
+			<item type="sendCommand" label="1000-200" command="CAPITAL 1000 %p" />
+			<item type="sendCommand" label="50000-10000" command="CAPITAL 50000 %p" />
+		</item>
+		<item type="menu" label="Puntos De Echizo">
+			<item type="sendCommand" label="10" command="PUNTOSHECHIZO 10 %p" />
+			<item type="sendCommand" label="15" command="PUNTOSHECHIZO 15 %p" />
+			<item type="sendCommand" label="99" command="PUNTOSHECHIZO 99 %p" />
+			<item type="sendCommand" label="100" command="PUNTOSHECHIZO  100 %p" />
+			<item type="sendCommand" label="199" command="PUNTOSHECHIZO 199 %p" />
+			<item type="sendCommand" label="50000" command="PUNTOSHECHIZO 50000 %p" />
+		</item>
+		<item type="menu" label="Sets">
+			<item type="menu" label="Stats Aleatorios">
+				<item type="menu" label="1 a 20">
+					<item type="menu" label="Pio">
+						<item type="sendCommand" label="Jaune" command="ITEMSET 72" />
+						<item type="sendCommand" label="Verde" command="ITEMSET 71" />
+						<item type="sendCommand" label="Rojo" command="ITEMSET 60" />
+						<item type="sendCommand" label="Azul" command="ITEMSET 61" />
+						<item type="sendCommand" label="Violeta" command="ITEMSET 62" />
+						<item type="sendCommand" label="Rosa" command="ITEMSET 70" />
+					</item>
+					<item type="sendCommand" label="Boune" command="ITEMSET 69" />
+					<item type="sendCommand" label="Jeune Aventurier" command="ITEMSET 5" />
+					<item type="sendCommand" label="Arakne" command="ITEMSET 22" />
+					<item type="sendCommand" label="Champ Champ" command="ITEMSET 24" />
+					<item type="sendCommand" label="Champetre" command="ITEMSET 18" />
+					<item type="sendCommand" label="Bandit" command="ITEMSET 25" />
+					<item type="sendCommand" label="Bouftou" command="ITEMSET 1" />
+					<item type="sendCommand" label="Homme Ours" command="ITEMSET 12" />
+					<item type="sendCommand" label="Paysan" command="ITEMSET 47" />
+					<item type="sendCommand" label="Mousse" command="ITEMSET 63" />
+				</item>
+				<item type="menu" label="21 a 40">
+					<item type="sendCommand" label="Moskito" command="ITEMSET 23" />
+					<item type="sendCommand" label="Tofu" command="ITEMSET 50" />
+					<item type="sendCommand" label="Wa" command="ITEMSET 40" />
+					<item type="sendCommand" label="Toady" command="ITEMSET 7" />
+					<item type="sendCommand" label="Fourbasse" command="ITEMSET 16" />
+					<item type="sendCommand" label="Prespic" command="ITEMSET 31" />
+					<item type="sendCommand" label="Sanglier" command="ITEMSET 21" />
+					<item type="sendCommand" label="Larvesque" command="ITEMSET 33" />
+				</item>
+				<item type="menu" label="41 a 60">
+					<item type="menu" label="Kwak">
+						<item type="sendCommand" label="Kwak Terre" command="ITEMSET 14" />
+						<item type="sendCommand" label="Kwak Vent" command="ITEMSET 15" />
+						<item type="sendCommand" label="Kwak Flammes" command="ITEMSET 2" />
+						<item type="sendCommand" label="Kwak Glace" command="ITEMSET 13" />
+					</item>
+					<item type="menu" label="Blop">
+						<item type="sendCommand" label="Blop Coco" command="ITEMSET 100" />
+						<item type="sendCommand" label="Blop Reinette" command="ITEMSET 99" />
+						<item type="sendCommand" label="Blop Griotte" command="ITEMSET 98" />
+						<item type="sendCommand" label="Blop Indigo" command="ITEMSET 101" />
+					</item>
+					<item type="menu" label="Scarafeuille">
+						<item type="sendCommand" label="Vert" command="ITEMSET 27" />
+						<item type="sendCommand" label="Blanc" command="ITEMSET 29" />
+						<item type="sendCommand" label="Rouge" command="ITEMSET 28" />
+						<item type="sendCommand" label="Bleu" command="ITEMSET 30" />
+						<item type="static" label="Donjon" />
+						<item type="sendCommand" label="Noir" command="ITEMSET 49" />
+						<item type="sendCommand" label="Doree" command="ITEMSET 51" />
+					</item>
+					<item type="sendCommand" label="Akwadala" command="ITEMSET 34" />
+					<item type="sendCommand" label="Corbac" command="ITEMSET 8" />
+					<item type="sendCommand" label="Abraknyde" command="ITEMSET 3" />
+					<item type="sendCommand" label="Megaman" command="ITEMSET 76" />
+					<item type="sendCommand" label="Vioutifoule" command="ITEMSET 75" />
+					<item type="sendCommand" label="Craqueleur" command="ITEMSET 26" />
+					<item type="sendCommand" label="Dindo" command="ITEMSET 42" />
+					<item type="sendCommand" label="Boufcool" command="ITEMSET 43" />
+					<item type="sendCommand" label="Vegetatif" command="ITEMSET 10" />
+					<item type="sendCommand" label="Gelax" command="ITEMSET 6" />
+					<item type="sendCommand" label="Wabbit" command="ITEMSET 11" />
+					<item type="sendCommand" label="Tortue" command="ITEMSET 9" />
+					<item type="sendCommand" label="Koalak" command="ITEMSET 46" />
+				</item>
+				<item type="menu" label="61 a 80">
+					<item type="menu" label="Blop Royale">
+						<item type="sendCommand" label="Blop Coco Royale" command="ITEMSET 104" />
+						<item type="sendCommand" label="Blop Reinette Royale" command="ITEMSET 103" />
+						<item type="sendCommand" label="Blop Griotte Royale" command="ITEMSET 102" />
+						<item type="sendCommand" label="Blop Indigo Royale" command="ITEMSET 105" />
+					</item>
+					<item type="sendCommand" label="Kitsou" command="ITEMSET 41" />
+					<item type="sendCommand" label="Mulou" command="ITEMSET 32" />
+					<item type="sendCommand" label="Chef Crocodaille" command="ITEMSET 20" />
+					<item type="sendCommand" label="Bouftou Royal" command="ITEMSET 4" />
+					<item type="sendCommand" label="Aerdala" command="ITEMSET 35" />
+					<item type="sendCommand" label="O'Boul" command="ITEMSET 38" />
+					<item type="sendCommand" label="Farle Ingalsse" command="ITEMSET 17" />
+					<item type="sendCommand" label="Shika Ingalsse" command="ITEMSET 53" />
+				</item>
+				<item type="menu" label="81 a 100">
+					<item type="sendCommand" label="Koulosse" command="ITEMSET 44" />
+					<item type="sendCommand" label="Terrdala" command="ITEMSET 36" />
+					<item type="sendCommand" label="Craqueleur Legendaire" command="ITEMSET 52" />
+					<item type="sendCommand" label="Blop Multicolore Royale" command="ITEMSET 106" />
+					<item type="sendCommand" label="Sombre" command="ITEMSET 80" />
+					<item type="sendCommand" label="Feudala" command="ITEMSET 37" />
+					<item type="sendCommand" label="Chef Bwork" command="ITEMSET 19" />
+				</item>
+				<item type="menu" label="101 a 120">
+					<item type="sendCommand" label="Vassale" command="ITEMSET 77" />
+					<item type="sendCommand" label="Dragon Cochon" command="ITEMSET 58" />
+					<item type="sendCommand" label="Rat Noir" command="ITEMSET 68" />
+					<item type="sendCommand" label="Rat Blanc" command="ITEMSET 67" />
+					<item type="sendCommand" label="Minotoror" command="ITEMSET 54" />
+					<item type="sendCommand" label="Ancestrale" command="ITEMSET 65" />
+				</item>
+				<item type="menu" label="Plus de 120">
+					<item type="sendCommand" label="Dragoeuf" command="ITEMSET 56" />
+					<item type="sendCommand" label="Minotot" command="ITEMSET 57" />
+					<item type="sendCommand" label="Baveuse" command="ITEMSET 96" />
+					<item type="sendCommand" label="Zoth Zotheur" command="ITEMSET 93" />
+					<item type="sendCommand" label="Ceremoniale" command="ITEMSET 64" />
+					<item type="sendCommand" label="Elya Wood" command="ITEMSET 39" />
+					<item type="sendCommand" label="Meulou" command="ITEMSET 55" />
+					<item type="sendCommand" label="Mominotor" command="ITEMSET 59" />
+					<item type="sendCommand" label="Chene Mou" command="ITEMSET 66" />
+					<item type="sendCommand" label="Souveraine" command="ITEMSET 78" />
+					<item type="sendCommand" label="Claire" command="ITEMSET 79" />
+					<item type="sendCommand" label="Zothuliste" command="ITEMSET 94" />
+					<item type="sendCommand" label="Zothicien" command="ITEMSET 95" />
+					<item type="sendCommand" label="Ventouse" command="ITEMSET 97" />
+					<item type="sendCommand" label="Tue-Mouche" command="ITEMSET 107" />
+					<item type="sendCommand" label="Bworker Berserker" command="ITEMSET 108" />
+					<item type="sendCommand" label="Bworker Gladiateur" command="ITEMSET 109" />
+					<item type="sendCommand" label="Ougah" command="ITEMSET 118" />
+					<item type="sendCommand" label="Panoplignon" command="ITEMSET 119" />
+					<item type="sendCommand" label="Sous-bois" command="ITEMSET 120" />
+					<item type="sendCommand" label="Panoplycelium" command="ITEMSET 121" />
+				</item>
+				<item type="menu" label="Issues de cadeaux">
+					<item type="menu" label="Classee">
+						<item type="menu" label="Moins de 60">
+							<item type="sendCommand" label="Champion" command="ITEMSET 45" />
+							<item type="sendCommand" label="Ananas" command="ITEMSET 74" />
+							<item type="sendCommand" label="Bzz" command="ITEMSET 112" />
+							<item type="sendCommand" label="Peggy Porkass" command="ITEMSET 113" />
+							<item type="sendCommand" label="Bois de l'Est" command="ITEMSET 114" />
+							<item type="sendCommand" label="Citronoplie" command="ITEMSET 115" />
+							<item type="sendCommand" label="Empire" command="ITEMSET 117" />
+							<item type="sendCommand" label="Cigale" command="ITEMSET 122" />
+							<item type="sendCommand" label="Pompanoplie" command="ITEMSET 124" />
+						</item>
+						<item type="menu" label="Plus de 60">
+							<item type="sendCommand" label="Gato" command="ITEMSET 110" />
+							<item type="sendCommand" label="Paupayahn" command="ITEMSET 111" />
+							<item type="sendCommand" label="Charlie" command="ITEMSET 116" />
+							<item type="sendCommand" label="Posh" command="ITEMSET 123" />
+							<item type="sendCommand" label="Cristaline" command="ITEMSET 125" />
+							<item type="sendCommand" label="Parrain" command="ITEMSET 126" />
+							<item type="sendCommand" label="Black Wab" command="ITEMSET 127" />
+							<item type="sendCommand" label="Slait" command="ITEMSET 128" />
+							<item type="sendCommand" label="Papayou" command="ITEMSET 129" />
+							<item type="sendCommand" label="Vampyre maudit" command="ITEMSET 130" />
+							<item type="sendCommand" label="Tetounik" command="ITEMSET 132" />
+							<item type="sendCommand" label="Mystere" command="ITEMSET 131" />
+							<item type="sendCommand" label="Denree" command="ITEMSET 133" />
+							<item type="sendCommand" label="Yug" command="ITEMSET 134" />
+							<item type="sendCommand" label="Noke" command="ITEMSET 135" />
+							<item type="sendCommand" label="Solaire" command="ITEMSET 136" />
+							<item type="sendCommand" label="Mace" command="ITEMSET 137" />
+							<item type="sendCommand" label="Chisp" command="ITEMSET 138" />
+							<item type="sendCommand" label="Goldobrak" command="ITEMSET 139" />
+							<item type="sendCommand" label="Sleump" command="ITEMSET 140" />
+							<item type="sendCommand" label="Real Boitar" command="ITEMSET 142" />
+							<item type="sendCommand" label="Bouftons Rouges" command="ITEMSET 143" />
+							<item type="sendCommand" label="Grut" command="ITEMSET 144" />
+							<item type="sendCommand" label="Kocksis" command="ITEMSET 145" />
+							<item type="sendCommand" label="Gobeuf" command="ITEMSET 146" />
+							<item type="sendCommand" label="Laikteur" command="ITEMSET 147" />
+							<item type="sendCommand" label="Rekto Topi" command="ITEMSET 148" />
+							<item type="sendCommand" label="Grizou" command="ITEMSET 149" />
+						</item>
+					</item>
+					<item type="menu" label="Otros">
+						<item type="sendCommand" label="Temeraire" command="ITEMSET 81" />
+						<item type="sendCommand" label="Prince des voleurs" command="ITEMSET 82" />
+						<item type="sendCommand" label="Altruiste" command="ITEMSET 83" />
+						<item type="sendCommand" label="Innombrable" command="ITEMSET 84" />
+						<item type="sendCommand" label="Venerable" command="ITEMSET 85" />
+						<item type="sendCommand" label="Intemporelle" command="ITEMSET 86" />
+						<item type="sendCommand" label="Exsangue" command="ITEMSET 87" />
+						<item type="sendCommand" label="Gouttiere" command="ITEMSET 88" />
+						<item type="sendCommand" label="Criminelle" command="ITEMSET 89" />
+						<item type="sendCommand" label="Sauvage" command="ITEMSET 90" />
+						<item type="sendCommand" label="Indestructible" command="ITEMSET 91" />
+						<item type="sendCommand" label="Ethylique" command="ITEMSET 92" />
+					</item>
+				</item>
+			</item>
+			<item type="menu" label="Stats Al Maximo">
+				<item type="menu" label="1 a 20">
+					<item type="menu" label="Set Pio">
+						<item type="sendCommand" label="Jaune" command="ITEMSET 72 MAX" />
+						<item type="sendCommand" label="Vert" command="ITEMSET 71 MAX" />
+						<item type="sendCommand" label="Rouge" command="ITEMSET 60 MAX" />
+						<item type="sendCommand" label="Bleu" command="ITEMSET 61 MAX" />
+						<item type="sendCommand" label="Violet" command="ITEMSET 62 MAX" />
+						<item type="sendCommand" label="Rose" command="ITEMSET 70 MAX" />
+					</item>
+					<item type="sendCommand" label="Boune" command="ITEMSET 69 MAX" />
+					<item type="sendCommand" label="Jeune Aventurier" command="ITEMSET 5 MAX" />
+					<item type="sendCommand" label="Arakne" command="ITEMSET 22 MAX" />
+					<item type="sendCommand" label="Champ Champ" command="ITEMSET 24 MAX" />
+					<item type="sendCommand" label="Champetre" command="ITEMSET 18 MAX" />
+					<item type="sendCommand" label="Bandit" command="ITEMSET 25 MAX" />
+					<item type="sendCommand" label="Bouftou" command="ITEMSET 1 MAX" />
+					<item type="sendCommand" label="Homme Ours" command="ITEMSET 12 MAX" />
+					<item type="sendCommand" label="Paysan" command="ITEMSET 47 MAX" />
+					<item type="sendCommand" label="Mousse" command="ITEMSET 63 MAX" />
+				</item>
+				<item type="menu" label="21 a 40">
+					<item type="sendCommand" label="Moskito" command="ITEMSET 23 MAX" />
+					<item type="sendCommand" label="Tofu" command="ITEMSET 50 MAX" />
+					<item type="sendCommand" label="Wa" command="ITEMSET 40 MAX" />
+					<item type="sendCommand" label="Toady" command="ITEMSET 7 MAX" />
+					<item type="sendCommand" label="Fourbasse" command="ITEMSET 16 MAX" />
+					<item type="sendCommand" label="Prespic" command="ITEMSET 31 MAX" />
+					<item type="sendCommand" label="Sanglier" command="ITEMSET 21 MAX" />
+					<item type="sendCommand" label="Larvesque" command="ITEMSET 33 MAX" />
+				</item>
+				<item type="menu" label="41 a 60">
+					<item type="menu" label="Kwak">
+						<item type="sendCommand" label="Kwak Terre" command="ITEMSET 14 MAX" />
+						<item type="sendCommand" label="Kwak Vent" command="ITEMSET 15 MAX" />
+						<item type="sendCommand" label="Kwak Flammes" command="ITEMSET 2 MAX" />
+						<item type="sendCommand" label="Kwak Glace" command="ITEMSET 13 MAX" />
+					</item>
+					<item type="menu" label="Blop">
+						<item type="sendCommand" label="Blop Coco" command="ITEMSET 100 MAX" />
+						<item type="sendCommand" label="Blop Reinette" command="ITEMSET 99 MAX" />
+						<item type="sendCommand" label="Blop Griotte" command="ITEMSET 98 MAX" />
+						<item type="sendCommand" label="Blop Indigo" command="ITEMSET 101 MAX" />
+					</item>
+					<item type="menu" label="Scarafeuille">
+						<item type="sendCommand" label="Vert" command="ITEMSET 27 MAX" />
+						<item type="sendCommand" label="Blanc" command="ITEMSET 29 MAX" />
+						<item type="sendCommand" label="Rouge" command="ITEMSET 28 MAX" />
+						<item type="sendCommand" label="Bleu" command="ITEMSET 30 MAX" />
+						<item type="static" label="Donjon MAX" />
+						<item type="sendCommand" label="Noir" command="ITEMSET 49 MAX" />
+						<item type="sendCommand" label="Doree" command="ITEMSET 51 MAX" />
+					</item>
+					<item type="sendCommand" label="Akwadala" command="ITEMSET 34 MAX" />
+					<item type="sendCommand" label="Corbac" command="ITEMSET 8 MAX" />
+					<item type="sendCommand" label="Abraknyde" command="ITEMSET 3 MAX" />
+					<item type="sendCommand" label="Megaman" command="ITEMSET 76 MAX" />
+					<item type="sendCommand" label="Vioutifoule" command="ITEMSET 75 MAX" />
+					<item type="sendCommand" label="Craqueleur" command="ITEMSET 26 MAX" />
+					<item type="sendCommand" label="Dindo" command="ITEMSET 42 MAX" />
+					<item type="sendCommand" label="Boufcool" command="ITEMSET 43 MAX" />
+					<item type="sendCommand" label="Vegetatif" command="ITEMSET 10 MAX" />
+					<item type="sendCommand" label="Gelax" command="ITEMSET 6 MAX" />
+					<item type="sendCommand" label="Wabbit" command="ITEMSET 11 MAX" />
+					<item type="sendCommand" label="Tortue" command="ITEMSET 9 MAX" />
+					<item type="sendCommand" label="Koalak" command="ITEMSET 46 MAX" />
+				</item>
+				<item type="menu" label="61 a 80">
+					<item type="menu" label="Blop Royale">
+						<item type="sendCommand" label="Blop Coco Royale" command="ITEMSET 104 MAX" />
+						<item type="sendCommand" label="Blop Reinette Royale" command="ITEMSET 103 MAX" />
+						<item type="sendCommand" label="Blop Griotte Royale" command="ITEMSET 102 MAX" />
+						<item type="sendCommand" label="Blop Indigo Royale" command="ITEMSET 105 MAX" />
+					</item>
+					<item type="sendCommand" label="Kitsou" command="ITEMSET 41 MAX" />
+					<item type="sendCommand" label="Mulou" command="ITEMSET 32 MAX" />
+					<item type="sendCommand" label="Chef Crocodaille" command="ITEMSET 20 MAX" />
+					<item type="sendCommand" label="Bouftou Royal" command="ITEMSET 4 MAX" />
+					<item type="sendCommand" label="Aerdala" command="ITEMSET 35 MAX" />
+					<item type="sendCommand" label="O'Boul" command="ITEMSET 38 MAX" />
+					<item type="sendCommand" label="Farle Ingalsse" command="ITEMSET 17 MAX" />
+					<item type="sendCommand" label="Shika Ingalsse" command="ITEMSET 53 MAX" />
+				</item>
+				<item type="menu" label="81 a 100">
+					<item type="sendCommand" label="Koulosse" command="ITEMSET 44 MAX" />
+					<item type="sendCommand" label="Terrdala" command="ITEMSET 36 MAX" />
+					<item type="sendCommand" label="Craqueleur Legendaire" command="ITEMSET 52 MAX" />
+					<item type="sendCommand" label="Blop Multicolore Royale" command="ITEMSET 106 MAX" />
+					<item type="sendCommand" label="Sombre" command="ITEMSET 80 MAX" />
+					<item type="sendCommand" label="Feudala" command="ITEMSET 37 MAX" />
+					<item type="sendCommand" label="Chef Bwork" command="ITEMSET 19 MAX" />
+				</item>
+				<item type="menu" label="101 a 120">
+					<item type="sendCommand" label="Vassale" command="ITEMSET 77 MAX" />
+					<item type="sendCommand" label="Dragon Cochon" command="ITEMSET 58 MAX" />
+					<item type="sendCommand" label="Rat Noir" command="ITEMSET 68 MAX" />
+					<item type="sendCommand" label="Rat Blanc" command="ITEMSET 67 MAX" />
+					<item type="sendCommand" label="Minotoror" command="ITEMSET 54 MAX" />
+					<item type="sendCommand" label="Ancestrale" command="ITEMSET 65 MAX" />
+				</item>
+				<item type="menu" label="Plus de 120">
+					<item type="sendCommand" label="Dragoeuf" command="ITEMSET 56 MAX" />
+					<item type="sendCommand" label="Minotot" command="ITEMSET 57 MAX" />
+					<item type="sendCommand" label="Baveuse" command="ITEMSET 96 MAX" />
+					<item type="sendCommand" label="Zoth Zotheur" command="ITEMSET 93 MAX" />
+					<item type="sendCommand" label="Ceremoniale" command="ITEMSET 64 MAX" />
+					<item type="sendCommand" label="Elya Wood" command="ITEMSET 39 MAX" />
+					<item type="sendCommand" label="Meulou" command="ITEMSET 55 MAX" />
+					<item type="sendCommand" label="Mominotor" command="ITEMSET 59 MAX" />
+					<item type="sendCommand" label="Chene Mou" command="ITEMSET 66 MAX" />
+					<item type="sendCommand" label="Souveraine" command="ITEMSET 78 MAX" />
+					<item type="sendCommand" label="Claire" command="ITEMSET 79 MAX" />
+					<item type="sendCommand" label="Zothuliste" command="ITEMSET 94 MAX" />
+					<item type="sendCommand" label="Zothicien" command="ITEMSET 95 MAX" />
+					<item type="sendCommand" label="Ventouse" command="ITEMSET 97 MAX" />
+					<item type="sendCommand" label="Tue-Mouche" command="ITEMSET 107 MAX" />
+					<item type="sendCommand" label="Bworker Berserker" command="ITEMSET 108 MAX" />
+					<item type="sendCommand" label="Bworker Gladiateur" command="ITEMSET 109 MAX" />
+					<item type="sendCommand" label="Ougah" command="ITEMSET 118 MAX" />
+					<item type="sendCommand" label="Panoplignon" command="ITEMSET 119 MAX" />
+					<item type="sendCommand" label="Sous-bois" command="ITEMSET 120 MAX" />
+					<item type="sendCommand" label="Panoplycelium" command="ITEMSET 121 MAX" />
+				</item>
+				<item type="menu" label="Issues de cadeaux">
+					<item type="menu" label="Classee">
+						<item type="menu" label="Moins de 60">
+							<item type="sendCommand" label="Champion" command="ITEMSET 45 MAX" />
+							<item type="sendCommand" label="Ananas" command="ITEMSET 74 MAX" />
+							<item type="sendCommand" label="Bzz" command="ITEMSET 112 MAX" />
+							<item type="sendCommand" label="Peggy Porkass" command="ITEMSET 113 MAX" />
+							<item type="sendCommand" label="Bois de l'Est" command="ITEMSET 114 MAX" />
+							<item type="sendCommand" label="Citronoplie" command="ITEMSET 115 MAX" />
+							<item type="sendCommand" label="Empire" command="ITEMSET 117 MAX" />
+							<item type="sendCommand" label="Cigale" command="ITEMSET 122 MAX" />
+							<item type="sendCommand" label="Pompanoplie" command="ITEMSET 124 MAX" />
+						</item>
+						<item type="menu" label="Plus de 60">
+							<item type="sendCommand" label="Gato" command="ITEMSET 110 MAX" />
+							<item type="sendCommand" label="Paupayahn" command="ITEMSET 111 MAX" />
+							<item type="sendCommand" label="Charlie" command="ITEMSET 116 MAX" />
+							<item type="sendCommand" label="Posh" command="ITEMSET 123 MAX" />
+							<item type="sendCommand" label="Cristaline" command="ITEMSET 125 MAX" />
+							<item type="sendCommand" label="Parrain" command="ITEMSET 126 MAX" />
+							<item type="sendCommand" label="Black Wab" command="ITEMSET 127 MAX" />
+							<item type="sendCommand" label="Slait" command="ITEMSET 128 MAX" />
+							<item type="sendCommand" label="Papayou" command="ITEMSET 129 MAX" />
+							<item type="sendCommand" label="Vampyre maudit" command="ITEMSET 130 MAX" />
+							<item type="sendCommand" label="Tetounik" command="ITEMSET 132 MAX" />
+							<item type="sendCommand" label="Mystere" command="ITEMSET 131 MAX" />
+							<item type="sendCommand" label="Denree" command="ITEMSET 133 MAX" />
+							<item type="sendCommand" label="Yug" command="ITEMSET 134 MAX" />
+							<item type="sendCommand" label="Noke" command="ITEMSET 135 MAX" />
+							<item type="sendCommand" label="Solaire" command="ITEMSET 136 MAX" />
+							<item type="sendCommand" label="Mace" command="ITEMSET 137 MAX" />
+							<item type="sendCommand" label="Chisp" command="ITEMSET 138 MAX" />
+							<item type="sendCommand" label="Goldobrak" command="ITEMSET 139 MAX" />
+							<item type="sendCommand" label="Sleump" command="ITEMSET 140 MAX" />
+							<item type="sendCommand" label="Real Boitar" command="ITEMSET 142 MAX" />
+							<item type="sendCommand" label="Bouftons Rouges" command="ITEMSET 143 MAX" />
+							<item type="sendCommand" label="Grut" command="ITEMSET 144 MAX" />
+							<item type="sendCommand" label="Kocksis" command="ITEMSET 145 MAX" />
+							<item type="sendCommand" label="Gobeuf" command="ITEMSET 146 MAX" />
+							<item type="sendCommand" label="Laikteur" command="ITEMSET 147 MAX" />
+							<item type="sendCommand" label="Rekto Topi" command="ITEMSET 148 MAX" />
+							<item type="sendCommand" label="Grizou" command="ITEMSET 149 MAX" />
+						</item>
+					</item>
+					<item type="menu" label="Otros">
+						<item type="sendCommand" label="Temeraire" command="ITEMSET 81 MAX" />
+						<item type="sendCommand" label="Prince des voleurs" command="ITEMSET 82 MAX" />
+						<item type="sendCommand" label="Altruiste" command="ITEMSET 83 MAX" />
+						<item type="sendCommand" label="Innombrable" command="ITEMSET 84 MAX" />
+						<item type="sendCommand" label="Venerable" command="ITEMSET 85 MAX" />
+						<item type="sendCommand" label="Intemporelle" command="ITEMSET 86 MAX" />
+						<item type="sendCommand" label="Exsangue" command="ITEMSET 87 MAX" />
+						<item type="sendCommand" label="Gouttiere" command="ITEMSET 88 MAX" />
+						<item type="sendCommand" label="Criminelle" command="ITEMSET 89 MAX" />
+						<item type="sendCommand" label="Sauvage" command="ITEMSET 90 MAX" />
+						<item type="sendCommand" label="Indestructible" command="ITEMSET 91 MAX" />
+						<item type="sendCommand" label="Ethylique" command="ITEMSET 92 MAX" />
+					</item>
+				</item>
+			</item><item type="menu" label="Stats Al Minimo">
+				<item type="menu" label="1 a 20">
+					<item type="menu" label="Piou">
+						<item type="sendCommand" label="Jaune" command="ITEMSET 72 MIN" />
+						<item type="sendCommand" label="Vert" command="ITEMSET 71 MIN" />
+						<item type="sendCommand" label="Rouge" command="ITEMSET 60 MIN" />
+						<item type="sendCommand" label="Bleu" command="ITEMSET 61 MIN" />
+						<item type="sendCommand" label="Violet" command="ITEMSET 62 MIN" />
+						<item type="sendCommand" label="Rose" command="ITEMSET 70 MIN" />
+					</item>
+					<item type="sendCommand" label="Boune" command="ITEMSET 69 MIN" />
+					<item type="sendCommand" label="Jeune Aventurier" command="ITEMSET 5 MIN" />
+					<item type="sendCommand" label="Arakne" command="ITEMSET 22 MIN" />
+					<item type="sendCommand" label="Champ Champ" command="ITEMSET 24 MIN" />
+					<item type="sendCommand" label="Champetre" command="ITEMSET 18 MIN" />
+					<item type="sendCommand" label="Bandit" command="ITEMSET 25 MIN" />
+					<item type="sendCommand" label="Bouftou" command="ITEMSET 1 MIN" />
+					<item type="sendCommand" label="Homme Ours" command="ITEMSET 12 MIN" />
+					<item type="sendCommand" label="Paysan" command="ITEMSET 47 MIN" />
+					<item type="sendCommand" label="Mousse" command="ITEMSET 63 MIN" />
+				</item>
+				<item type="menu" label="21 a 40">
+					<item type="sendCommand" label="Moskito" command="ITEMSET 23 MIN" />
+					<item type="sendCommand" label="Tofu" command="ITEMSET 50 MIN" />
+					<item type="sendCommand" label="Wa" command="ITEMSET 40 MIN" />
+					<item type="sendCommand" label="Toady" command="ITEMSET 7 MIN" />
+					<item type="sendCommand" label="Fourbasse" command="ITEMSET 16 MIN" />
+					<item type="sendCommand" label="Prespic" command="ITEMSET 31 MIN" />
+					<item type="sendCommand" label="Sanglier" command="ITEMSET 21 MIN" />
+					<item type="sendCommand" label="Larvesque" command="ITEMSET 33 MIN" />
+				</item>
+				<item type="menu" label="41 a 60">
+					<item type="menu" label="Kwak">
+						<item type="sendCommand" label="Kwak Terre" command="ITEMSET 14 MIN" />
+						<item type="sendCommand" label="Kwak Vent" command="ITEMSET 15 MIN" />
+						<item type="sendCommand" label="Kwak Flammes" command="ITEMSET 2 MIN" />
+						<item type="sendCommand" label="Kwak Glace" command="ITEMSET 13 MIN" />
+					</item>
+					<item type="menu" label="Blop">
+						<item type="sendCommand" label="Blop Coco" command="ITEMSET 100 MIN" />
+						<item type="sendCommand" label="Blop Reinette" command="ITEMSET 99 MIN" />
+						<item type="sendCommand" label="Blop Griotte" command="ITEMSET 98 MIN" />
+						<item type="sendCommand" label="Blop Indigo" command="ITEMSET 101 MIN" />
+					</item>
+					<item type="menu" label="Scarafeuille">
+						<item type="sendCommand" label="Vert" command="ITEMSET 27 MIN" />
+						<item type="sendCommand" label="Blanc" command="ITEMSET 29 MIN" />
+						<item type="sendCommand" label="Rouge" command="ITEMSET 28 MIN" />
+						<item type="sendCommand" label="Bleu" command="ITEMSET 30 MIN" />
+						<item type="static" label="Donjon MIN" />
+						<item type="sendCommand" label="Noir" command="ITEMSET 49 MIN" />
+						<item type="sendCommand" label="Doree" command="ITEMSET 51 MIN" />
+					</item>
+					<item type="sendCommand" label="Akwadala" command="ITEMSET 34 MIN" />
+					<item type="sendCommand" label="Corbac" command="ITEMSET 8 MIN" />
+					<item type="sendCommand" label="Abraknyde" command="ITEMSET 3 MIN" />
+					<item type="sendCommand" label="Megaman" command="ITEMSET 76 MIN" />
+					<item type="sendCommand" label="Vioutifoule" command="ITEMSET 75 MIN" />
+					<item type="sendCommand" label="Craqueleur" command="ITEMSET 26 MIN" />
+					<item type="sendCommand" label="Dindo" command="ITEMSET 42 MIN" />
+					<item type="sendCommand" label="Boufcool" command="ITEMSET 43 MIN" />
+					<item type="sendCommand" label="Vegetatif" command="ITEMSET 10 MIN" />
+					<item type="sendCommand" label="Gelax" command="ITEMSET 6 MIN" />
+					<item type="sendCommand" label="Wabbit" command="ITEMSET 11 MIN" />
+					<item type="sendCommand" label="Tortue" command="ITEMSET 9 MIN" />
+					<item type="sendCommand" label="Koalak" command="ITEMSET 46 MIN" />
+				</item>
+				<item type="menu" label="61 a 80">
+					<item type="menu" label="Blop Royale">
+						<item type="sendCommand" label="Blop Coco Royale" command="ITEMSET 104 MIN" />
+						<item type="sendCommand" label="Blop Reinette Royale" command="ITEMSET 103 MIN" />
+						<item type="sendCommand" label="Blop Griotte Royale" command="ITEMSET 102 MIN" />
+						<item type="sendCommand" label="Blop Indigo Royale" command="ITEMSET 105 MIN" />
+					</item>
+					<item type="sendCommand" label="Kitsou" command="ITEMSET 41 MIN" />
+					<item type="sendCommand" label="Mulou" command="ITEMSET 32 MIN" />
+					<item type="sendCommand" label="Chef Crocodaille" command="ITEMSET 20 MIN" />
+					<item type="sendCommand" label="Bouftou Royal" command="ITEMSET 4 MIN" />
+					<item type="sendCommand" label="Aerdala" command="ITEMSET 35 MIN" />
+					<item type="sendCommand" label="O'Boul" command="ITEMSET 38 MIN" />
+					<item type="sendCommand" label="Farle Ingalsse" command="ITEMSET 17 MIN" />
+					<item type="sendCommand" label="Shika Ingalsse" command="ITEMSET 53 MIN" />
+				</item>
+				<item type="menu" label="81 a 100">
+					<item type="sendCommand" label="Koulosse" command="ITEMSET 44 MIN" />
+					<item type="sendCommand" label="Terrdala" command="ITEMSET 36 MIN" />
+					<item type="sendCommand" label="Craqueleur Legendaire" command="ITEMSET 52 MIN" />
+					<item type="sendCommand" label="Blop Multicolore Royale" command="ITEMSET 106 MIN" />
+					<item type="sendCommand" label="Sombre" command="ITEMSET 80 MIN" />
+					<item type="sendCommand" label="Feudala" command="ITEMSET 37 MIN" />
+					<item type="sendCommand" label="Chef Bwork" command="ITEMSET 19 MIN" />
+				</item>
+				<item type="menu" label="101 a 120">
+					<item type="sendCommand" label="Vassale" command="ITEMSET 77 MIN" />
+					<item type="sendCommand" label="Dragon Cochon" command="ITEMSET 58 MIN" />
+					<item type="sendCommand" label="Rat Noir" command="ITEMSET 68 MIN" />
+					<item type="sendCommand" label="Rat Blanc" command="ITEMSET 67 MIN" />
+					<item type="sendCommand" label="Minotoror" command="ITEMSET 54 MIN" />
+					<item type="sendCommand" label="Ancestrale" command="ITEMSET 65 MIN" />
+				</item>
+				<item type="menu" label="Plus de 120">
+					<item type="sendCommand" label="Dragoeuf" command="ITEMSET 56 MIN" />
+					<item type="sendCommand" label="Minotot" command="ITEMSET 57 MIN" />
+					<item type="sendCommand" label="Baveuse" command="ITEMSET 96 MIN" />
+					<item type="sendCommand" label="Zoth Zotheur" command="ITEMSET 93 MIN" />
+					<item type="sendCommand" label="Ceremoniale" command="ITEMSET 64 MIN" />
+					<item type="sendCommand" label="Elya Wood" command="ITEMSET 39 MIN" />
+					<item type="sendCommand" label="Meulou" command="ITEMSET 55 MIN" />
+					<item type="sendCommand" label="Mominotor" command="ITEMSET 59 MIN" />
+					<item type="sendCommand" label="Chene Mou" command="ITEMSET 66 MIN" />
+					<item type="sendCommand" label="Souveraine" command="ITEMSET 78 MIN" />
+					<item type="sendCommand" label="Claire" command="ITEMSET 79 MIN" />
+					<item type="sendCommand" label="Zothuliste" command="ITEMSET 94 MIN" />
+					<item type="sendCommand" label="Zothicien" command="ITEMSET 95 MIN" />
+					<item type="sendCommand" label="Ventouse" command="ITEMSET 97 MIN" />
+					<item type="sendCommand" label="Tue-Mouche" command="ITEMSET 107 MIN" />
+					<item type="sendCommand" label="Bworker Berserker" command="ITEMSET 108 MIN" />
+					<item type="sendCommand" label="Bworker Gladiateur" command="ITEMSET 109 MIN" />
+					<item type="sendCommand" label="Ougah" command="ITEMSET 118 MIN" />
+					<item type="sendCommand" label="Panoplignon" command="ITEMSET 119 MIN" />
+					<item type="sendCommand" label="Sous-bois" command="ITEMSET 120 MIN" />
+					<item type="sendCommand" label="Panoplycelium" command="ITEMSET 121 MIN" />
+				</item>
+				<item type="menu" label="Issues de cadeaux">
+					<item type="menu" label="Classee">
+						<item type="menu" label="Moins de 60">
+							<item type="sendCommand" label="Champion" command="ITEMSET 45 MIN" />
+							<item type="sendCommand" label="Ananas" command="ITEMSET 74 MIN" />
+							<item type="sendCommand" label="Bzz" command="ITEMSET 112 MIN" />
+							<item type="sendCommand" label="Peggy Porkass" command="ITEMSET 113 MIN" />
+							<item type="sendCommand" label="Bois de l'Est" command="ITEMSET 114 MIN" />
+							<item type="sendCommand" label="Citronoplie" command="ITEMSET 115 MIN" />
+							<item type="sendCommand" label="Empire" command="ITEMSET 117 MIN" />
+							<item type="sendCommand" label="Cigale" command="ITEMSET 122 MIN" />
+							<item type="sendCommand" label="Pompanoplie" command="ITEMSET 124 MIN" />
+						</item>
+						<item type="menu" label="Plus de 60">
+							<item type="sendCommand" label="Gato" command="ITEMSET 110 MIN" />
+							<item type="sendCommand" label="Paupayahn" command="ITEMSET 111 MIN" />
+							<item type="sendCommand" label="Charlie" command="ITEMSET 116 MIN" />
+							<item type="sendCommand" label="Posh" command="ITEMSET 123 MIN" />
+							<item type="sendCommand" label="Cristaline" command="ITEMSET 125 MIN" />
+							<item type="sendCommand" label="Parrain" command="ITEMSET 126 MIN" />
+							<item type="sendCommand" label="Black Wab" command="ITEMSET 127 MIN" />
+							<item type="sendCommand" label="Slait" command="ITEMSET 128 MIN" />
+							<item type="sendCommand" label="Papayou" command="ITEMSET 129 MIN" />
+							<item type="sendCommand" label="Vampyre maudit" command="ITEMSET 130 MIN" />
+							<item type="sendCommand" label="Tetounik" command="ITEMSET 132 MIN" />
+							<item type="sendCommand" label="Mystere" command="ITEMSET 131 MIN" />
+							<item type="sendCommand" label="Denree" command="ITEMSET 133 MIN" />
+							<item type="sendCommand" label="Yug" command="ITEMSET 134 MIN" />
+							<item type="sendCommand" label="Noke" command="ITEMSET 135 MIN" />
+							<item type="sendCommand" label="Solaire" command="ITEMSET 136 MIN" />
+							<item type="sendCommand" label="Mace" command="ITEMSET 137 MIN" />
+							<item type="sendCommand" label="Chisp" command="ITEMSET 138 MIN" />
+							<item type="sendCommand" label="Goldobrak" command="ITEMSET 139 MIN" />
+							<item type="sendCommand" label="Sleump" command="ITEMSET 140 MIN" />
+							<item type="sendCommand" label="Real Boitar" command="ITEMSET 142 MIN" />
+							<item type="sendCommand" label="Bouftons Rouges" command="ITEMSET 143 MIN" />
+							<item type="sendCommand" label="Grut" command="ITEMSET 144 MIN" />
+							<item type="sendCommand" label="Kocksis" command="ITEMSET 145 MIN" />
+							<item type="sendCommand" label="Gobeuf" command="ITEMSET 146 MIN" />
+							<item type="sendCommand" label="Laikteur" command="ITEMSET 147 MIN" />
+							<item type="sendCommand" label="Rekto Topi" command="ITEMSET 148 MIN" />
+							<item type="sendCommand" label="Grizou" command="ITEMSET 149 MIN" />
+						</item>
+					</item>
+					<item type="menu" label="Non classee">
+						<item type="sendCommand" label="Temeraire" command="ITEMSET 81 MIN" />
+						<item type="sendCommand" label="Prince des voleurs" command="ITEMSET 82 MIN" />
+						<item type="sendCommand" label="Altruiste" command="ITEMSET 83 MIN" />
+						<item type="sendCommand" label="Innombrable" command="ITEMSET 84 MIN" />
+						<item type="sendCommand" label="Venerable" command="ITEMSET 85 MIN" />
+						<item type="sendCommand" label="Intemporelle" command="ITEMSET 86 MIN" />
+						<item type="sendCommand" label="Exsangue" command="ITEMSET 87 MIN" />
+						<item type="sendCommand" label="Gouttiere" command="ITEMSET 88 MIN" />
+						<item type="sendCommand" label="Criminelle" command="ITEMSET 89 MIN" />
+						<item type="sendCommand" label="Sauvage" command="ITEMSET 90 MIN" />
+						<item type="sendCommand" label="Indestructible" command="ITEMSET 91 MIN" />
+						<item type="sendCommand" label="Ethylique" command="ITEMSET 92 MIN" />
+					</item>
+				</item>
+			</item>
+		</item>
+		<!--item type="static" label="Objets" /> <!--@todo itemSelector & all ? Non, ITEM ne marche pas sur cible (Ancestra) ...-- >
+		<item type="menu" label="Faire la commande boutique">
+			<item type="sendCommand" label="Donner une dinde Squelette" command="ITEM XXX 1 %p" />
+		</item-->
+	</item>
+	<item type="menu" label="Teletransportar">
+		<item type="sendCommand" label="Ir al mapa del jugador" command="IRDONDE %p" />
+		<item type="sendCommand" label="Hacer venir a un jugador" command="TRAER %p" />
+		<item type="menu" label="Par map">
+			<item type="static" label="Zaaps" />
+			<item type="menu" label="Incarnam">
+				<item type="sendCommand" label="Temple [1, 3] (10297)" command="TELEPORT 10297 229 %p" />
+				<item type="sendCommand" label="Foret [2, 6] (10349)" command="TELEPORT 10349 312 %p" />
+				<item type="sendCommand" label="Champs [5, 0] (10304)" command="TELEPORT 10304 138 %p" />
+				<item type="sendCommand" label="Lac [6, 4] (10317)" command="TELEPORT 10317 195 %p" />
+				<item type="static" label="Autres" />
+				<item type="sendCommand" label="Divers [3, 3] (10354)" command="TELEPORT 10354 297 %p" />
+			</item>
+			<item type="sendCommand" label="Ile d'Otomai - Le village Cotier [-46, 18] (10643)" command="TELEPORT 10643 269 %p" />
+			<item type="menu" label="Contours de Bonta">
+				<item type="sendCommand" label="Bonta [-32, -58] (4263)" command="TELEPORT 4263 170 %p" />
+				<item type="sendCommand" label="Villages des brigandins [-18, -26] (6855)" command="TELEPORT 6855 253 %p" />
+				<item type="sendCommand" label="Plaines de Cania - Plaines Rocheuses [-14, -47] (3250)" command="TELEPORT 3250 165 %p" />
+				<item type="sendCommand" label="Plaines de Cania - Massif de Cania [-20, -20] (3022)" command="TELEPORT 3022 186 %p" />
+			</item>
+			<item type="menu" label="Montagnes des Koalaks">
+				<item type="sendCommand" label="Montagnes des Koalaks - Villages des eleveurs [-16, 1] (8785)" command="TELEPORT 8785 281 %p" />
+			</item>
+			<item type="menu" label="Contours de Brakmar">
+				<item type="sendCommand" label="Brakmar [-25, 40] (5295)" command="TELEPORT 5295 561 %p" />
+				<item type="sendCommand" label="Landes de Sidimote [-24, 12]  (4739)" command="TELEPORT 4739 354 %p" />
+			</item>
+			<item type="menu" label="Amakna">
+				<item type="sendCommand" label="La montagne des Craqueleurs [-5, -8] (2191)" command="TELEPORT 2191 200 %p" />
+				<item type="sendCommand" label="Le chateau d'Amakna [3, -5] (9454)" command="TELEPORT 9454 268 %p" />
+				<item type="sendCommand" label="Port de Madrestam [7, -4] (164)" command="TELEPORT 164 193 %p" />
+				<item type="sendCommand" label="Le village [-2, 0] (951)" command="TELEPORT 951 156 %p" />
+				<item type="sendCommand" label="La Milifutaie [5, 7](528)" command="TELEPORT 528 186 %p" />
+				<item type="sendCommand" label="Bord de la foret malefique [-1, 13] (10354)" command="TELEPORT 10354 220 %p" />
+				<item type="sendCommand" label="Porte de Sufokia [10, 22] (10354)" command="TELEPORT 1158 340 %p" />
+				<item type="sendCommand" label="Plaine des scarafeuilles [-1, 24] (1242)" command="TELEPORT 1242 323 %p" />
+			</item>
+			<item type="menu" label="Contours d'Astrub">
+				<item type="sendCommand" label="Astrub - Cite d'Astrub [4, -19] (7411)" command="TELEPORT 7411 311 %p" />
+				<item type="sendCommand" label="Tainelia - Le berceau [1, -32] (6954)" command="TELEPORT 6954 268 %p" />
+			</item>
+			<item type="menu" label="Pandala">
+				<item type="sendCommand" label="Pandala Neutre - Village de Pandala [26, -37] (8037)" command="TELEPORT 8037 249 %p" />
+				<item type="static" label="Elements" />
+				<item type="sendCommand" label="Pandala Air - Village d'Aerdala [17, -31] (8163)" command="TELEPORT 8163 207 %p" />
+				<item type="sendCommand" label="Pandala Eau - Village d'Akwadala [23, -22] (8125)" command="TELEPORT 8125 358 %p" />
+				<item type="sendCommand" label="Pandala Terre - Village de Terrdala [30, -38] (8088)" command="TELEPORT 8088 221 %p" />
+				<item type="sendCommand" label="Pandala Feu - Village de Feudala [29, -49] (8437)" command="TELEPORT 8437 310 %p" />
+			</item>
+			<item type="menu" label="Iles de Madrestam">
+				<item type="sendCommand" label="L'ile des Wabbits - Ile des Wabbits [25, -4] (844)" command="TELEPORT 844 212 %p" />
+				<item type="sendCommand" label="L'ile de Moon - La plage de Moon [35, 12] (1841)" command="TELEPORT 1841 150 %p" />
+			</item>
+			<item type="static" label="Donjons" />
+			<item type="sendCommand" label="Bouftou Royal (2083)" command="TELEPORT 2083 381 %p" />
+			<item type="sendCommand" label="Meulou (9648)" command="TELEPORT 9648 268 %p" />
+			<item type="sendCommand" label="Chene Mou (8721)" command="TELEPORT 8721 395 %p" />
+			<item type="sendCommand" label="Bworker (9760)" command="TELEPORT 9760 425 %p" />
+		</item>
+		<item type="static" label="Endroits speciaux" />
+		<item type="sendCommand" label="Aller a l'enclos Brakmarien" command="TELEPORT 9352 140 %p" />
+		<item type="sendCommand" label="Aller au zoneShop" command="TELEPORT 11105 138 %p" />
+	</item>
+	<item type="static" label="Outils" />
+	<item type="menu" label="General">
+		<item type="loadXML" label="Recharger le fichier XML" />
+		<item type="static" label="Interfaces" />
+		<item type="summoner" label="Gestionnaire des items (type banque)" />
+		<item type="sendCommand" label="Gestionnaire des items (type vue), self" command="ITEM #item" />
+		<item type="sendCommand" label="Gestionnaire des items (type vue), MIN" command="ITEM #item MIN" />
+		<item type="sendCommand" label="Gestionnaire des items (type vue), MAX" command="ITEM #item MAX" />
+		<item type="sendCommand" label="Creation de guilde" command="CREATEGUILD %p" />
+		<item type="static" label="Outils debug" />
+		<!--Useless: alls characters is saved
+		item type="sendCommand" label="Avertir d'un reboot" command="Anb [DofuRuano] Le serveur va bientot rebooter. Cela dure environ 5 minutes" /-->
+		<item type="sendChat" label="Infos version" command="%v" />
+		<item type="sendCommand" label="Activar el modo debug" command="/debug" />
+		<item type="menu" label="Commandes admins">
+			<item type="menu" label="Partie 1">
+				<item type="static" label="Commandes generales" />
+				<item type="sendCommand" label="Inverser les sprites" command="/TOGGLESPRITES" />
+				<item type="sendCommand" label="Infos" command="/INFOS" />
+				<item type="prepareCommand" label="Zoom (gfx)" command="/zoom $1 $2 $3" />
+				<item type="sendCommand" label="Nombre de timers" command="/TIMERSCOUNT" />
+				<item type="sendCommand" label="Les variables" command="/VARS" />
+				<item type="sendCommand" label="Monter sa monture" command="/MOUNT" />
+				<item type="prepareCommand" label="Changer la taille" command="/SCALE $taille $2(si non precise: $taille)" />
+				<item type="sendCommand" label="Ping" command="/PING" />
+				<item type="sendCommand" label="ID Map" command="/MAPID" />
+				<item type="sendCommand" label="ID Case" command="/CELL" />
+				<item type="sendCommand" label="Date" command="/TIME" />
+			</item>
+			<item type="menu" label="Partie 2">
+				<item type="sendCommand" label="Vider le cache" command="/CACHE" />
+				<item type="sendCommand" label="Relancer" command="/REBOOT" />
+				<item type="sendCommand" label="Frames par secondes" command="/FPS" />
+				<item type="prepareCommand" label="Informer (par variable)" command="/ASKOK ${Variable de langue, par exemple: DO_U_QUIT}" />
+				<item type="prepareCommand" label="Informer (par texte)" command="/ASKOK2 ${Texte, par exemple: Voulez-vous mourir ?}" />
+				<item type="sendCommand" label="Trouver la place du MovieClip" command="/MOVIECLIP" />
+				<item type="prepareCommand" label="Ligne de vue (Line of Sight, LOS)" command="/LOS %c ($case_depart) $case_arrivee" />
+				<item type="prepareCommand" label="Vider une case" command="/CLEARCELL %c ($case)" />
+				<item type="prepareCommand" label="Information sur la case" command="/CELLINFO %c" />
+				<item type="prepareCommand" label="Informations sur le fichier de langue" command="/LANGFILE $fichier_langue" />
+				<item type="sendCommand" label="Liste des sprites" command="/LISTSPRITES" />
+				<item type="sendCommand" label="Liste des pictos" command="/LISTPICTOS" />
+			</item>
+			<item type="menu" label="Partie 3">
+				<item type="prepareCommand" label="POINTSPRITES (retire 1 pointSprite au TipsManager)" command="/POINTSPRITES $1" />
+				<item type="prepareCommand" label="POINTSPICTO (retire 1 pointPicto au TipsManager)" command="/POINTSPICTO $1" />
+				<item type="menu" label="Commandes SaveTheWorld">
+				<!-- Commandes de save, si  dofus.Constants.SAVING_THE_WORLD est à True uniquement.
+				Décommenté vu que en menuDebug ! -->
+					<item type="sendCommand" label="Executer la sauvegarder du monde" command="/SAVETHEWORLD" />
+					<item type="sendCommand" label="Arreter la sauvegarder du monde" command="/STOPSAVETHEWORLD" />
+					<item type="sendCommand" label="gotonext SAVETHEWORLD" command="/SAVETHEWORLD" />
+				</item>
+				<item type="prepareCommand" label="Jouer (musique)" command="/SOMAPLAY (vos parametres, avec espaces etc)" />
+				<item type="prepareCommand" label="Verifier l'identite (reseau)" command="/VERIFYIDENTIFY $network_key" />
+				<item type="prepareCommand" label="Information sur un monstre" command="/MONSTER $monster_id" />
+			</item>
+			<item type="menu" label="Partie 4">
+				<item type="sendCommand" label="Activar el modo Debug" command="/DEBUG" />
+				<item type="static" label="Commandes du mode DEBUG" />
+				<item type="prepareCommand" label="Jouer une animation" command="/ANIM $1 $2" />
+				<item type="prepareCommand" label="Packets (&GT = envoyer, &LT = recevoir)" command="/C ${&GT; ou &LT;} $packet" />
+				<item type="prepareCommand" label="Packets (&GT = envoyer, &LT = recevoir) mode debug" command="/D ${&GT; ou &LT;} $packet" />
+			</item>
+		</item>
+		<item type="menu" label="UI">
+			<item type="menu" label="Partie 1">
+				<item type="sendCommand" label="PlayerShopModifier" command="/ui PlayerShopModifier" />
+				<item type="sendCommand" label="TaxCollectorStorage" command="/ui TaxCollectorStorage" />
+				<item type="sendCommand" label="PlayerShop" command="/ui PlayerShop" />
+				<item type="sendCommand" label="NpcShop" command="/ui NpcShop" />
+				<item type="sendCommand" label="Inventory" command="/ui Inventory" />
+				<item type="sendCommand" label="Timeline" command="/ui Timeline" />
+				<item type="sendCommand" label="ChallengeMenu" command="/ui ChallengeMenu" />
+				<item type="sendCommand" label="StatsJobContainerHighlight" command="/ui StatsJobContainerHighlight" />
+				<item type="sendCommand" label="InventoryContainerHighlight" command="/ui InventoryContainerHighlight" />
+				<item type="sendCommand" label="ForgemagusContainerHighlight" command="/ui ForgemagusContainerHighlight" />
+				<item type="sendCommand" label="StatsJobContainerBackground2" command="/ui StatsJobContainerBackground2" />
+				<item type="sendCommand" label="StatsJobContainerBackground" command="/ui StatsJobContainerBackground" />
+				<item type="sendCommand" label="InventoryContainerBackground" command="/ui InventoryContainerBackground" />
+				<item type="sendCommand" label="ForgemagusContainerBackground" command="/ui ForgemagusContainerBackground" />
+				<item type="sendCommand" label="PopupQuantity" command="/ui PopupQuantity" />
+				<item type="sendCommand" label="PopupHexa" command="/ui PopupHexa" />
+				<item type="sendCommand" label="StringCourse" command="/ui StringCourse" />
+				<item type="sendCommand" label="Friends" command="/ui Friends" />
+				<item type="sendCommand" label="FightChallenge" command="/ui FightChallenge" />
+				<item type="sendCommand" label="SecureCraft" command="/ui SecureCraft" />
+			</item>
+			<item type="menu" label="Partie 2">
+				<item type="sendCommand" label="Craft" command="/ui Craft" />
+				<item type="sendCommand" label="Exchange" command="/ui Exchange" />
+				<item type="sendCommand" label="AskPrivateChat" command="/ui AskPrivateChat" />
+				<item type="sendCommand" label="CenterText" command="/ui CenterText" />
+				<item type="sendCommand" label="CenterInfo" command="/ui CenterInfo" />
+				<item type="sendCommand" label="AskCancel" command="/ui AskCancel" />
+				<item type="sendCommand" label="AskLinkWarning" command="/ui AskLinkWarning" />
+				<item type="sendCommand" label="AskGameBegin" command="/ui AskGameBegin" />
+				<item type="sendCommand" label="AskYesNo" command="/ui AskYesNo" />
+				<item type="sendCommand" label="AskYesNoIgnore" command="/ui AskYesNoIgnore" />
+				<item type="sendCommand" label="AskCustomShortcut" command="/ui AskCustomShortcut" />
+				<item type="sendCommand" label="ChooseNickName" command="/ui ChooseNickName" />
+				<item type="sendCommand" label="AskSecretAnswer" command="/ui AskSecretAnswer" />
+				<item type="sendCommand" label="AskAlertServer" command="/ui AskAlertServer" />
+				<item type="sendCommand" label="AskOk" command="/ui AskOk" />
+				<item type="sendCommand" label="Login" command="/ui Login" />
+				<item type="sendCommand" label="GameOver" command="/ui GameOver" />
+				<item type="sendCommand" label="ItemViewer" command="/ui ItemViewer" />
+				<item type="sendCommand" label="ChooseItemSkin" command="/ui ChooseItemSkin" />
+			</item>
+			<item type="menu" label="Partie 3">
+				<item type="sendCommand" label="MountViewer" command="/ui MountViewer" />
+				<item type="sendCommand" label="Mount" command="/ui Mount" />
+				<item type="sendCommand" label="StatsJob" command="/ui StatsJob" />
+				<item type="sendCommand" label="JoinFriend" command="/ui JoinFriend" />
+				<item type="sendCommand" label="GameResultPlayer" command="/ui GameResultPlayer" />
+				<item type="sendCommand" label="GameResultPlayerPVP" command="/ui GameResultPlayerPVP" />
+				<item type="sendCommand" label="NpcDialog" command="/ui NpcDialog" />
+				<item type="sendCommand" label="GameResult" command="/ui GameResult" />
+				<item type="sendCommand" label="GameResultTeamPVP" command="/ui GameResultTeamPVP" />
+				<item type="sendCommand" label="GameResultTeam" command="/ui GameResultTeam" />
+				<item type="sendCommand" label="FriendsDisconnectedItem" command="/ui FriendsDisconnectedItem" />
+				<item type="sendCommand" label="QuestsStepRewardItem" command="/ui QuestsStepRewardItem" />
+				<item type="sendCommand" label="BigStorePriceItem" command="/ui BigStorePriceItem" />
+				<item type="sendCommand" label="FriendsConnectedItem" command="/ui FriendsConnectedItem" />
+				<item type="sendCommand" label="KeyCode" command="/ui KeyCode" />
+				<item type="sendCommand" label="HouseIndoor" command="/ui HouseIndoor" />
+				<item type="sendCommand" label="ItemUtility" command="/ui ItemUtility" />
+				<item type="sendCommand" label="Storage" command="/ui Storage" />
+				<item type="sendCommand" label="Zoom" command="/ui Zoom" />
+			</item>
+			<item type="menu" label="Partie 4">
+				<item type="sendCommand" label="Tutorial" command="/ui Tutorial" />
+				<item type="sendCommand" label="MainMenu" command="/ui MainMenu" />
+				<item type="sendCommand" label="Register" command="/ui Register" />
+				<item type="sendCommand" label="Options" command="/ui Options" />
+				<item type="sendCommand" label="AskMainMenu" command="/ui AskMainMenu" />
+				<item type="sendCommand" label="MountAncestorsViewer" command="/ui MountAncestorsViewer" />
+				<item type="sendCommand" label="FightOptionButtons" command="/ui FightOptionButtons" />
+				<item type="sendCommand" label="Banner" command="/ui Banner" />
+				<item type="sendCommand" label="Spells" command="/ui Spells" />
+				<item type="sendCommand" label="MountParkSale" command="/ui MountParkSale" />
+				<item type="sendCommand" label="HouseSale" command="/ui HouseSale" />
+				<item type="sendCommand" label="CreateCharacter" command="/ui CreateCharacter" />
+				<item type="sendCommand" label="ChooseCharacter" command="/ui ChooseCharacter" />
+				<item type="sendCommand" label="CharactersMigration" command="/ui CharactersMigration" />
+				<item type="sendCommand" label="CharactersMigrationItem" command="/ui CharactersMigrationItem" />
+				<item type="sendCommand" label="Gifts" command="/ui Gifts" />
+				<item type="sendCommand" label="ServerList" command="/ui ServerList" />
+				<item type="sendCommand" label="ChooseServer" command="/ui ChooseServer" />
+				<item type="sendCommand" label="PlayerInfos" command="/ui PlayerInfos" />
+				<item type="sendCommand" label="PlayerInfosEffectsItem" command="/ui PlayerInfosEffectsItem" />
+			</item>
+			<item type="menu" label="Partie 5">
+				<item type="sendCommand" label="WaitingQueue" command="/ui WaitingQueue" />
+				<item type="sendCommand" label="WaitingMessage" command="/ui WaitingMessage" />
+				<item type="sendCommand" label="Waiting" command="/ui Waiting" />
+				<item type="sendCommand" label="DocumentParchment" command="/ui DocumentParchment" />
+				<item type="sendCommand" label="DocumentBook" command="/ui DocumentBook" />
+				<item type="sendCommand" label="Cinematic" command="/ui Cinematic" />
+				<item type="sendCommand" label="MapInfos" command="/ui MapInfos" />
+				<item type="sendCommand" label="SpellInfos" command="/ui SpellInfos" />
+				<item type="sendCommand" label="MapExplorer" command="/ui MapExplorer" />
+				<item type="sendCommand" label="Guild" command="/ui Guild" />
+				<item type="sendCommand" label="CreateGuild" command="/ui CreateGuild" />
+				<item type="sendCommand" label="CrafterCard" command="/ui CrafterCard" />
+				<item type="sendCommand" label="GuildMemberInfos" command="/ui GuildMemberInfos" />
+				<item type="sendCommand" label="Subway" command="/ui Subway" />
+				<item type="sendCommand" label="MonsterAndLookSelector" command="/ui MonsterAndLookSelector" />
+				<item type="sendCommand" label="ItemSelector" command="/ui ItemSelector" />
+				<item type="sendCommand" label="Waypoints" command="/ui Waypoints" />
+				<item type="sendCommand" label="ShortcutsItem" command="/ui ShortcutsItem" />
+			</item>
+			<item type="menu" label="Partie 6">
+				<item type="sendCommand" label="SubwayItem" command="/ui SubwayItem" />
+				<item type="sendCommand" label="WaypointsItem" command="/ui WaypointsItem" />
+				<item type="sendCommand" label="Buff" command="/ui Buff" />
+				<item type="sendCommand" label="BuffInfos" command="/ui BuffInfos" />
+				<item type="sendCommand" label="DocumentRoadSignRight" command="/ui DocumentRoadSignRight" />
+				<item type="sendCommand" label="DocumentRoadSignLeft" command="/ui DocumentRoadSignLeft" />
+				<item type="sendCommand" label="FightsInfos" command="/ui FightsInfos" />
+				<item type="sendCommand" label="FightsInfosPlayerItem" command="/ui FightsInfosPlayerItem" />
+				<item type="sendCommand" label="FightsInfosFightItem" command="/ui FightsInfosFightItem" />
+				<item type="sendCommand" label="Tips" command="/ui Tips" />
+				<item type="sendCommand" label="CardsCollection" command="/ui CardsCollection" />
+				<item type="sendCommand" label="Indicator" command="/ui Indicator" />
+				<item type="sendCommand" label="ServersManagerRetry" command="/ui ServersManagerRetry" />
+				<item type="sendCommand" label="Shortcuts" command="/ui Shortcuts" />
+				<item type="sendCommand" label="Debug" command="/ui Debug" />
+				<item type="sendCommand" label="Quests" command="/ui Quests" />
+				<item type="sendCommand" label="PartyItem" command="/ui PartyItem" />
+				<item type="sendCommand" label="Party" command="/ui Party" />
+				<item type="sendCommand" label="MountStorage" command="/ui MountStorage" />
+				<item type="sendCommand" label="BigStoreSell" command="/ui BigStoreSell" />
+			</item>
+			<item type="menu" label="Partie 7">
+				<item type="sendCommand" label="CrafterList" command="/ui CrafterList" />
+				<item type="sendCommand" label="BigStoreBuy" command="/ui BigStoreBuy" />
+				<item type="sendCommand" label="BigStoreSearch" command="/ui BigStoreSearch" />
+				<item type="sendCommand" label="InventorySearch" command="/ui InventorySearch" />
+				<item type="sendCommand" label="QuestsObjectivetItem" command="/ui QuestsObjectivetItem" />
+				<item type="sendCommand" label="QuestsStepItem" command="/ui QuestsStepItem" />
+				<item type="sendCommand" label="QuestsQuestItem" command="/ui QuestsQuestItem" />
+				<item type="sendCommand" label="PayZoneDialog" command="/ui PayZoneDialog" />
+				<item type="sendCommand" label="PayZoneDialog2" command="/ui PayZoneDialog2" />
+				<item type="sendCommand" label="PayZone" command="/ui PayZone" />
+				<item type="sendCommand" label="MovableContainerBar" command="/ui MovableContainerBar" />
+				<item type="sendCommand" label="LoginNewsItem" command="/ui LoginNewsItem" />
+				<item type="sendCommand" label="GiftsSprite" command="/ui GiftsSprite" />
+				<item type="sendCommand" label="AutomaticServer" command="/ui AutomaticServer" />
+				<item type="sendCommand" label="ServerInformations" command="/ui ServerInformations" />
+				<item type="sendCommand" label="TitleDisplayer" command="/ui TitleDisplayer" />
+				<item type="sendCommand" label="ForgemagusCraft" command="/ui ForgemagusCraft" />
+				<item type="sendCommand" label="KnownledgeBase" command="/ui KnownledgeBase" />
+				<item type="sendCommand" label="KnownledgeBaseCategory" command="/ui KnownledgeBaseCategory" />
+				<item type="sendCommand" label="KnownledgeBaseItem" command="/ui KnownledgeBaseItem" />
+				<item type="sendCommand" label="FloatingTips" command="/ui FloatingTips" />
+			</item>
+			<item type="menu" label="Partie 8">
+				<item type="sendCommand" label="SpellViewerOnCreate" command="/ui SpellViewerOnCreate" />
+				<item type="sendCommand" label="HistoryViewerOnCreate" command="/ui HistoryViewerOnCreate" />
+				<item type="sendCommand" label="GuildHouseRights" command="/ui GuildHouseRights" />
+				<item type="sendCommand" label="ItemSummoner" command="/ui ItemSummoner" />
+				<item type="sendCommand" label="AskReportMessage" command="/ui AskReportMessage" />
+				<item type="sendCommand" label="Conquest" command="/ui Conquest" />
+				<item type="sendCommand" label="SpellForget" command="/ui SpellForget" />
+				<item type="sendCommand" label="SpellForgetItem" command="/ui SpellForgetItem" />
+				<item type="sendCommand" label="ItemFound" command="/ui ItemFound" />
+				<item type="sendCommand" label="ChooseFeed" command="/ui ChooseFeed" />
+			</item>
+		</item>
+	</item>
+	<item type="menu" label="Acciones sobre el mapa">
+		<item type="static" label="Triggers" />
+		<item type="prepareCommand" label="Ajout" command="ADDTRIGGER $map_id $cell_id" />
+		<item type="prepareCommand" label="Suppression" command="DELTRIGGER %m($mapid) %c($cellid)" />
+		<item type="static" label="Combates" />
+		<item type="sendCommand" label="- Refrescar los monstruos" command="REFRESHMOBS" />
+		<item type="static" label="- Positions de combat" />
+		<item type="sendCommand" label="- Creer une case pour le groupe 1" command="addfightpos 0" />
+		<item type="sendCommand" label="- Creer une case pour le groupe 2" command="addfightpos 1" />
+		<item type="sendCommand" label="- Supprimer la case de combat" command="delfightpos" />
+		<item type="menu" label="- Nombre de groupes/map">
+			<item type="sendCommand" label="Un" command="SETMAXGROUP 1" />
+			<item type="sendCommand" label="Deux" command="SETMAXGROUP 2" />
+			<item type="sendCommand" label="Trois" command="SETMAXGROUP 3" />
+			<item type="sendCommand" label="Quatre" command="SETMAXGROUP 4" />
+			<item type="sendCommand" label="Cinq" command="SETMAXGROUP 5" />
+			<item type="sendCommand" label="Six" command="SETMAXGROUP 6" />
+			<item type="sendCommand" label="Huit" command="SETMAXGROUP 8" />
+			<item type="sendCommand" label="Sept" command="SETMAXGROUP 7" />
+		</item>
+		<item type="static" label="Moderation" />
+		<item type="sendChat" command="Attention, je vais sanctionner !" label="Avertir la map" />
+	</item>
+	<item type="static" label="Animation" />
+	<item type="sendCommand" command="An DofuRuano Server: dofuruano.sytes.net" label="Advertir de un evento" />
+	<item type="menu" label="Interfaces">
+		<!-- Here is the admin, the # will be replaced by the values choosed in the editors -->
+		<item type="sendCommand" label="Gestionnaire des items (type vue)" command="ITEM #item %p" />
+		<item type="sendCommand" label="Gestionnaire des monstres" command="spawn #monster" />
+		<item type="sendCommand" label="Gestionnaire de looks" command="FORMA #look %p" />
+		<!--item type="sendCommand" label="Se transformer" command="FORMA #look %p" /-->
+		<!-- End DofuRuano-Created Admin -->
+		<item type="sendCommand" label="Rendre invisible" command="FORMA 9999 %p" />
+		<item type="sendCommand" label="Rendre son apparence" command="DEFORMA %p" />
+	</item>
+	<!--item type="sendChat" label="guess" command="%s" /-->
+	<item type="menu" label="Cambiar el tamaño">
+		<item type="sendCommand" label="1%" command="SIZE 1 %p" />
+		<item type="sendCommand" label="25%" command="SIZE 25 %p" />
+		<item type="sendCommand" label="50%" command="SIZE 50 %p" />
+		<item type="sendCommand" label="100% (basique)" command="SIZE 100 %p" />
+		<item type="sendCommand" label="110%" command="SIZE 110 %p" />
+		<item type="sendCommand" label="200%" command="SIZE 200 %p" />
+		<item type="sendCommand" label="500%" command="SIZE 500 %p" />
+		<item type="sendCommand" label="5000%" command="SIZE 5000 %p" />
+	</item>
+	<item type="menu" label="Apariencias">
+		<item type="menu" label="Otros">
+			<item type="menu" label="Boss">
+				<item type="sendCommand" command="FORMA 1046 %p" label="Ecureuil" />
+				<item type="sendCommand" command="FORMA 1217 %p" label="Tentacule Kralamour" />
+			</item>
+			<item type="menu" label="Misc">
+				<item type="sendCommand" command="FORMA 0 %p" label="epee de combat (defaut)" />
+				<item type="sendCommand" command="FORMA 2 %p" label="Cristal Demon" />
+				<item type="sendCommand" command="FORMA 3 %p" label="epee de combat (monstres)" />
+				<item type="sendCommand" command="FORMA 4 %p" label="epee de combat (percepteur)" />
+				<item type="sendCommand" command="FORMA 5 %p" label="epee de combat (defaut)" />
+				<item type="sendCommand" command="FORMA 12 %p" label="Feca (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 13 %p" label="Feca (joueur, tombe)" />
+				<item type="sendCommand" command="FORMA 22 %p" label="Osamodas (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 23 %p" label="Osamodas (joueur, tombe)" />
+				<item type="sendCommand" command="FORMA 32 %p" label="Enutrof (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 33 %p" label="Enutrof (joueur, tombe)" />
+				<item type="sendCommand" command="FORMA 42 %p" label="Sram (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 43 %p" label="Sram (joueur, tombe)" />
+				<item type="sendCommand" command="FORMA 52 %p" label="Xelor (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 53 %p" label="Xelor (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 62 %p" label="Ecaflip (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 63 %p" label="Ecaflip (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 72 %p" label="Eniripsa (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 73 %p" label="Eniripsa (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 82 %p" label="Iop (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 83 %p" label="Iop (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 92 %p" label="Crâ (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 93 %p" label="Crâ (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 102 %p" label="Sadida (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 103 %p" label="Sadida (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 112 %p" label="Sacrieur (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 113 %p" label="Sacrieur (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 122 %p" label="Pandawa (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 123 %p" label="Pandawa (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 1005 %p" label="Champ" />
+				<item type="sendCommand" command="FORMA 1006 %p" label="Moustiko" />
+				<item type="sendCommand" command="FORMA 1011 %p" label="Tournesol sauvage" />
+				<item type="sendCommand" command="FORMA 1015 %p" label="Lapin" />
+				<item type="sendCommand" command="FORMA 1017 %p" label="Sanglier" />
+				<item type="sendCommand" command="FORMA 1022 %p" label="Larve Bleu" />
+				<item type="sendCommand" command="FORMA 1023 %p" label="Larve Verte" />
+				<item type="sendCommand" command="FORMA 1024 %p" label="Larve Orange" />
+				<item type="sendCommand" command="FORMA 1045 %p" label="Pissenlit diabolique" />
+				<item type="sendCommand" command="FORMA 1082 %p" label="Rokailleux tete" />
+				<item type="sendCommand" command="FORMA 1087 %p" label="Tofu Lance" />
+				<item type="sendCommand" command="FORMA 1090 %p" label="Bouftou royal" />
+				<item type="sendCommand" command="FORMA 1093 %p" label="Boufton Noir" />
+				<item type="sendCommand" command="FORMA 1110 %p" label="Dragodinde Sauvage" />
+				<item type="sendCommand" command="FORMA 1140 %p" label="Boule d eau" />
+				<item type="sendCommand" command="FORMA 1187 %p" label="Cocon du maitre Corbac" />
+				<item type="sendCommand" command="FORMA 1210 %p" label="Traces de pas (mode invisibilite)" />
+				<item type="sendCommand" command="FORMA 1213 %p" label="etoile de mer" />
+				<item type="sendCommand" command="FORMA 1215 %p" label="Kralamour" />
+				<item type="sendCommand" command="FORMA 1216 %p" label="Tentacule Invocatrice" />
+				<item type="sendCommand" command="FORMA 1224 %p" label="Robot en bois boulet" />
+				<item type="sendCommand" command="FORMA 1225 %p" label="robot en bois bouclier" />
+				<item type="sendCommand" command="FORMA 1237 %p" label="ballon" />
+				<item type="sendCommand" command="FORMA 1238 %p" label="sadida de la foire du trool" />
+				<item type="sendCommand" command="FORMA 1250 %p" label="Kill bwork" />
+				<item type="sendCommand" command="FORMA 1262 %p" label="invoc panda" />
+				<item type="sendCommand" command="FORMA 1263 %p" label="Bouftou GM" />
+				<item type="sendCommand" command="FORMA 1279 %p" label="Mega Leopardo" />
+				<item type="sendCommand" command="FORMA 1291 %p" label="mega Leopardo fantome" />
+				<item type="sendCommand" command="FORMA 1323 %p" label="Koalak (ghost)" />
+				<item type="sendCommand" command="FORMA 1328 %p" label="Snowfouxy (ghost)" />
+				<item type="sendCommand" command="FORMA 1329 %p" label="Korbak (ghost)" />
+				<item type="sendCommand" command="FORMA 1336 %p" label="Champ Arach Bolet" />
+				<item type="sendCommand" command="FORMA 1342 %p" label="Salah Mandreuh" />
+				<item type="sendCommand" command="FORMA 1343 %p" label="GroKameleon Feu" />
+				<item type="sendCommand" command="FORMA 1344 %p" label="GroKameleon Terre" />
+				<item type="sendCommand" command="FORMA 1345 %p" label="GroKameleon Eau" />
+				<item type="sendCommand" command="FORMA 1346 %p" label="GroKameleon Air" />
+				<item type="sendCommand" command="FORMA 1351 %p" label="Salah Mandreuh" />
+				<item type="sendCommand" command="FORMA 1360 %p" label="pepsy koala" />
+				<item type="sendCommand" command="FORMA 1371 %p" label="Megagrotofu" />
+				<item type="sendCommand" command="FORMA 1378 %p" label="Tofu en cage (cassee)" />
+				<item type="sendCommand" command="FORMA 1385 %p" label="Gamino cavalier Tofu" />
+				<item type="sendCommand" command="FORMA 1390 %p" label="Kokotier" />
+				<item type="sendCommand" command="FORMA 1435 %p" label="PitiRatBajoie" />
+				<item type="sendCommand" command="FORMA 1437 %p" label="BrakmarRat" />
+				<item type="sendCommand" command="FORMA 1438 %p" label="Splinter" />
+				<item type="sendCommand" command="FORMA 1441 %p" label="Monture diforme" />
+				<item type="sendCommand" command="FORMA 1448 %p" label="Charme" />
+				<item type="sendCommand" command="FORMA 1457 %p" label="Wa Wabbit 8 views" />
+				<item type="sendCommand" command="FORMA 1460 %p" label="Maitresse des trools" />
+				<item type="sendCommand" command="FORMA 1461 %p" label="Maitresse des trolls" />
+				<item type="sendCommand" command="FORMA 1463 %p" label="Mama Trool" />
+				<item type="sendCommand" command="FORMA 1464 %p" label="Trool Barbu" />
+				<item type="sendCommand" command="FORMA 1465 %p" label="Dragon Pudoeuf blanc et vert" />
+				<item type="sendCommand" command="FORMA 1466 %p" label="Dragon Pudoeuf jaune" />
+				<item type="sendCommand" command="FORMA 1467 %p" label="Dragon Pudoeuf jaune et bleu" />
+				<item type="sendCommand" command="FORMA 1468 %p" label="Dragon Pudoeuf rouge et noir" />
+				<item type="sendCommand" command="FORMA 1469 %p" label="Baby Trool" />
+				<item type="sendCommand" command="FORMA 1470 %p" label="Krakeleur Sombre" />
+				<item type="sendCommand" command="FORMA 1471 %p" label="Bernard Lhermite" />
+				<item type="sendCommand" command="FORMA 1476 %p" label="Bob La Mousse" />
+				<item type="sendCommand" command="FORMA 1477 %p" label="Lutin Irlandais" />
+				<item type="sendCommand" command="FORMA 1482 %p" label="Piti Requin Bleu" />
+				<item type="sendCommand" command="FORMA 1486 %p" label="Mini Krakralamour" />
+				<item type="sendCommand" command="FORMA 1489 %p" label="Mini Lutin King" />
+				<item type="sendCommand" command="FORMA 1491 %p" label="Moule ouverte" />
+				<item type="sendCommand" command="FORMA 1492 %p" label="Patraque" />
+				<item type="sendCommand" command="FORMA 1493 %p" label="Gros Lutin Irlandais" />
+				<item type="sendCommand" command="FORMA 1494 %p" label="Mante des sables" />
+				<item type="sendCommand" command="FORMA 1498 %p" label="Croc Blanc" />
+				<item type="sendCommand" command="FORMA 1500 %p" label="Epouvantail" />
+				<item type="sendCommand" command="FORMA 1507 %p" label="Krak enneige" />
+				<item type="sendCommand" command="FORMA 1516 %p" label="pantalon du papa nowel" />
+				<item type="sendCommand" command="FORMA 1524 %p" label="Glaçon perso" />
+				<item type="sendCommand" command="FORMA 1525 %p" label="Trool Mage" />
+				<item type="sendCommand" command="FORMA 1526 %p" label="Trool Guerrier" />
+				<item type="sendCommand" command="FORMA 1529 %p" label="Serpentin tropical" />
+				<item type="sendCommand" command="FORMA 1532 %p" label="Meupette 01" />
+				<item type="sendCommand" command="FORMA 1540 %p" label="Rat bi Jacob" />
+				<item type="sendCommand" command="FORMA 1542 %p" label="Rat Boss Bonta Obese" />
+				<item type="sendCommand" command="FORMA 1543 %p" label="Rat Stafarai" />
+				<item type="sendCommand" command="FORMA 1545 %p" label="Rat Stafaraille" />
+				<item type="sendCommand" command="FORMA 1547 %p" label="Invoc de bob la mousse" />
+				<item type="sendCommand" command="FORMA 1550 %p" label="Singe feuillu" />
+				<item type="sendCommand" command="FORMA 1556 %p" label="Cocoflor" />
+				<item type="sendCommand" command="FORMA 1575 %p" label="Bzz" />
+				<item type="sendCommand" command="FORMA 1576 %p" label="Brakmarien" />
+				<item type="sendCommand" command="FORMA 1584 %p" label="Trois Wabbits" />
+				<item type="sendCommand" command="FORMA 1588 %p" label="Larve Doree" />
+				<item type="sendCommand" command="FORMA 1589 %p" label="Harry Gator" />
+				<item type="sendCommand" command="FORMA 1590 %p" label="Wally Gator" />
+				<item type="sendCommand" command="FORMA 1591 %p" label="Harry Gator" />
+				<item type="sendCommand" command="FORMA 1596 %p" label="Ti Molusque (Vert)" />
+				<item type="sendCommand" command="FORMA 1627 %p" label="Fafah le flib" />
+				<item type="sendCommand" command="FORMA 1634 %p" label="oeil02" />
+				<item type="sendCommand" command="FORMA 1640 %p" label="Kimbo" />
+				<item type="sendCommand" command="FORMA 5001 %p" label="chacha tigre" />
+				<item type="sendCommand" command="FORMA 5002 %p" label="leopardo*" />
+				<item type="sendCommand" command="FORMA 6001 %p" label="Renne de noel" />
+				<item type="sendCommand" command="FORMA 7001 %p" label="Tabi" />
+				<item type="sendCommand" command="FORMA 7002 %p" label="Monture" />
+				<item type="sendCommand" command="FORMA 7003 %p" label="Monture skulette" />
+				<item type="sendCommand" command="FORMA 7010 %p" label="Chataigner" />
+				<item type="sendCommand" command="FORMA 7011 %p" label="Tapis cochon" />
+				<item type="sendCommand" command="FORMA 7012 %p" label="Cawottes" />
+				<item type="sendCommand" command="FORMA 7013 %p" label="tit puit" />
+				<item type="sendCommand" command="FORMA 7014 %p" label="Buisson pandala" />
+				<item type="sendCommand" command="FORMA 7015 %p" label="Fleurs Koalaks" />
+				<item type="sendCommand" command="FORMA 7016 %p" label="Jarre" />
+				<item type="sendCommand" command="FORMA 7017 %p" label="Tonneaucaisse" />
+				<item type="sendCommand" command="FORMA 7018 %p" label="Tas de caisse" />
+				<item type="sendCommand" command="FORMA 7019 %p" label="Tresor" />
+				<item type="sendCommand" command="FORMA 7020 %p" label="stand Tomates" />
+				<item type="sendCommand" command="FORMA 7021 %p" label="Truc de la plage" />
+				<item type="sendCommand" command="FORMA 7022 %p" label="Arbre" />
+				<item type="sendCommand" command="FORMA 7023 %p" label="pommier" />
+				<item type="sendCommand" command="FORMA 7024 %p" label="buisson" />
+				<item type="sendCommand" command="FORMA 7025 %p" label="Rocher" />
+				<item type="sendCommand" command="FORMA 7026 %p" label="rocher des plaines" />
+				<item type="sendCommand" command="FORMA 7027 %p" label="rocher de brakmar" />
+				<item type="sendCommand" command="FORMA 7028 %p" label="buches" />
+				<item type="sendCommand" command="FORMA 7030 %p" label="Maitre pandawashuka" />
+				<item type="sendCommand" command="FORMA 7031 %p" label="Maitresse pandawashuka" />
+				<item type="sendCommand" command="FORMA 8001 %p" label="une roublarde" />
+				<item type="sendCommand" command="FORMA 8005 %p" label="Broussaille" />
+				<item type="sendCommand" command="FORMA 8006 %p" label="seriane" />
+				<item type="sendCommand" command="FORMA 8009 %p" label="une seriane" />
+				<item type="sendCommand" command="FORMA 8024 %p" label="Jiva" />
+				<item type="sendCommand" command="FORMA 8025 %p" label="Brumaire" />
+				<item type="sendCommand" command="FORMA 8036 %p" label="Ilyzaelle" />
+				<item type="sendCommand" command="FORMA 8520 %p" label="Vieux summens" />
+				<item type="sendCommand" command="FORMA 8521 %p" label="vieux summens bis" />
+				<item type="sendCommand" command="FORMA 9011 %p" label="Pretresse" />
+				<item type="sendCommand" command="FORMA 9017 %p" label="pnj un peu joufle" />
+				<item type="sendCommand" command="FORMA 9072 %p" label="la roue du bouftou" />
+				<item type="sendCommand" command="FORMA 9074 %p" label="des pattes" />
+				<item type="sendCommand" command="FORMA 9080 %p" label="Rasta Dida" />
+				<item type="sendCommand" command="FORMA 9081 %p" label="Abou Rigene" />
+				<item type="sendCommand" command="FORMA 9084 %p" label="Allister" />
+				<item type="sendCommand" command="FORMA 9087 %p" label="Mini Otomai" />
+				<item type="sendCommand" command="FORMA 9088 %p" label="Otomaya" />
+				<item type="sendCommand" command="FORMA 9089 %p" label="Allister" />
+				<item type="sendCommand" command="FORMA 9092 %p" label="disskray nhin" />
+				<item type="sendCommand" command="FORMA 9094 %p" label="Roi ALlister sur son trone" />
+				<item type="sendCommand" command="FORMA 9095 %p" label="Iop en costard" />
+				<item type="sendCommand" command="FORMA 9096 %p" label="Xelor en costume" />
+				<item type="sendCommand" command="FORMA 9098 %p" label="Wabbit 8 views" />
+				<item type="sendCommand" command="FORMA 9099 %p" label="Ecureuil 8 views" />
+				<item type="sendCommand" command="FORMA 9100 %p" label="Fallanster" />
+				<item type="sendCommand" command="FORMA 9101 %p" label="Sramette avec robe " />
+				<item type="sendCommand" command="FORMA 9102 %p" label="Sadidette avec robe" />
+				<item type="sendCommand" command="FORMA 9103 %p" label="La mariee" />
+				<item type="sendCommand" command="FORMA 9105 %p" label="Professeur Fournestrool" />
+				<item type="sendCommand" command="FORMA 9200 %p" label="Allister" />
+			</item>
+			<item type="menu" label="Fantasma de mascotas">
+				<item type="sendCommand" command="FORMA 1 %p" label="Cristal Ange" />
+				<item type="sendCommand" command="FORMA 1300 %p" label="Chacha (ghost)" />
+				<item type="sendCommand" command="FORMA 1301 %p" label="Chienchien (ghost)" />
+				<item type="sendCommand" command="FORMA 1302 %p" label="Pekipeki (ghost)" />
+				<item type="sendCommand" command="FORMA 1303 %p" label="Ecureuil (ghost)" />
+				<item type="sendCommand" command="FORMA 1304 %p" label="Marcassin (ghost)" />
+				<item type="sendCommand" command="FORMA 1305 %p" label="Tortue (ghost)" />
+				<item type="sendCommand" command="FORMA 1306 %p" label="Korbak (ghost)" />
+				<item type="sendCommand" command="FORMA 1307 %p" label="Bilby (ghost)" />
+				<item type="sendCommand" command="FORMA 1308 %p" label="Moon (ghost)" />
+				<item type="sendCommand" command="FORMA 1309 %p" label="Wabbit (ghost)" />
+				<item type="sendCommand" command="FORMA 1310 %p" label="Kwak (ghost)" />
+				<item type="sendCommand" command="FORMA 1311 %p" label="Pioupiou (ghost)" />
+				<item type="sendCommand" command="FORMA 1312 %p" label="Kouinkouin (ghost)" />
+				<item type="sendCommand" command="FORMA 1313 %p" label="Dragoune (ghost)" />
+				<item type="sendCommand" command="FORMA 1314 %p" label="Croum (ghost)" />
+				<item type="sendCommand" command="FORMA 1315 %p" label="Fotome (ghost)" />
+				<item type="sendCommand" command="FORMA 1316 %p" label="Minimino (ghost)" />
+				<item type="sendCommand" command="FORMA 1317 %p" label="Willy (ghost)" />
+				<item type="sendCommand" command="FORMA 1318 %p" label="Mini Wa (ghost)" />
+				<item type="sendCommand" command="FORMA 1319 %p" label="Firefoux (ghost)" />
+				<item type="sendCommand" command="FORMA 1320 %p" label="Koalak (ghost)" />
+				<item type="sendCommand" command="FORMA 1321 %p" label="Pinguoin gay (ghost)" />
+				<item type="sendCommand" command="FORMA 1322 %p" label="Bworky (ghost)" />
+				<item type="sendCommand" command="FORMA 1324 %p" label="Scara (ghost)" />
+				<item type="sendCommand" command="FORMA 1325 %p" label="Firefouxy (ghost)" />
+				<item type="sendCommand" command="FORMA 1326 %p" label="bouftoutou (ghost)" />
+				<item type="sendCommand" command="FORMA 1327 %p" label="AbraKadabra (ghost)" />
+				<item type="sendCommand" command="FORMA 1330 %p" label="Panda (ghost)" />
+				<item type="sendCommand" command="FORMA 1331 %p" label="Fantome de familier Fëanor" />
+				<item type="sendCommand" command="FORMA 1332 %p" label="Fantome de familier Ross" />
+			</item>
+			<item type="menu" label="Non classe">
+				<item type="sendCommand" command="FORMA 1 %p" label="Cristal Ange" />
+				<item type="sendCommand" command="FORMA 1001 %p" label="Arbracknyde" />
+				<item type="sendCommand" command="FORMA 1003 %p" label="Bwork Guerrier" />
+				<item type="sendCommand" command="FORMA 1008 %p" label="Krakeleur de pierre" />
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1016 %p" label="Bouftou" />
+				<item type="sendCommand" command="FORMA 1049 %p" label="Kraqueleur Plaine de Cania" />
+				<item type="sendCommand" command="FORMA 1058 %p" label="Wabbit Meuchine" />
+				<item type="sendCommand" command="FORMA 1073 %p" label="Mineur Sombre" />
+				<item type="sendCommand" command="FORMA 1094 %p" label="null" />
+				<item type="sendCommand" command="FORMA 1096 %p" label="Coquille Dragoeuf Blanc" />
+				<item type="sendCommand" command="FORMA 1101 %p" label="Champion Xelor" />
+				<item type="sendCommand" command="FORMA 1117 %p" label="Bouftou Halloween" />
+				<item type="sendCommand" command="FORMA 1158 %p" label="Abra Sombre" />
+				<item type="sendCommand" command="FORMA 1219 %p" label="Epouvantail" />
+				<item type="sendCommand" command="FORMA 1243 %p" label="Cybworg" />
+				<item type="sendCommand" command="FORMA 1248 %p" label="Krak Boul" />
+				<item type="sendCommand" command="FORMA 1254 %p" label="popo nouel" />
+				<item type="sendCommand" command="FORMA 1255 %p" label="Cadeau Anime" />
+				<item type="sendCommand" command="FORMA 1258 %p" label="OuGa statue" />
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1273 %p" label="Bulbig" />
+				<item type="sendCommand" command="FORMA 1282 %p" label="Demon Uk" />
+				<item type="sendCommand" command="FORMA 1283 %p" label="Tanukou-san" />
+				<item type="sendCommand" command="FORMA 1295 %p" label="pandore" />
+				<item type="sendCommand" command="FORMA 1296 %p" label="pandore Fantome" />
+				<item type="sendCommand" command="FORMA 1297 %p" label="Peki peki" />
+				<item type="sendCommand" command="FORMA 1311 %p" label="Pioupiou (ghost)" />
+				<item type="sendCommand" command="FORMA 1334 %p" label="AbraKne Sombre" />
+				<item type="sendCommand" command="FORMA 1337 %p" label="ArachNatronc" />
+				<item type="sendCommand" command="FORMA 1347 %p" label="Minoskito" />
+				<item type="sendCommand" command="FORMA 1348 %p" label="Kameleon" />
+				<item type="sendCommand" command="FORMA 1386 %p" label="Tofu monture" />
+				<item type="sendCommand" command="FORMA 1436 %p" label="BontaRat" />
+				<item type="sendCommand" command="FORMA 1439 %p" label="PapyKoala" />
+				<item type="sendCommand" command="FORMA 1452 %p" label="Craqueboule des plaines" />
+				<item type="sendCommand" command="FORMA 1478 %p" label="PekiGarou" />
+				<item type="sendCommand" command="FORMA 1490 %p" label="Moule pas fraiche" />
+				<item type="sendCommand" command="FORMA 1535 %p" label="Brakmar Rat" />
+				<item type="sendCommand" command="FORMA 8000 %p" label="Roublard" />
+				<item type="sendCommand" command="FORMA 8002 %p" label="Momie" />
+				<item type="sendCommand" command="FORMA 8008 %p" label="Disciple roublard" />
+				<item type="sendCommand" command="FORMA 8100 %p" label="prisme brakmarien" />
+				<item type="sendCommand" command="FORMA 8101 %p" label="Prisme bontarien" />
+				<item type="sendCommand" command="FORMA 8102 %p" label="Prisme neutre" />
+				<item type="sendCommand" command="FORMA 9005 %p" label="chanil" />
+				<item type="sendCommand" command="FORMA 9031 %p" label="Paysan" />
+				<item type="sendCommand" command="FORMA 9032 %p" label="Paysanne" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9075 %p" label="gros panda" />
+				<item type="sendCommand" command="FORMA 9078 %p" label="Eleveur" />
+				<item type="sendCommand" command="FORMA 9079 %p" label="Bricoleur" />
+			</item>
+			<item type="menu" label="Personages de dofus">
+				<item type="sendCommand" command="FORMA 10 %p" label="Feca" />
+				<item type="sendCommand" command="FORMA 11 %p" label="Feca fille" />
+				<item type="sendCommand" command="FORMA 20 %p" label="Osamodas" />
+				<item type="sendCommand" command="FORMA 21 %p" label="Osamodas fille" />
+				<item type="sendCommand" command="FORMA 30 %p" label="Enutrof" />
+				<item type="sendCommand" command="FORMA 31 %p" label="Enutrofette" />
+				<item type="sendCommand" command="FORMA 40 %p" label="Sram" />
+				<item type="sendCommand" command="FORMA 41 %p" label="Sramette" />
+				<item type="sendCommand" command="FORMA 50 %p" label="Xelor" />
+				<item type="sendCommand" command="FORMA 51 %p" label="Xelorette" />
+				<item type="sendCommand" command="FORMA 60 %p" label="Ecaflip" />
+				<item type="sendCommand" command="FORMA 61 %p" label="Ecaflipette" />
+				<item type="sendCommand" command="FORMA 70 %p" label="Eniripsa" />
+				<item type="sendCommand" command="FORMA 71 %p" label="Eniripsa fille" />
+				<item type="sendCommand" command="FORMA 80 %p" label="Iop" />
+				<item type="sendCommand" command="FORMA 81 %p" label="Iopette" />
+				<item type="sendCommand" command="FORMA 90 %p" label="Cra" />
+				<item type="sendCommand" command="FORMA 91 %p" label="Craette" />
+				<item type="sendCommand" command="FORMA 100 %p" label="Sadida" />
+				<item type="sendCommand" command="FORMA 101 %p" label="Sadidette" />
+				<item type="sendCommand" command="FORMA 110 %p" label="Sacrieur" />
+				<item type="sendCommand" command="FORMA 111 %p" label="Sacrieuse" />
+				<item type="sendCommand" command="FORMA 120 %p" label="panda" />
+				<item type="sendCommand" command="FORMA 121 %p" label="pandawette" />
+			</item>
+			<item type="menu" label="Pnjs">
+				<item type="sendCommand" command="FORMA 1002 %p" label="Araignee arbracknyde" />
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1044 %p" label="Rose demoniaque" />
+				<item type="sendCommand" command="FORMA 1046 %p" label="Ecureuil" />
+				<item type="sendCommand" command="FORMA 1073 %p" label="Mineur Sombre" />
+				<item type="sendCommand" command="FORMA 1078 %p" label="Vampire" />
+				<item type="sendCommand" command="FORMA 1083 %p" label="Coffre au Tresor malveillant" />
+				<item type="sendCommand" command="FORMA 1089 %p" label="Paysan" />
+				<item type="sendCommand" command="FORMA 1100 %p" label="Champion Sram" />
+				<item type="sendCommand" command="FORMA 1139 %p" label="Boule de Feu" />
+				<item type="sendCommand" command="FORMA 1169 %p" label="Bwak d air" />
+				<item type="sendCommand" command="FORMA 1179 %p" label="Corbac" />
+				<item type="sendCommand" command="FORMA 1191 %p" label="Milicien Tarche" />
+				<item type="sendCommand" command="FORMA 1206 %p" label="Chef Guerrier Brakmar" />
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 1208 %p" label="marcassin" />
+				<item type="sendCommand" command="FORMA 1211 %p" label="Garde Neutre" />
+				<item type="sendCommand" command="FORMA 1218 %p" label="Larve Doree" />
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1566 %p" label="Bouftou" />
+				<item type="sendCommand" command="FORMA 8008 %p" label="Disciple roublard" />
+				<item type="sendCommand" command="FORMA 9033 %p" label="Bijoutiere" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+			</item>
+			<item type="menu" label="Monstres de quete">
+				<item type="sendCommand" command="FORMA 1001 %p" label="Arbracknyde" />
+				<item type="sendCommand" command="FORMA 1003 %p" label="Bwork Guerrier" />
+				<item type="sendCommand" command="FORMA 1004 %p" label="Bwork Archer" />
+				<item type="sendCommand" command="FORMA 1046 %p" label="Ecureuil" />
+				<item type="sendCommand" command="FORMA 1070 %p" label="GliGli ancestral" />
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 1188 %p" label="Chafer des plaines du Sud" />
+				<item type="sendCommand" command="FORMA 1241 %p" label="MaMa Bwork" />
+			</item>
+			<item type="menu" label="Monstruos Tutorial">
+				<item type="sendCommand" command="FORMA 1002 %p" label="Araignee arbracknyde" />
+				<item type="sendCommand" command="FORMA 1053 %p" label="Tiwabbit" />
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 1092 %p" label="Boufton Blanc" />
+				<item type="sendCommand" command="FORMA 1107 %p" label="Milimulou" />
+			</item>
+			<item type="menu" label="Invocaciones  de clase">
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1018 %p" label="Chaton" />
+				<item type="sendCommand" command="FORMA 1020 %p" label="Prespic" />
+				<item type="sendCommand" command="FORMA 1021 %p" label="Poupee vaudou" />
+				<item type="sendCommand" command="FORMA 1083 %p" label="Coffre au Tresor malveillant" />
+				<item type="sendCommand" command="FORMA 1097 %p" label="Champion Feca" />
+				<item type="sendCommand" command="FORMA 1098 %p" label="Champion Osa" />
+				<item type="sendCommand" command="FORMA 1099 %p" label="Champion Enu" />
+				<item type="sendCommand" command="FORMA 1100 %p" label="Champion Sram" />
+				<item type="sendCommand" command="FORMA 1101 %p" label="Champion Xelor" />
+				<item type="sendCommand" command="FORMA 1102 %p" label="Champion Eca" />
+				<item type="sendCommand" command="FORMA 1103 %p" label="Champion Enia" />
+				<item type="sendCommand" command="FORMA 1104 %p" label="Champion Iop" />
+				<item type="sendCommand" command="FORMA 1105 %p" label="Champion Cra" />
+				<item type="sendCommand" command="FORMA 1106 %p" label="Champion Sadida" />
+				<item type="sendCommand" command="FORMA 1143 %p" label="Pelle Animee" />
+				<item type="sendCommand" command="FORMA 1144 %p" label="Sac anime" />
+				<item type="sendCommand" command="FORMA 1154 %p" label="Aiguille Xelor" />
+				<item type="sendCommand" command="FORMA 1156 %p" label="Craqueleur invoc" />
+				<item type="sendCommand" command="FORMA 1165 %p" label="Dragonnet rouge" />
+				<item type="sendCommand" command="FORMA 1170 %p" label="Cadran" />
+				<item type="sendCommand" command="FORMA 1180 %p" label="poupee surpuissante" />
+				<item type="sendCommand" command="FORMA 1181 %p" label="poupee sacrifie" />
+				<item type="sendCommand" command="FORMA 1182 %p" label="poupee gonflable" />
+				<item type="sendCommand" command="FORMA 1183 %p" label="Arbre Sadida" />
+				<item type="sendCommand" command="FORMA 1184 %p" label="poupee bloqueuse" />
+				<item type="sendCommand" command="FORMA 1185 %p" label="poupee fourbe" />
+				<item type="sendCommand" command="FORMA 1189 %p" label="Chafer Lancier" />
+				<item type="sendCommand" command="FORMA 1229 %p" label="Epee dansante" />
+				<item type="sendCommand" command="FORMA 1230 %p" label="Epee volante" />
+				<item type="sendCommand" command="FORMA 1240 %p" label="Dopeul sacri" />
+				<item type="sendCommand" command="FORMA 1261 %p" label="invoc panda" />
+				<item type="sendCommand" command="FORMA 1268 %p" label="kistoune air" />
+				<item type="sendCommand" command="FORMA 1269 %p" label="kistoune feu" />
+				<item type="sendCommand" command="FORMA 1270 %p" label="kistoune terre" />
+				<item type="sendCommand" command="FORMA 1271 %p" label="kistoune eau" />
+				<item type="sendCommand" command="FORMA 1277 %p" label="Kawotte" />
+				<item type="sendCommand" command="FORMA 1456 %p" label="Dopeul Panda" />
+				<item type="sendCommand" command="FORMA 1557 %p" label="Lapin Cretin (Invoc Eni)" />
+				<item type="sendCommand" command="FORMA 1558 %p" label="Tofu" />
+				<item type="sendCommand" command="FORMA 1562 %p" label="Sanglier" />
+				<item type="sendCommand" command="FORMA 1564 %p" label="Arakne" />
+				<item type="sendCommand" command="FORMA 1566 %p" label="Bouftou" />
+			</item>
+			<item type="menu" label="Duty free">
+				<item type="sendCommand" command="FORMA 1155 %p" label="brigandin" />
+				<item type="sendCommand" command="FORMA 9012 %p" label="Serveuse" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9033 %p" label="Bijoutiere" />
+				<item type="sendCommand" command="FORMA 9054 %p" label="Wabbit Cle" />
+				<item type="sendCommand" command="FORMA 9056 %p" label="Forin cowboy" />
+				<item type="sendCommand" command="FORMA 9067 %p" label="Forgemage" />
+			</item>
+			<item type="menu" label="Fantasmas">
+				<item type="sendCommand" command="FORMA 1193 %p" label="Fantome Iop" />
+				<item type="sendCommand" command="FORMA 1194 %p" label="Fantome Osa" />
+				<item type="sendCommand" command="FORMA 1195 %p" label="Fantome Cra" />
+			</item>
+		</item>
+		<item type="menu" label="Protectores">
+			<item type="menu" label="Protecteurs des Poissons">
+				<item type="sendCommand" command="FORMA 1349 %p" label="Tortue Nialge" />
+			</item>
+			<item type="menu" label="Protectores de minerales">
+				<item type="sendCommand" command="FORMA 1389 %p" label="KrakBoule des recoltes" />
+			</item>
+			<item type="menu" label="Protectores de Leñador">
+				<item type="sendCommand" command="FORMA 1391 %p" label="Oliviolet" />
+				<item type="sendCommand" command="FORMA 1392 %p" label="Bambou" />
+				<item type="sendCommand" command="FORMA 1393 %p" label="Bambou sombre" />
+				<item type="sendCommand" command="FORMA 1394 %p" label="Bombu" />
+				<item type="sendCommand" command="FORMA 1395 %p" label="Kaliptus" />
+				<item type="sendCommand" command="FORMA 1396 %p" label="Erable" />
+				<item type="sendCommand" command="FORMA 1397 %p" label="If" />
+				<item type="sendCommand" command="FORMA 1398 %p" label="Meurisier" />
+				<item type="sendCommand" command="FORMA 1399 %p" label="Ebene" />
+				<item type="sendCommand" command="FORMA 1400 %p" label="Orme" />
+				<item type="sendCommand" command="FORMA 1401 %p" label="Noyer" />
+				<item type="sendCommand" command="FORMA 1402 %p" label="Chataigner" />
+				<item type="sendCommand" command="FORMA 1403 %p" label="Chene" />
+				<item type="sendCommand" command="FORMA 1404 %p" label="Frene" />
+				<item type="sendCommand" command="FORMA 1405 %p" label="Bambou sacre" />
+			</item>
+			<item type="menu" label="Protectores de Cereales">
+				<item type="sendCommand" command="FORMA 1410 %p" label="Epouvantail de malt" />
+				<item type="sendCommand" command="FORMA 1411 %p" label="Epouvantail de ble" />
+				<item type="sendCommand" command="FORMA 1412 %p" label="Epouvantail de orge" />
+				<item type="sendCommand" command="FORMA 1413 %p" label="Epouvantail de houblon" />
+				<item type="sendCommand" command="FORMA 1414 %p" label="Epouvantail de avoine" />
+				<item type="sendCommand" command="FORMA 1415 %p" label="Epouvantail de lin" />
+				<item type="sendCommand" command="FORMA 1416 %p" label="Epouvantail de chanvre" />
+				<item type="sendCommand" command="FORMA 1417 %p" label="Epouvantail de riz" />
+				<item type="sendCommand" command="FORMA 1418 %p" label="Epouvantail de seigle" />
+			</item>
+			<item type="menu" label="Protectores de Plantas">
+				<item type="sendCommand" command="FORMA 1419 %p" label="BulOrchidee" />
+				<item type="sendCommand" command="FORMA 1429 %p" label="Bullin" />
+				<item type="sendCommand" command="FORMA 1430 %p" label="BulEdelweiss" />
+				<item type="sendCommand" command="FORMA 1431 %p" label="Bulchanvre" />
+				<item type="sendCommand" command="FORMA 1432 %p" label="Bulmenthe" />
+				<item type="sendCommand" command="FORMA 1433 %p" label="Bultrefle" />
+				<item type="sendCommand" command="FORMA 1434 %p" label="Bulpandouille" />
+			</item>
+			<item type="menu" label="Invocaciones de Protectores ">
+				<item type="sendCommand" command="FORMA 1420 %p" label="Invoc de malt" />
+				<item type="sendCommand" command="FORMA 1421 %p" label="Invoc de ble" />
+				<item type="sendCommand" command="FORMA 1422 %p" label="Invoc de orge" />
+				<item type="sendCommand" command="FORMA 1423 %p" label="Invoc de houblon" />
+				<item type="sendCommand" command="FORMA 1424 %p" label="Invoc de avoine" />
+				<item type="sendCommand" command="FORMA 1425 %p" label="Invoc de lin" />
+				<item type="sendCommand" command="FORMA 1426 %p" label="Invoc de chanvre" />
+				<item type="sendCommand" command="FORMA 1427 %p" label="Invoc de riz" />
+				<item type="sendCommand" command="FORMA 1428 %p" label="Invoc de seigle" />
+			</item>
+			<item type="menu" label="Apprentissage metier">
+				<item type="sendCommand" command="FORMA 9003 %p" label="l'homme Ours" />
+				<item type="sendCommand" command="FORMA 9008 %p" label="peche" />
+				<item type="sendCommand" command="FORMA 9015 %p" label="Forgeron" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9031 %p" label="Paysan" />
+				<item type="sendCommand" command="FORMA 9032 %p" label="Paysanne" />
+				<item type="sendCommand" command="FORMA 9033 %p" label="Bijoutiere" />
+				<item type="sendCommand" command="FORMA 9034 %p" label="Cordonnier" />
+				<item type="sendCommand" command="FORMA 9035 %p" label="Bucheron" />
+				<item type="sendCommand" command="FORMA 9036 %p" label="Mineur" />
+				<item type="sendCommand" command="FORMA 9037 %p" label="Sculpteur" />
+				<item type="sendCommand" command="FORMA 9039 %p" label="Herboriste" />
+				<item type="sendCommand" command="FORMA 9067 %p" label="Forgemage" />
+			</item>
+			<item type="menu" label="Apprentissage metier Astrub">
+				<item type="sendCommand" command="FORMA 9003 %p" label="l'homme Ours" />
+				<item type="sendCommand" command="FORMA 9008 %p" label="peche" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9015 %p" label="Forgeron" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9032 %p" label="Paysanne" />
+				<item type="sendCommand" command="FORMA 9033 %p" label="Bijoutiere" />
+				<item type="sendCommand" command="FORMA 9034 %p" label="Cordonnier" />
+				<item type="sendCommand" command="FORMA 9035 %p" label="Bucheron" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9069 %p" label="Femme (Bonta)" />
+			</item>
+			<item type="menu" label="Vendeurs hotel des ventes">
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9073 %p" label="vendeur Hotel de vente" />
+				<item type="sendCommand" command="FORMA 9075 %p" label="gros panda" />
+			</item>
+		</item>
+		<item type="menu" label="~ Astrub">
+			<item type="menu" label="Roublard">
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9040 %p" label="Roublard" />
+			</item>
+			<item type="menu" label="Abraknidos">
+				<item type="sendCommand" command="FORMA 1001 %p" label="Arbracknyde" />
+				<item type="sendCommand" command="FORMA 1157 %p" label="Chene mou" />
+				<item type="sendCommand" command="FORMA 1158 %p" label="Abra Sombre" />
+				<item type="sendCommand" command="FORMA 1160 %p" label="Tronc" />
+				<item type="sendCommand" command="FORMA 1163 %p" label="Branche" />
+				<item type="sendCommand" command="FORMA 1164 %p" label="Branche 2" />
+				<item type="sendCommand" command="FORMA 1333 %p" label="AbraKne" />
+				<item type="sendCommand" command="FORMA 1334 %p" label="AbraKne Sombre" />
+				<item type="sendCommand" command="FORMA 1337 %p" label="ArachNatronc" />
+				<item type="sendCommand" command="FORMA 1458 %p" label="Abraknyde Ancestral" />
+			</item>
+			<item type="menu" label="Montruos de la playa">
+				<item type="sendCommand" command="FORMA 1009 %p" label="Crabe" />
+				<item type="sendCommand" command="FORMA 1474 %p" label="Etoile de mer" />
+				<item type="sendCommand" command="FORMA 1481 %p" label="Gros Requin" />
+				<item type="sendCommand" command="FORMA 1483 %p" label="Piti Requin Rouge" />
+				<item type="sendCommand" command="FORMA 1484 %p" label="Piti Requin Vert" />
+				<item type="sendCommand" command="FORMA 1485 %p" label="Piti Requin Blanc" />
+				<item type="sendCommand" command="FORMA 1487 %p" label="Piti Requin Bleu Bis" />
+				<item type="sendCommand" command="FORMA 1488 %p" label="Piti Requin Orange" />
+				<item type="sendCommand" command="FORMA 1490 %p" label="Moule pas fraiche" />
+				<item type="sendCommand" command="FORMA 1546 %p" label="mob l eponge" />
+			</item>
+			<item type="menu" label="Animaux">
+				<item type="sendCommand" command="FORMA 1044 %p" label="Rose demoniaque" />
+			</item>
+			<item type="menu" label="Monstres de la Tourbiere sans fond">
+				<item type="sendCommand" command="FORMA 1214 %p" label="Encre Kralamour" />
+				<item type="sendCommand" command="FORMA 1624 %p" label="Roissingue" />
+				<item type="sendCommand" command="FORMA 1625 %p" label="Tourbassingue" />
+				<item type="sendCommand" command="FORMA 1626 %p" label="Bourbassingue" />
+				<item type="sendCommand" command="FORMA 1632 %p" label="tentacule" />
+				<item type="sendCommand" command="FORMA 1633 %p" label="oeil01" />
+				<item type="sendCommand" command="FORMA 1635 %p" label="KralaMouth" />
+			</item>
+			<item type="menu" label="Plantes des champs">
+				<item type="sendCommand" command="FORMA 1044 %p" label="Rose demoniaque" />
+				<item type="sendCommand" command="FORMA 1459 %p" label="Boss des plantes" />
+				<item type="sendCommand" command="FORMA 1560 %p" label="Pissenlit" />
+				<item type="sendCommand" command="FORMA 1561 %p" label="Rose demoniaque" />
+				<item type="sendCommand" command="FORMA 1569 %p" label="Tournesol" />
+			</item>
+			<item type="menu" label="Abitantes de Astrub">
+				<item type="sendCommand" command="FORMA 1073 %p" label="Mineur Sombre" />
+				<item type="sendCommand" command="FORMA 1197 %p" label="Chef milice (Tom cruche)" />
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 1212 %p" label="Piou" />
+				<item type="sendCommand" command="FORMA 1245 %p" label="ogivol" />
+				<item type="sendCommand" command="FORMA 1566 %p" label="Bouftou" />
+				<item type="sendCommand" command="FORMA 8007 %p" label="Serianne Laura Craft" />
+				<item type="sendCommand" command="FORMA 8008 %p" label="Disciple roublard" />
+				<item type="sendCommand" command="FORMA 9001 %p" label="Chacha" />
+				<item type="sendCommand" command="FORMA 9007 %p" label="mage b" />
+				<item type="sendCommand" command="FORMA 9010 %p" label="Forin gamin" />
+				<item type="sendCommand" command="FORMA 9018 %p" label="Vieux de base" />
+				<item type="sendCommand" command="FORMA 9037 %p" label="Sculpteur" />
+				<item type="sendCommand" command="FORMA 9040 %p" label="Roublard" />
+				<item type="sendCommand" command="FORMA 9043 %p" label="Petite fille Villageoise 2" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9050 %p" label="Berger Gosse" />
+				<item type="sendCommand" command="FORMA 9058 %p" label="Forin verre" />
+				<item type="sendCommand" command="FORMA 9064 %p" label="Gropinson" />
+				<item type="sendCommand" command="FORMA 9093 %p" label="Tofu Malade" />
+			</item>
+			<item type="menu" label="Avis de recherche Astrub">
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 1153 %p" label="Oni" />
+				<item type="sendCommand" command="FORMA 1211 %p" label="Garde Neutre" />
+				<item type="sendCommand" command="FORMA 1228 %p" label="chef braconnier" />
+				<item type="sendCommand" command="FORMA 1243 %p" label="Cybworg" />
+				<item type="sendCommand" command="FORMA 1245 %p" label="ogivol" />
+				<item type="sendCommand" command="FORMA 1246 %p" label="Padegref" />
+				<item type="sendCommand" command="FORMA 1247 %p" label="Frakacia - Mama Roublarde" />
+				<item type="sendCommand" command="FORMA 1248 %p" label="Krak Boul" />
+				<item type="sendCommand" command="FORMA 1249 %p" label="Ecureuil foudugland" />
+				<item type="sendCommand" command="FORMA 1264 %p" label="Maitre pandawashuka" />
+			</item>
+			<item type="menu" label="Arakne">
+				<item type="sendCommand" command="FORMA 1161 %p" label="Arakne majeur" />
+				<item type="sendCommand" command="FORMA 1564 %p" label="Arakne" />
+			</item>
+			<item type="menu" label="Tutorial">
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 6000 %p" label="percepteur" />
+				<item type="sendCommand" command="FORMA 9000 %p" label="Pretre" />
+				<item type="sendCommand" command="FORMA 9006 %p" label="mage a" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9025 %p" label="Vendeur Ecaflip" />
+				<item type="sendCommand" command="FORMA 9059 %p" label="Aigle anime" />
+			</item>
+			<item type="static" label="Tainelia" />
+			<item type="menu" label="Bouftous">
+				<item type="sendCommand" command="FORMA 1117 %p" label="Bouftou Halloween" />
+				<item type="sendCommand" command="FORMA 1566 %p" label="Bouftou" />
+				<item type="sendCommand" command="FORMA 1570 %p" label="Boufton blanc" />
+				<item type="sendCommand" command="FORMA 1571 %p" label="Boufton noir" />
+				<item type="sendCommand" command="FORMA 1573 %p" label="Chef de guerre bouftou" />
+				<item type="sendCommand" command="FORMA 1574 %p" label="Bouftou royal" />
+			</item>
+			<item type="menu" label="Tainela">
+				<item type="sendCommand" command="FORMA 9059 %p" label="Aigle anime" />
+			</item>
+		</item>
+		<item type="menu" label="~ Amakna">
+			<item type="menu" label="Bworks">
+				<item type="sendCommand" command="FORMA 1003 %p" label="Bwork Guerrier" />
+				<item type="sendCommand" command="FORMA 1004 %p" label="Bwork Archer" />
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1241 %p" label="MaMa Bwork" />
+				<item type="sendCommand" command="FORMA 1242 %p" label="Bworker" />
+				<item type="sendCommand" command="FORMA 1243 %p" label="Cybworg" />
+				<item type="sendCommand" command="FORMA 1244 %p" label="Bwork Elementaux" />
+			</item>
+			<item type="menu" label="Habitantes Bwork">
+				<item type="sendCommand" command="FORMA 1003 %p" label="Bwork Guerrier" />
+				<item type="sendCommand" command="FORMA 1004 %p" label="Bwork Archer" />
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1069 %p" label="Mulou" />
+				<item type="sendCommand" command="FORMA 1241 %p" label="MaMa Bwork" />
+				<item type="sendCommand" command="FORMA 9090 %p" label="Goblin qui change de couleur" />
+			</item>
+			<item type="menu" label="Montruos de conquista de territorios">
+				<item type="sendCommand" command="FORMA 1200 %p" label="Prisme" />
+			</item>
+			<item type="menu" label="Habitante 'Amakna">
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9025 %p" label="Vendeur Ecaflip" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9069 %p" label="Femme (Bonta)" />
+			</item>
+			<item type="menu" label="Habitante Madrestam">
+				<item type="sendCommand" command="FORMA 9018 %p" label="Vieux de base" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9053 %p" label="Capitaine" />
+			</item>
+			<item type="menu" label="Gardiens des villages de Kwaks">
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+			</item>
+			<item type="menu" label="Habitantes de Sufokia">
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 9008 %p" label="peche" />
+			</item>
+			<item type="menu" label="Goblins">
+				<item type="sendCommand" command="FORMA 1007 %p" label="Cavalier Gob" />
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+			</item>
+			<item type="menu" label="Craqueleurs">
+				<item type="sendCommand" command="FORMA 1008 %p" label="Krakeleur de pierre" />
+				<item type="sendCommand" command="FORMA 1049 %p" label="Kraqueleur Plaine de Cania" />
+				<item type="sendCommand" command="FORMA 1152 %p" label="Mega Krakeuleur" />
+				<item type="sendCommand" command="FORMA 1248 %p" label="Krak Boul" />
+				<item type="sendCommand" command="FORMA 1358 %p" label="Mega krak des montagnes" />
+			</item>
+			<item type="menu" label="Camping Amakna">
+				<item type="sendCommand" command="FORMA 1010 %p" label="Avatar MJ Lion" />
+				<item type="sendCommand" command="FORMA 1014 %p" label="Chafer" />
+				<item type="sendCommand" command="FORMA 1046 %p" label="Ecureuil" />
+				<item type="sendCommand" command="FORMA 1061 %p" label="Gelee Royale bleue" />
+				<item type="sendCommand" command="FORMA 1063 %p" label="Gelee Royale Menthe" />
+				<item type="sendCommand" command="FORMA 1065 %p" label="Gelee Royale Fraise" />
+				<item type="sendCommand" command="FORMA 1071 %p" label="Dark Vlad" />
+				<item type="sendCommand" command="FORMA 1211 %p" label="Garde Neutre" />
+				<item type="sendCommand" command="FORMA 1222 %p" label="Gelee citron royale " />
+				<item type="sendCommand" command="FORMA 9000 %p" label="Pretre" />
+				<item type="sendCommand" command="FORMA 9001 %p" label="Chacha" />
+				<item type="sendCommand" command="FORMA 9003 %p" label="l'homme Ours" />
+				<item type="sendCommand" command="FORMA 9005 %p" label="chanil" />
+				<item type="sendCommand" command="FORMA 9012 %p" label="Serveuse" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9014 %p" label="Vendeuse de base 2" />
+				<item type="sendCommand" command="FORMA 9015 %p" label="Forgeron" />
+				<item type="sendCommand" command="FORMA 9019 %p" label="Garde un peu gros" />
+				<item type="sendCommand" command="FORMA 9020 %p" label="Vendeur Feca" />
+				<item type="sendCommand" command="FORMA 9024 %p" label="Vendeur Xelor" />
+				<item type="sendCommand" command="FORMA 9029 %p" label="Vendeur Sadida" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9036 %p" label="Mineur" />
+				<item type="sendCommand" command="FORMA 9037 %p" label="Sculpteur" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9042 %p" label="Petite fille Villageoise" />
+				<item type="sendCommand" command="FORMA 9043 %p" label="Petite fille Villageoise 2" />
+				<item type="sendCommand" command="FORMA 9044 %p" label="Paysanne Jarre d'eau" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9046 %p" label="Villageois 2" />
+				<item type="sendCommand" command="FORMA 9047 %p" label="Villageois Vieux" />
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9050 %p" label="Berger Gosse" />
+				<item type="sendCommand" command="FORMA 9082 %p" label="Rasta Rider" />
+			</item>
+			<item type="menu" label="Larvas">
+				<item type="sendCommand" command="FORMA 1231 %p" label="ShinLarve" />
+				<item type="sendCommand" command="FORMA 1563 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1567 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1568 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1577 %p" label="Larve doree" />
+				<item type="sendCommand" command="FORMA 1578 %p" label="Larve emeraude" />
+				<item type="sendCommand" command="FORMA 1579 %p" label="Larve Rubis" />
+				<item type="sendCommand" command="FORMA 1580 %p" label="Larve Saphir" />
+			</item>
+			<item type="menu" label="Residentes de templos de clase">
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1264 %p" label="Maitre pandawashuka" />
+				<item type="sendCommand" command="FORMA 9020 %p" label="Vendeur Feca" />
+				<item type="sendCommand" command="FORMA 9021 %p" label="Vendeur Osamodas" />
+				<item type="sendCommand" command="FORMA 9022 %p" label="Vendeur Enutrof" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9024 %p" label="Vendeur Xelor" />
+				<item type="sendCommand" command="FORMA 9025 %p" label="Vendeur Ecaflip" />
+				<item type="sendCommand" command="FORMA 9026 %p" label="Vendeur Eniripsa" />
+				<item type="sendCommand" command="FORMA 9027 %p" label="Vendeur Iop" />
+				<item type="sendCommand" command="FORMA 9028 %p" label="Vendeur Cra" />
+				<item type="sendCommand" command="FORMA 9029 %p" label="Vendeur Sadida" />
+				<item type="sendCommand" command="FORMA 9068 %p" label="Sacrieur" />
+			</item>
+			<item type="menu" label="Chafers">
+				<item type="sendCommand" command="FORMA 1014 %p" label="Chafer" />
+				<item type="sendCommand" command="FORMA 1047 %p" label="Chafer invisible" />
+				<item type="sendCommand" command="FORMA 1048 %p" label="Captain Chafer" />
+				<item type="sendCommand" command="FORMA 1068 %p" label="Rib" />
+				<item type="sendCommand" command="FORMA 1188 %p" label="Chafer des plaines du Sud" />
+				<item type="sendCommand" command="FORMA 1189 %p" label="Chafer Lancier" />
+				<item type="sendCommand" command="FORMA 1190 %p" label="Chafer Archer" />
+			</item>
+			<item type="menu" label="Tofus">
+				<item type="sendCommand" command="FORMA 1019 %p" label="Tofu" />
+				<item type="sendCommand" command="FORMA 1111 %p" label="Tofu Halloween" />
+				<item type="sendCommand" command="FORMA 1151 %p" label="Tofu royal" />
+				<item type="sendCommand" command="FORMA 1372 %p" label="GwoTofu" />
+				<item type="sendCommand" command="FORMA 1373 %p" label="Tofuzmo" />
+				<item type="sendCommand" command="FORMA 1374 %p" label="Tofumikaz" />
+				<item type="sendCommand" command="FORMA 1375 %p" label="Radiactofu" />
+				<item type="sendCommand" command="FORMA 1376 %p" label="Tofoune" />
+				<item type="sendCommand" command="FORMA 1377 %p" label="Tofu en cage" />
+				<item type="sendCommand" command="FORMA 1379 %p" label="BomberFu" />
+				<item type="sendCommand" command="FORMA 1380 %p" label="BatTofu" />
+				<item type="sendCommand" command="FORMA 1443 %p" label="Tofu transgenique" />
+				<item type="sendCommand" command="FORMA 1462 %p" label="Tofu Noir" />
+				<item type="sendCommand" command="FORMA 1558 %p" label="Tofu" />
+			</item>
+			<item type="menu" label="Dragohuevos">
+				<item type="sendCommand" command="FORMA 1025 %p" label="Oeuf dragon jaune" />
+				<item type="sendCommand" command="FORMA 1026 %p" label="Oeuf dragon Noir" />
+				<item type="sendCommand" command="FORMA 1027 %p" label="Oeuf dragon Bleu" />
+				<item type="sendCommand" command="FORMA 1028 %p" label="Dragoeuf Imature" />
+				<item type="sendCommand" command="FORMA 1029 %p" label="Oeuf jaune casse Dragon" />
+				<item type="sendCommand" command="FORMA 1030 %p" label="Oeuf Noir  casse Dragon" />
+				<item type="sendCommand" command="FORMA 1031 %p" label="Oeuf Bleu  casse Dragon" />
+				<item type="sendCommand" command="FORMA 1032 %p" label="Dragoeuf blanc" />
+				<item type="sendCommand" command="FORMA 1033 %p" label="Coquille jaune Dragon" />
+				<item type="sendCommand" command="FORMA 1034 %p" label="Coquille Noir  Dragon" />
+				<item type="sendCommand" command="FORMA 1035 %p" label="Coquille Bleu  Dragon" />
+				<item type="sendCommand" command="FORMA 1036 %p" label="dragoeuf blanc eveille" />
+				<item type="sendCommand" command="FORMA 1096 %p" label="Coquille Dragoeuf Blanc" />
+				<item type="sendCommand" command="FORMA 1339 %p" label="Dragoss en oeuf" />
+				<item type="sendCommand" command="FORMA 1340 %p" label="Dragoss le boss" />
+				<item type="sendCommand" command="FORMA 1451 %p" label="Gros dragon" />
+				<item type="sendCommand" command="FORMA 1480 %p" label="Dragoeuf Soldat" />
+				<item type="sendCommand" command="FORMA 1501 %p" label="Drageuse" />
+				<item type="sendCommand" command="FORMA 1502 %p" label="Draggi" />
+				<item type="sendCommand" command="FORMA 1503 %p" label="Groszilla" />
+				<item type="sendCommand" command="FORMA 1508 %p" label="Grasmera" />
+			</item>
+			<item type="menu" label="Dragocerdos">
+				<item type="sendCommand" command="FORMA 1037 %p" label="Dragon Cochon" />
+				<item type="sendCommand" command="FORMA 1060 %p" label="Dragon cochon Arbalette" />
+				<item type="sendCommand" command="FORMA 1256 %p" label="Donduss Ang Cochon" />
+				<item type="sendCommand" command="FORMA 1257 %p" label="Cochon de farles larve" />
+				<item type="sendCommand" command="FORMA 1259 %p" label="Don Dorgan Cochon" />
+			</item>
+			<item type="menu" label="Kwaks">
+				<item type="sendCommand" command="FORMA 1041 %p" label="Phoenix Blanc" />
+				<item type="sendCommand" command="FORMA 1042 %p" label="Phoenic Feu" />
+				<item type="sendCommand" command="FORMA 1043 %p" label="Phoenix Glace" />
+				<item type="sendCommand" command="FORMA 1149 %p" label="Kwak de terre" />
+				<item type="sendCommand" command="FORMA 1166 %p" label="Bwak de feu" />
+				<item type="sendCommand" command="FORMA 1167 %p" label="Bwak d eau" />
+				<item type="sendCommand" command="FORMA 1168 %p" label="Bwak de terre" />
+				<item type="sendCommand" command="FORMA 1169 %p" label="Bwak d air" />
+			</item>
+			<item type="menu" label="Gelatinas">
+				<item type="sendCommand" command="FORMA 1061 %p" label="Gelee Royale bleue" />
+				<item type="sendCommand" command="FORMA 1062 %p" label="Gelee bleue" />
+				<item type="sendCommand" command="FORMA 1063 %p" label="Gelee Royale Menthe" />
+				<item type="sendCommand" command="FORMA 1064 %p" label="Gelee Menthe" />
+				<item type="sendCommand" command="FORMA 1065 %p" label="Gelee Royale Fraise" />
+				<item type="sendCommand" command="FORMA 1066 %p" label="Gelee Fraise" />
+				<item type="sendCommand" command="FORMA 1221 %p" label="Gelee citron" />
+				<item type="sendCommand" command="FORMA 1222 %p" label="Gelee citron royale " />
+			</item>
+			<item type="menu" label="Monstres des marecages">
+				<item type="sendCommand" command="FORMA 1067 %p" label="Boo" />
+			</item>
+			<item type="menu" label="Monstruos de la noche">
+				<item type="sendCommand" command="FORMA 1071 %p" label="Dark Vlad" />
+				<item type="sendCommand" command="FORMA 1072 %p" label="Tofu Malefique" />
+				<item type="sendCommand" command="FORMA 1077 %p" label="Vampire Faible" />
+				<item type="sendCommand" command="FORMA 1078 %p" label="Vampire" />
+				<item type="sendCommand" command="FORMA 1079 %p" label="Cit'wouille malveillante" />
+				<item type="sendCommand" command="FORMA 1080 %p" label="NoeilNoeil" />
+				<item type="sendCommand" command="FORMA 1081 %p" label="KwO'an" />
+				<item type="sendCommand" command="FORMA 1084 %p" label="SouWoui Gouyize" />
+				<item type="sendCommand" command="FORMA 1153 %p" label="Oni" />
+				<item type="sendCommand" command="FORMA 1199 %p" label="Momie Nova" />
+				<item type="sendCommand" command="FORMA 1251 %p" label="Ouassingue" />
+				<item type="sendCommand" command="FORMA 1252 %p" label="mini Ouassingue" />
+				<item type="sendCommand" command="FORMA 1253 %p" label="Gargouille" />
+			</item>
+			<item type="menu" label="Bandidos">
+				<item type="sendCommand" command="FORMA 1073 %p" label="Mineur Sombre" />
+				<item type="sendCommand" command="FORMA 1074 %p" label="Forgeron Sombre" />
+				<item type="sendCommand" command="FORMA 1075 %p" label="Boulanger Sombre" />
+				<item type="sendCommand" command="FORMA 1095 %p" label="Bandit Clan des cranes" />
+			</item>
+			<item type="menu" label="Avis de recherche">
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 1202 %p" label="Iop Sombre" />
+				<item type="sendCommand" command="FORMA 1203 %p" label="Sacri Sombre" />
+				<item type="sendCommand" command="FORMA 1204 %p" label="Eca Sombre" />
+				<item type="sendCommand" command="FORMA 1228 %p" label="chef braconnier" />
+				<item type="sendCommand" command="FORMA 1243 %p" label="Cybworg" />
+				<item type="sendCommand" command="FORMA 1245 %p" label="ogivol" />
+				<item type="sendCommand" command="FORMA 1246 %p" label="Padegref" />
+				<item type="sendCommand" command="FORMA 1247 %p" label="Frakacia - Mama Roublarde" />
+				<item type="sendCommand" command="FORMA 1248 %p" label="Krak Boul" />
+				<item type="sendCommand" command="FORMA 1249 %p" label="Ecureuil foudugland" />
+				<item type="sendCommand" command="FORMA 1264 %p" label="Maitre pandawashuka" />
+			</item>
+			<item type="menu" label="Templo de los dopeuls">
+				<item type="sendCommand" command="FORMA 1097 %p" label="Champion Feca" />
+				<item type="sendCommand" command="FORMA 1098 %p" label="Champion Osa" />
+				<item type="sendCommand" command="FORMA 1099 %p" label="Champion Enu" />
+				<item type="sendCommand" command="FORMA 1100 %p" label="Champion Sram" />
+				<item type="sendCommand" command="FORMA 1101 %p" label="Champion Xelor" />
+				<item type="sendCommand" command="FORMA 1102 %p" label="Champion Eca" />
+				<item type="sendCommand" command="FORMA 1103 %p" label="Champion Enia" />
+				<item type="sendCommand" command="FORMA 1104 %p" label="Champion Iop" />
+				<item type="sendCommand" command="FORMA 1105 %p" label="Champion Cra" />
+				<item type="sendCommand" command="FORMA 1106 %p" label="Champion Sadida" />
+				<item type="sendCommand" command="FORMA 1240 %p" label="Dopeul sacri" />
+			</item>
+			<item type="menu" label="Dragodinde">
+				<item type="sendCommand" command="FORMA 1108 %p" label="Dragodinde" />
+			</item>
+			<item type="menu" label="Château d'Allister">
+				<item type="sendCommand" command="FORMA 1109 %p" label="Wa Wabbit" />
+				<item type="sendCommand" command="FORMA 9016 %p" label="Forin" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9038 %p" label="Amayiro" />
+				<item type="sendCommand" command="FORMA 9097 %p" label="Garde sur monture" />
+				<item type="sendCommand" command="FORMA 9104 %p" label="trone d'allister" />
+			</item>
+			<item type="menu" label="Scaras">
+				<item type="sendCommand" command="FORMA 1135 %p" label="Scarafeuille Bleu" />
+				<item type="sendCommand" command="FORMA 1136 %p" label="Scarafeuille Rouge" />
+				<item type="sendCommand" command="FORMA 1137 %p" label="Scarafeuille Vert" />
+				<item type="sendCommand" command="FORMA 1138 %p" label="Scarafeuille Blanc" />
+				<item type="sendCommand" command="FORMA 1145 %p" label="Flameche feu" />
+				<item type="sendCommand" command="FORMA 1146 %p" label="Flameche eau" />
+				<item type="sendCommand" command="FORMA 1147 %p" label="Flameche terre" />
+				<item type="sendCommand" command="FORMA 1148 %p" label="Flameche air" />
+				<item type="sendCommand" command="FORMA 1453 %p" label="Scarafeuille Noir" />
+				<item type="sendCommand" command="FORMA 1454 %p" label="Baby Scara" />
+				<item type="sendCommand" command="FORMA 1455 %p" label="Scarabosse" />
+			</item>
+		</item>
+		<item type="menu" label="~ Bonta">
+			<item type="menu" label="Milicianos de Bonta">
+				<item type="sendCommand" command="FORMA 1001 %p" label="Arbracknyde" />
+				<item type="sendCommand" command="FORMA 1191 %p" label="Milicien Tarche" />
+				<item type="sendCommand" command="FORMA 1197 %p" label="Chef milice (Tom cruche)" />
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 8004 %p" label="Fantomas (monstre)" />
+				<item type="sendCommand" command="FORMA 9004 %p" label="Milicien assis" />
+				<item type="sendCommand" command="FORMA 9006 %p" label="mage a" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9038 %p" label="Amayiro" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9049 %p" label="Milicien" />
+			</item>
+			<item type="menu" label="Habitantes de Bonta">
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 7000 %p" label="Tabi (monstre)" />
+				<item type="sendCommand" command="FORMA 9001 %p" label="Chacha" />
+				<item type="sendCommand" command="FORMA 9004 %p" label="Milicien assis" />
+				<item type="sendCommand" command="FORMA 9012 %p" label="Serveuse" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9015 %p" label="Forgeron" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9042 %p" label="Petite fille Villageoise" />
+				<item type="sendCommand" command="FORMA 9043 %p" label="Petite fille Villageoise 2" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9046 %p" label="Villageois 2" />
+				<item type="sendCommand" command="FORMA 9047 %p" label="Villageois Vieux" />
+				<item type="sendCommand" command="FORMA 9050 %p" label="Berger Gosse" />
+				<item type="sendCommand" command="FORMA 9067 %p" label="Forgemage" />
+				<item type="sendCommand" command="FORMA 9069 %p" label="Femme (Bonta)" />
+				<item type="sendCommand" command="FORMA 9070 %p" label="Femme (Route de Bonta)" />
+			</item>
+			<item type="menu" label="Corbacs">
+				<item type="sendCommand" command="FORMA 1179 %p" label="Corbac" />
+				<item type="sendCommand" command="FORMA 1186 %p" label="Grand Maitre Corbac" />
+				<item type="sendCommand" command="FORMA 1406 %p" label="Renarbo" />
+				<item type="sendCommand" command="FORMA 1407 %p" label="Hibou buveur" />
+				<item type="sendCommand" command="FORMA 1408 %p" label="Gros corbac en cage" />
+			</item>
+			<item type="menu" label="Champiñones">
+				<item type="sendCommand" command="FORMA 1209 %p" label="Maitre Bolet" />
+				<item type="sendCommand" command="FORMA 1335 %p" label="Champ Arach" />
+				<item type="sendCommand" command="FORMA 1565 %p" label="Champi" />
+			</item>
+			<item type="menu" label="Blop">
+				<item type="sendCommand" command="FORMA 1171 %p" label="Blop liquide" />
+				<item type="sendCommand" command="FORMA 1172 %p" label="Blop chaud" />
+				<item type="sendCommand" command="FORMA 1173 %p" label="Blop vegetal" />
+				<item type="sendCommand" command="FORMA 1174 %p" label="Blop gazeux" />
+				<item type="sendCommand" command="FORMA 1175 %p" label="Biblop liquide" />
+				<item type="sendCommand" command="FORMA 1176 %p" label="Biblop chaud" />
+				<item type="sendCommand" command="FORMA 1177 %p" label="Biblop vegetal" />
+				<item type="sendCommand" command="FORMA 1178 %p" label="Biblop gazeux" />
+			</item>
+			<item type="menu" label="Monstruos de Cania">
+				<item type="sendCommand" command="FORMA 1013 %p" label="Serpentin" />
+				<item type="sendCommand" command="FORMA 1038 %p" label="Cavalier Porkas" />
+				<item type="sendCommand" command="FORMA 1039 %p" label="Kanigrou" />
+				<item type="sendCommand" command="FORMA 1040 %p" label="Porkas" />
+				<item type="sendCommand" command="FORMA 1070 %p" label="GliGli ancestral" />
+				<item type="sendCommand" command="FORMA 1085 %p" label="SouWoui Mawon'ne" />
+				<item type="sendCommand" command="FORMA 1086 %p" label="SouWoui Verte" />
+			</item>		<item type="menu" label="Mulou">
+				<item type="sendCommand" command="FORMA 1069 %p" label="Mulou" />
+				<item type="sendCommand" command="FORMA 1107 %p" label="Milimulou" />
+				<item type="sendCommand" command="FORMA 1131 %p" label="Trooll" />
+				<item type="sendCommand" command="FORMA 1134 %p" label="Meulou" />
+			</item>
+			<item type="menu" label="Voyageur plaine de Cania">
+				<item type="sendCommand" command="FORMA 1070 %p" label="GliGli ancestral" />
+				<item type="sendCommand" command="FORMA 1076 %p" label="Gobelin" />
+				<item type="sendCommand" command="FORMA 9000 %p" label="Pretre" />
+				<item type="sendCommand" command="FORMA 9047 %p" label="Villageois Vieux" />
+			</item>
+			<item type="menu" label="Monstre des egouts">
+				<item type="sendCommand" command="FORMA 1125 %p" label="tortue1" />
+				<item type="sendCommand" command="FORMA 1126 %p" label="tortue2" />
+				<item type="sendCommand" command="FORMA 1127 %p" label="tortue3" />
+				<item type="sendCommand" command="FORMA 1128 %p" label="tortue4" />
+				<item type="sendCommand" command="FORMA 1226 %p" label="rat degoutant" />
+				<item type="sendCommand" command="FORMA 1227 %p" label="rat degoutant chaman" />
+				<item type="sendCommand" command="FORMA 1232 %p" label="Arach degoutante" />
+				<item type="sendCommand" command="FORMA 1436 %p" label="BontaRat" />
+				<item type="sendCommand" command="FORMA 1534 %p" label="Gros Rat au boulet au pied" />
+				<item type="sendCommand" command="FORMA 1535 %p" label="Brakmar Rat" />
+				<item type="sendCommand" command="FORMA 1536 %p" label="RatCaille marron" />
+				<item type="sendCommand" command="FORMA 1537 %p" label="RatCaille blanc" />
+				<item type="sendCommand" command="FORMA 1538 %p" label="Rat Boss de Brakmar" />
+				<item type="sendCommand" command="FORMA 1539 %p" label="Rat Muscler" />
+				<item type="sendCommand" command="FORMA 1541 %p" label="SphincterCell" />
+				<item type="sendCommand" command="FORMA 1544 %p" label="Rat Boss Bonta Maigre" />
+			</item>
+			<item type="menu" label="Brigandins">
+				<item type="sendCommand" command="FORMA 1150 %p" label="Brigandine" />
+				<item type="sendCommand" command="FORMA 1155 %p" label="brigandin" />
+				<item type="sendCommand" command="FORMA 1220 %p" label="Robot bois" />
+				<item type="sendCommand" command="FORMA 1223 %p" label="Robot masse" />
+			</item>
+			<item type="menu" label="Feria del Trolll">
+				<item type="sendCommand" command="FORMA 1233 %p" label="Arach degoutante" />
+				<item type="sendCommand" command="FORMA 1234 %p" label="BouftonCUs-Quadricornus" />
+				<item type="sendCommand" command="FORMA 1235 %p" label="Bworkitus-Double Tetus" />
+				<item type="sendCommand" command="FORMA 1236 %p" label="Dragonicus - minotaurus" />
+				<item type="sendCommand" command="FORMA 9002 %p" label="Trool de foire" />
+				<item type="sendCommand" command="FORMA 9009 %p" label="voyante" />
+				<item type="sendCommand" command="FORMA 9010 %p" label="Forin gamin" />
+				<item type="sendCommand" command="FORMA 9016 %p" label="Forin" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9056 %p" label="Forin cowboy" />
+				<item type="sendCommand" command="FORMA 9058 %p" label="Forin verre" />
+				<item type="sendCommand" command="FORMA 9067 %p" label="Forgemage" />
+				<item type="sendCommand" command="FORMA 9069 %p" label="Femme (Bonta)" />
+				<item type="sendCommand" command="FORMA 9070 %p" label="Femme (Route de Bonta)" />
+			</item>
+			<item type="menu" label="Village Brigandin">
+				<item type="sendCommand" command="FORMA 1150 %p" label="Brigandine" />
+				<item type="sendCommand" command="FORMA 1155 %p" label="brigandin" />
+				<item type="sendCommand" command="FORMA 1220 %p" label="Robot bois" />
+				<item type="sendCommand" command="FORMA 1228 %p" label="chef braconnier" />
+				<item type="sendCommand" command="FORMA 9071 %p" label="Brigandine voyage" />
+			</item>
+		</item>
+		<item type="menu" label="~ Brakmar">
+			<item type="menu" label="Habitantes de Brakmar">
+				<item type="sendCommand" command="FORMA 1002 %p" label="Araignee arbracknyde" />
+				<item type="sendCommand" command="FORMA 1003 %p" label="Bwork Guerrier" />
+				<item type="sendCommand" command="FORMA 1012 %p" label="Bwork Mage" />
+				<item type="sendCommand" command="FORMA 1014 %p" label="Chafer" />
+				<item type="sendCommand" command="FORMA 1168 %p" label="Bwak de terre" />
+				<item type="sendCommand" command="FORMA 1197 %p" label="Chef milice (Tom cruche)" />
+				<item type="sendCommand" command="FORMA 1205 %p" label="Guerrier Brakmar" />
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 1243 %p" label="Cybworg" />
+				<item type="sendCommand" command="FORMA 8004 %p" label="Fantomas (monstre)" />
+				<item type="sendCommand" command="FORMA 9001 %p" label="Chacha" />
+				<item type="sendCommand" command="FORMA 9012 %p" label="Serveuse" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9015 %p" label="Forgeron" />
+				<item type="sendCommand" command="FORMA 9018 %p" label="Vieux de base" />
+				<item type="sendCommand" command="FORMA 9025 %p" label="Vendeur Ecaflip" />
+				<item type="sendCommand" command="FORMA 9030 %p" label="Boulanger" />
+				<item type="sendCommand" command="FORMA 9034 %p" label="Cordonnier" />
+				<item type="sendCommand" command="FORMA 9040 %p" label="Roublard" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9042 %p" label="Petite fille Villageoise" />
+				<item type="sendCommand" command="FORMA 9043 %p" label="Petite fille Villageoise 2" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9067 %p" label="Forgemage" />
+				<item type="sendCommand" command="FORMA 9069 %p" label="Femme (Bonta)" />
+			</item>
+			<item type="menu" label="Gardes">
+				<item type="sendCommand" command="FORMA 1190 %p" label="Chafer Archer" />
+				<item type="sendCommand" command="FORMA 1192 %p" label="Milicien" />
+				<item type="sendCommand" command="FORMA 1205 %p" label="Guerrier Brakmar" />
+				<item type="sendCommand" command="FORMA 9019 %p" label="Garde un peu gros" />
+			</item>
+			<item type="menu" label="Milicia de Brakmar">
+				<item type="sendCommand" command="FORMA 1014 %p" label="Chafer" />
+				<item type="sendCommand" command="FORMA 1190 %p" label="Chafer Archer" />
+				<item type="sendCommand" command="FORMA 1205 %p" label="Guerrier Brakmar" />
+				<item type="sendCommand" command="FORMA 1206 %p" label="Chef Guerrier Brakmar" />
+				<item type="sendCommand" command="FORMA 1535 %p" label="Brakmar Rat" />
+				<item type="sendCommand" command="FORMA 8004 %p" label="Fantomas (monstre)" />
+				<item type="sendCommand" command="FORMA 9007 %p" label="mage b" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9039 %p" label="Herboriste" />
+			</item>
+			<item type="menu" label="Monstruoss de landa">
+				<item type="sendCommand" command="FORMA 1085 %p" label="SouWoui Mawon'ne" />
+				<item type="sendCommand" command="FORMA 1196 %p" label="Ouginak" />
+				<item type="sendCommand" command="FORMA 1198 %p" label="Scorbute" />
+				<item type="sendCommand" command="FORMA 1201 %p" label="Loups" />
+			</item>
+			<item type="menu" label="Montruos del pueblo de los Dopeuls">
+				<item type="sendCommand" command="FORMA 1097 %p" label="Champion Feca" />
+				<item type="sendCommand" command="FORMA 1098 %p" label="Champion Osa" />
+				<item type="sendCommand" command="FORMA 1099 %p" label="Champion Enu" />
+				<item type="sendCommand" command="FORMA 1100 %p" label="Champion Sram" />
+				<item type="sendCommand" command="FORMA 1101 %p" label="Champion Xelor" />
+				<item type="sendCommand" command="FORMA 1102 %p" label="Champion Eca" />
+				<item type="sendCommand" command="FORMA 1103 %p" label="Champion Enia" />
+				<item type="sendCommand" command="FORMA 1104 %p" label="Champion Iop" />
+				<item type="sendCommand" command="FORMA 1105 %p" label="Champion Cra" />
+				<item type="sendCommand" command="FORMA 1106 %p" label="Champion Sadida" />
+				<item type="sendCommand" command="FORMA 1240 %p" label="Dopeul sacri" />
+			</item>
+		</item>
+		<item type="menu" label="~ Pandala">
+			<item type="menu" label="Monstruos de Pandala">
+				<item type="sendCommand" command="FORMA 1002 %p" label="Araignee arbracknyde" />
+				<item type="sendCommand" command="FORMA 1013 %p" label="Serpentin" />
+				<item type="sendCommand" command="FORMA 1095 %p" label="Bandit Clan des cranes" />
+				<item type="sendCommand" command="FORMA 1232 %p" label="Arach degoutante" />
+				<item type="sendCommand" command="FORMA 1283 %p" label="Tanukou-san" />
+				<item type="sendCommand" command="FORMA 1284 %p" label="Tanuki-chan" />
+			</item>
+			<item type="menu" label="Monstruos de pueblo de Pandala">
+				<item type="sendCommand" command="FORMA 1145 %p" label="Flameche feu" />
+				<item type="sendCommand" command="FORMA 1232 %p" label="Arach degoutante" />
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1264 %p" label="Maitre pandawashuka" />
+				<item type="sendCommand" command="FORMA 1274 %p" label="pendule" />
+				<item type="sendCommand" command="FORMA 1280 %p" label="Panda Gelee" />
+				<item type="sendCommand" command="FORMA 1295 %p" label="pandore" />
+				<item type="sendCommand" command="FORMA 1297 %p" label="Peki peki" />
+			</item>
+			<item type="menu" label="Pandawas">
+				<item type="sendCommand" command="FORMA 1083 %p" label="Coffre au Tresor malveillant" />
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1274 %p" label="pendule" />
+				<item type="sendCommand" command="FORMA 1295 %p" label="pandore" />
+				<item type="sendCommand" command="FORMA 8010 %p" label="Pandawa Ivre" />
+				<item type="sendCommand" command="FORMA 8011 %p" label="Pandawette Ivre" />
+			</item>
+			<item type="menu" label="Habitantes del pueblo  de Pandala">
+				<item type="sendCommand" command="FORMA 1169 %p" label="Bwak d air" />
+				<item type="sendCommand" command="FORMA 1260 %p" label="pandi panda" />
+				<item type="sendCommand" command="FORMA 1264 %p" label="Maitre pandawashuka" />
+				<item type="sendCommand" command="FORMA 1275 %p" label="FireFox" />
+				<item type="sendCommand" command="FORMA 1281 %p" label="assistant Shaman" />
+				<item type="sendCommand" command="FORMA 9001 %p" label="Chacha" />
+				<item type="sendCommand" command="FORMA 9016 %p" label="Forin" />
+				<item type="sendCommand" command="FORMA 9045 %p" label="Villageois" />
+				<item type="sendCommand" command="FORMA 9048 %p" label="Bibliothecaire" />
+				<item type="sendCommand" command="FORMA 9049 %p" label="Milicien" />
+				<item type="sendCommand" command="FORMA 9051 %p" label="Renard" />
+				<item type="sendCommand" command="FORMA 9075 %p" label="gros panda" />
+				<item type="sendCommand" command="FORMA 9076 %p" label="grandapanda" />
+				<item type="sendCommand" command="FORMA 9077 %p" label="feepandala" />
+			</item>
+			<item type="menu" label="Plantas de Pandala">
+				<item type="sendCommand" command="FORMA 1265 %p" label="Bulbiflore" />
+				<item type="sendCommand" command="FORMA 1266 %p" label="Bulbuisson" />
+				<item type="sendCommand" command="FORMA 1267 %p" label="Bulbambou" />
+				<item type="sendCommand" command="FORMA 1273 %p" label="Bulbig" />
+				<item type="sendCommand" command="FORMA 1285 %p" label="bambouto" />
+				<item type="sendCommand" command="FORMA 1286 %p" label="bambouto sacre" />
+			</item>
+			<item type="menu" label="Kitsus">
+				<item type="sendCommand" command="FORMA 1268 %p" label="kistoune air" />
+				<item type="sendCommand" command="FORMA 1269 %p" label="kistoune feu" />
+				<item type="sendCommand" command="FORMA 1270 %p" label="kistoune terre" />
+				<item type="sendCommand" command="FORMA 1271 %p" label="kistoune eau" />
+			</item>
+			<item type="menu" label="Fantasmas de Pandala">
+				<item type="sendCommand" command="FORMA 1275 %p" label="FireFox" />
+				<item type="sendCommand" command="FORMA 1287 %p" label="pandi fantome" />
+				<item type="sendCommand" command="FORMA 1288 %p" label="firefoux fantome" />
+				<item type="sendCommand" command="FORMA 1289 %p" label="Mega FireFoux fantome" />
+				<item type="sendCommand" command="FORMA 1290 %p" label="leopardo fantome" />
+				<item type="sendCommand" command="FORMA 1292 %p" label="tanuki fantome" />
+				<item type="sendCommand" command="FORMA 1293 %p" label="Tanuki Chan fantome" />
+				<item type="sendCommand" command="FORMA 1294 %p" label="pandule fantome" />
+				<item type="sendCommand" command="FORMA 1296 %p" label="pandore Fantome" />
+				<item type="sendCommand" command="FORMA 1298 %p" label="Bouate fantome" />
+			</item>
+			<item type="menu" label="Firefoux">
+				<item type="sendCommand" command="FORMA 1275 %p" label="FireFox" />
+				<item type="sendCommand" command="FORMA 1276 %p" label="mega firefox" />
+				<item type="sendCommand" command="FORMA 1278 %p" label="Leopardo" />
+			</item>
+		</item>
+		<item type="menu" label="~ Incarnam">
+			<item type="menu" label="Monstruos de la zona des debutants">
+				<item type="sendCommand" command="FORMA 1014 %p" label="Chafer" />
+				<item type="sendCommand" command="FORMA 1219 %p" label="Epouvantail" />
+				<item type="sendCommand" command="FORMA 1475 %p" label="Kwab Ezotik" />
+				<item type="sendCommand" command="FORMA 1558 %p" label="Tofu" />
+				<item type="sendCommand" command="FORMA 1560 %p" label="Pissenlit" />
+				<item type="sendCommand" command="FORMA 1561 %p" label="Rose demoniaque" />
+				<item type="sendCommand" command="FORMA 1562 %p" label="Sanglier" />
+				<item type="sendCommand" command="FORMA 1563 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1564 %p" label="Arakne" />
+				<item type="sendCommand" command="FORMA 1565 %p" label="Champi" />
+				<item type="sendCommand" command="FORMA 1566 %p" label="Bouftou" />
+				<item type="sendCommand" command="FORMA 1567 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1568 %p" label="Larve " />
+				<item type="sendCommand" command="FORMA 1569 %p" label="Tournesol" />
+				<item type="sendCommand" command="FORMA 1570 %p" label="Boufton blanc" />
+				<item type="sendCommand" command="FORMA 1571 %p" label="Boufton noir" />
+				<item type="sendCommand" command="FORMA 1572 %p" label="Moskito" />
+				<item type="sendCommand" command="FORMA 1573 %p" label="Chef de guerre bouftou" />
+				<item type="sendCommand" command="FORMA 1581 %p" label="Milou" />
+			</item>
+			<item type="menu" label="Pious">
+				<item type="sendCommand" command="FORMA 1212 %p" label="Piou" />
+			</item>
+			<item type="menu" label="Animaux de la foret">
+				<item type="sendCommand" command="FORMA 1020 %p" label="Prespic" />
+				<item type="sendCommand" command="FORMA 1239 %p" label="Le ours" />
+				<item type="sendCommand" command="FORMA 1562 %p" label="Sanglier" />
+				<item type="sendCommand" command="FORMA 9003 %p" label="l'homme Ours" />
+			</item>
+			<item type="menu" label="Moskitos">
+				<item type="sendCommand" command="FORMA 1572 %p" label="Moskito" />
+			</item>
+			<item type="menu" label="Habitantes Incarnam">
+				<item type="sendCommand" command="FORMA 1197 %p" label="Chef milice (Tom cruche)" />
+				<item type="sendCommand" command="FORMA 1207 %p" label="Tavernier" />
+				<item type="sendCommand" command="FORMA 1212 %p" label="Piou" />
+				<item type="sendCommand" command="FORMA 9000 %p" label="Pretre" />
+				<item type="sendCommand" command="FORMA 9003 %p" label="l'homme Ours" />
+				<item type="sendCommand" command="FORMA 9008 %p" label="peche" />
+				<item type="sendCommand" command="FORMA 9012 %p" label="Serveuse" />
+				<item type="sendCommand" command="FORMA 9013 %p" label="Vendeuse de base" />
+				<item type="sendCommand" command="FORMA 9019 %p" label="Garde un peu gros" />
+				<item type="sendCommand" command="FORMA 9031 %p" label="Paysan" />
+				<item type="sendCommand" command="FORMA 9035 %p" label="Bucheron" />
+				<item type="sendCommand" command="FORMA 9037 %p" label="Sculpteur" />
+				<item type="sendCommand" command="FORMA 9039 %p" label="Herboriste" />
+				<item type="sendCommand" command="FORMA 9041 %p" label="Gosse" />
+				<item type="sendCommand" command="FORMA 9044 %p" label="Paysanne Jarre d'eau" />
+				<item type="sendCommand" command="FORMA 9047 %p" label="Villageois Vieux" />
+				<item type="sendCommand" command="FORMA 9050 %p" label="Berger Gosse" />
+				<item type="sendCommand" command="FORMA 9059 %p" label="Aigle anime" />
+				<item type="sendCommand" command="FORMA 9079 %p" label="Bricoleur" />
+				<item type="sendCommand" command="FORMA 9083 %p" label="Papy Pupu" />
+				<item type="sendCommand" command="FORMA 9091 %p" label="Likhen" />
+			</item>
+		</item>
+		<item type="menu" label="Iles de Madrestam y Nowel">
+			<item type="menu" label="Monstres de Nowel">
+				<item type="sendCommand" command="FORMA 1062 %p" label="Gelee bleue" />
+				<item type="sendCommand" command="FORMA 1091 %p" label="Chef de gueurre Bouftou" />
+				<item type="sendCommand" command="FORMA 1472 %p" label="Le Yeti" />
+				<item type="sendCommand" command="FORMA 1495 %p" label="Lutin de noel" />
+				<item type="sendCommand" command="FORMA 1497 %p" label="Kanigrou" />
+				<item type="sendCommand" command="FORMA 1499 %p" label="Lutin de noel sur monture" />
+				<item type="sendCommand" command="FORMA 1504 %p" label="Tifoux des neiges" />
+				<item type="sendCommand" command="FORMA 1505 %p" label="Larve des neiges" />
+				<item type="sendCommand" command="FORMA 1506 %p" label="Krak des glaces" />
+				<item type="sendCommand" command="FORMA 1509 %p" label="Lutin de noel obese" />
+				<item type="sendCommand" command="FORMA 1510 %p" label="Boule de neige" />
+				<item type="sendCommand" command="FORMA 1511 %p" label="Papa nouwel" />
+				<item type="sendCommand" command="FORMA 1513 %p" label="Bonhomme de neige" />
+				<item type="sendCommand" command="FORMA 1514 %p" label="Pinpin le sapin" />
+				<item type="sendCommand" command="FORMA 1515 %p" label="petit papa Lutin nowell" />
+				<item type="sendCommand" command="FORMA 1517 %p" label="corps du papa nowel" />
+				<item type="sendCommand" command="FORMA 1518 %p" label="Tofu Surpwise" />
+				<item type="sendCommand" command="FORMA 1519 %p" label="Glaçon Kitsune" />
+				<item type="sendCommand" command="FORMA 1520 %p" label="Glaçon Wabbit" />
+				<item type="sendCommand" command="FORMA 1521 %p" label="Glaçon Bwak" />
+				<item type="sendCommand" command="FORMA 1522 %p" label="Piti cado de nowell" />
+				<item type="sendCommand" command="FORMA 1523 %p" label="Mini-Nuite" />
+			</item>
+			<item type="static" label="Wabbits" />
+			<item type="menu" label="Wabbits">
+				<item type="sendCommand" command="FORMA 1050 %p" label="Wabbit" />
+				<item type="sendCommand" command="FORMA 1051 %p" label="Black Wabbit" />
+				<item type="sendCommand" command="FORMA 1052 %p" label="Wo Wabbit" />
+				<item type="sendCommand" command="FORMA 1053 %p" label="Tiwabbit" />
+				<item type="sendCommand" command="FORMA 1054 %p" label="Black Tiwabbit" />
+				<item type="sendCommand" command="FORMA 1055 %p" label="Tiwabbit Kiafin" />
+				<item type="sendCommand" command="FORMA 1056 %p" label="Vieux Wabbit" />
+				<item type="sendCommand" command="FORMA 1057 %p" label="Wabbit Squelettes" />
+				<item type="sendCommand" command="FORMA 1058 %p" label="Wabbit Meuchine" />
+				<item type="sendCommand" command="FORMA 1059 %p" label="Wabbit GM" />
+				<item type="sendCommand" command="FORMA 1109 %p" label="Wa Wabbit" />
+			</item>
+			<item type="menu" label="Isla de los Wabbits">
+				<item type="sendCommand" command="FORMA 1056 %p" label="Vieux Wabbit" />
+				<item type="sendCommand" command="FORMA 1058 %p" label="Wabbit Meuchine" />
+				<item type="sendCommand" command="FORMA 9051 %p" label="Renard" />
+				<item type="sendCommand" command="FORMA 9052 %p" label="Renarde" />
+				<item type="sendCommand" command="FORMA 9053 %p" label="Capitaine" />
+				<item type="sendCommand" command="FORMA 9054 %p" label="Wabbit Cle" />
+				<item type="sendCommand" command="FORMA 9055 %p" label="Wa Wabbit mort" />
+				<item type="sendCommand" command="FORMA 9057 %p" label="Vieux Renard" />
+			</item>
+			<item type="static" label="Moon" />
+			<item type="menu" label="Kannibouls de l'ile de Moon">
+				<item type="sendCommand" command="FORMA 1112 %p" label="Kanniboul" />
+				<item type="sendCommand" command="FORMA 1113 %p" label="Kanniboul" />
+				<item type="sendCommand" command="FORMA 1114 %p" label="Kanniboul" />
+				<item type="sendCommand" command="FORMA 1115 %p" label="Kanniboul" />
+			</item>
+			<item type="menu" label="Plantas de Moon">
+				<item type="sendCommand" command="FORMA 1116 %p" label="Grand palmier" />
+				<item type="sendCommand" command="FORMA 1118 %p" label="Palmier" />
+				<item type="sendCommand" command="FORMA 1119 %p" label="Le Fourbasse" />
+				<item type="sendCommand" command="FORMA 1120 %p" label="Le koko" />
+				<item type="sendCommand" command="FORMA 1121 %p" label="MonstroPlante 1" />
+				<item type="sendCommand" command="FORMA 1122 %p" label="MonstroPlante 2" />
+			</item>
+			<item type="menu" label="Piratas de Moon">
+				<item type="sendCommand" command="FORMA 1123 %p" label="Chaffer_O_Canon" />
+				<item type="sendCommand" command="FORMA 1124 %p" label="Cap'tain Piwouat" />
+				<item type="sendCommand" command="FORMA 1132 %p" label="NakunBra" />
+				<item type="sendCommand" command="FORMA 1133 %p" label="Boomba" />
+			</item>
+			<item type="menu" label="Tortugas de Moon">
+				<item type="sendCommand" command="FORMA 1125 %p" label="tortue1" />
+				<item type="sendCommand" command="FORMA 1126 %p" label="tortue2" />
+				<item type="sendCommand" command="FORMA 1127 %p" label="tortue3" />
+				<item type="sendCommand" command="FORMA 1128 %p" label="tortue4" />
+			</item>
+			<item type="menu" label="Monstruos de Moon">
+				<item type="sendCommand" command="FORMA 1129 %p" label="moon" />
+				<item type="sendCommand" command="FORMA 1130 %p" label="black moon" />
+			</item>
+			<item type="menu" label="Isla de moon">
+				<item type="sendCommand" command="FORMA 1129 %p" label="moon" />
+				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
+				<item type="sendCommand" command="FORMA 9046 %p" label="Villageois 2" />
+				<item type="sendCommand" command="FORMA 9053 %p" label="Capitaine" />
+				<item type="sendCommand" command="FORMA 9060 %p" label="vendeur pirate" />
+				<item type="sendCommand" command="FORMA 9061 %p" label="gosse ile" />
+				<item type="sendCommand" command="FORMA 9062 %p" label="gosse ile2" />
+				<item type="sendCommand" command="FORMA 9063 %p" label="Kanniboule" />
+				<item type="sendCommand" command="FORMA 9064 %p" label="Gropinson" />
+			</item>
+		</item>
+		<item type="menu" label="~ Otomai">
+			<item type="menu" label="Monstruos de Arca de Otomai">
+				<item type="sendCommand" command="FORMA 1083 %p" label="Coffre au Tresor malveillant" />
+				<item type="sendCommand" command="FORMA 1618 %p" label="PitiPirate" />
+				<item type="sendCommand" command="FORMA 1619 %p" label="Tonneau Pirate" />
+				<item type="sendCommand" command="FORMA 1620 %p" label="Ben Fligans" />
+				<item type="sendCommand" command="FORMA 1621 %p" label="Gourlo le terrible" />
+			</item>
+			<item type="menu" label="Monstruos de la playa de corales">
+				<item type="sendCommand" command="FORMA 1587 %p" label="Krakeleur Corail" />
+				<item type="sendCommand" command="FORMA 1592 %p" label="Ti Molusque Kouracao (bleu)" />
+				<item type="sendCommand" command="FORMA 1593 %p" label="Ti Molusque Passaoh (rouge)" />
+				<item type="sendCommand" command="FORMA 1594 %p" label="Ti Molusque Malibout (bleuVert)" />
+				<item type="sendCommand" command="FORMA 1595 %p" label="Ti Molusque Morito (Jaune)" />
+				<item type="sendCommand" command="FORMA 1602 %p" label="Palmiflor Morito" />
+				<item type="sendCommand" command="FORMA 1603 %p" label="Palmiflor Malibout" />
+				<item type="sendCommand" command="FORMA 1604 %p" label="Palmiflor Kouracao" />
+				<item type="sendCommand" command="FORMA 1605 %p" label="Palmiflor PAssaoh" />
+				<item type="sendCommand" command="FORMA 1617 %p" label="Krakorail Magistral" />
+			</item>
+			<item type="menu" label="Monstres de la Jungle Sombre">
+				<item type="sendCommand" command="FORMA 1599 %p" label="Abrakleur Sombre" />
+				<item type="sendCommand" command="FORMA 1611 %p" label="Fecorce" />
+				<item type="sendCommand" command="FORMA 1612 %p" label="Chiendent" />
+				<item type="sendCommand" command="FORMA 1613 %p" label="Nerbe" />
+				<item type="sendCommand" command="FORMA 1614 %p" label="Brouture" />
+				<item type="sendCommand" command="FORMA 1615 %p" label="Floribonde" />
+				<item type="sendCommand" command="FORMA 1616 %p" label="tynril" />
+				<item type="sendCommand" command="FORMA 1638 %p" label="Bitouf Sombre" />
+			</item>
+			<item type="menu" label="Monstres de la Canopee Embrumee">
+				<item type="sendCommand" command="FORMA 1606 %p" label="Disciple Zoth" />
+				<item type="sendCommand" command="FORMA 1607 %p" label="Sergent Zoth" />
+				<item type="sendCommand" command="FORMA 1608 %p" label="Guerrier Zoth" />
+				<item type="sendCommand" command="FORMA 1609 %p" label="Gamine Zoth" />
+				<item type="sendCommand" command="FORMA 1610 %p" label="Maitre Zoth" />
+			</item>
+			<item type="menu" label="Minos">
+				<item type="sendCommand" command="FORMA 1088 %p" label="MinoTOroR" />
+				<item type="sendCommand" command="FORMA 1338 %p" label="Dark Demino" />
+				<item type="sendCommand" command="FORMA 1341 %p" label="Salah MEndreuh" />
+				<item type="sendCommand" command="FORMA 1347 %p" label="Minoskito" />
+				<item type="sendCommand" command="FORMA 1348 %p" label="Kameleon" />
+				<item type="sendCommand" command="FORMA 1384 %p" label="Gamino" />
+				<item type="sendCommand" command="FORMA 1387 %p" label="Demino" />
+				<item type="sendCommand" command="FORMA 1388 %p" label="Scablatte" />
+				<item type="sendCommand" command="FORMA 1409 %p" label="Serpent a plumes" />
+				<item type="sendCommand" command="FORMA 1442 %p" label="Degelee" />
+				<item type="sendCommand" command="FORMA 1444 %p" label="Minotot" />
+			</item>
+			<item type="menu" label="Ile d'Otomai">
+				<item type="sendCommand" command="FORMA 1528 %p" label="Krakeleur Exotique" />
+				<item type="sendCommand" command="FORMA 9066 %p" label="Otomai" />
+				<item type="sendCommand" command="FORMA 9106 %p" label="Ursula Antresse" />
+				<item type="sendCommand" command="FORMA 9107 %p" label="Alchimiste" />
+				<item type="sendCommand" command="FORMA 9108 %p" label="Lack" />
+				<item type="sendCommand" command="FORMA 9109 %p" label="Jock" />
+				<item type="sendCommand" command="FORMA 9110 %p" label="Denis Brouillart" />
+			</item>
+			<item type="menu" label="Monstres des Plaines herbeuses">
+				<item type="sendCommand" command="FORMA 1528 %p" label="Krakeleur Exotique" />
+				<item type="sendCommand" command="FORMA 1551 %p" label="Krakeboule exotique" />
+				<item type="sendCommand" command="FORMA 1585 %p" label="Rasbool" />
+				<item type="sendCommand" command="FORMA 1586 %p" label="Coconut Piou" />
+				<item type="sendCommand" command="FORMA 1597 %p" label="Phacochere rider" />
+				<item type="sendCommand" command="FORMA 1601 %p" label="Moufafah" />
+				<item type="sendCommand" command="FORMA 1628 %p" label="Kido" />
+				<item type="sendCommand" command="FORMA 1629 %p" label="Kilibriss" />
+				<item type="sendCommand" command="FORMA 1630 %p" label="Invocation du rasbool" />
+			</item>
+			<item type="menu" label="Monstres de l'Arbre Hakam">
+				<item type="sendCommand" command="FORMA 1531 %p" label="Meupette 02" />
+				<item type="sendCommand" command="FORMA 1598 %p" label="Abrakleur" />
+				<item type="sendCommand" command="FORMA 1600 %p" label="Poolay" />
+				<item type="sendCommand" command="FORMA 1622 %p" label="Kaskargo" />
+				<item type="sendCommand" command="FORMA 1623 %p" label="Kimbo" />
+				<item type="sendCommand" command="FORMA 1631 %p" label="Bitouf Aerien" />
+				<item type="sendCommand" command="FORMA 1636 %p" label="Disciple du Kimbo" />
+			</item>
+		</item>
+		<item type="menu" label="~ Montaña de los Koalaks">
+			<item type="menu" label="Crocodailles">
+				<item type="sendCommand" command="FORMA 1159 %p" label="Krokdur" />
+				<item type="sendCommand" command="FORMA 1162 %p" label="Soldat reptile" />
+				<item type="sendCommand" command="FORMA 8003 %p" label="Crocoburio" />
+			</item>
+			<item type="menu" label="Monstruos de las cavernas">
+				<item type="sendCommand" command="FORMA 1354 %p" label="Bouftout des montagnes" />
+				<item type="sendCommand" command="FORMA 1355 %p" label="Bouftout arc en ciel" />
+				<item type="sendCommand" command="FORMA 1356 %p" label="Cooloss" />
+				<item type="sendCommand" command="FORMA 1357 %p" label="Sadidette saphir emeraude rubis jade" />
+				<item type="sendCommand" command="FORMA 1369 %p" label="PuppetKoala" />
+				<item type="sendCommand" command="FORMA 1370 %p" label="Totem" />
+				<item type="sendCommand" command="FORMA 1450 %p" label="Skunk" />
+			</item>
+			<item type="menu" label="Montaña de los Koalaks">
+				<item type="sendCommand" command="FORMA 1356 %p" label="Cooloss" />
+				<item type="sendCommand" command="FORMA 1357 %p" label="Sadidette saphir emeraude rubis jade" />
+				<item type="sendCommand" command="FORMA 1363 %p" label="warko marron" />
+				<item type="sendCommand" command="FORMA 1450 %p" label="Skunk" />
+				<item type="sendCommand" command="FORMA 9009 %p" label="voyante" />
+				<item type="sendCommand" command="FORMA 9085 %p" label="Koa Lasso" />
+				<item type="sendCommand" command="FORMA 9086 %p" label="Chanil Fantome" />
+			</item>
+			<item type="menu" label="Koalaks">
+				<item type="sendCommand" command="FORMA 1359 %p" label="kokakoala" />
+				<item type="sendCommand" command="FORMA 1361 %p" label="redkoala" />
+				<item type="sendCommand" command="FORMA 1362 %p" label="warko violet" />
+				<item type="sendCommand" command="FORMA 1363 %p" label="warko marron" />
+				<item type="sendCommand" command="FORMA 1364 %p" label="doc alako" />
+				<item type="sendCommand" command="FORMA 1365 %p" label="kidkoala" />
+				<item type="sendCommand" command="FORMA 1366 %p" label="mama koala" />
+				<item type="sendCommand" command="FORMA 1367 %p" label="gangstako" />
+				<item type="sendCommand" command="FORMA 1368 %p" label="maxikoala" />
+				<item type="sendCommand" command="FORMA 1369 %p" label="PuppetKoala" />
+				<item type="sendCommand" command="FORMA 1381 %p" label="KoalaKavalier" />
+				<item type="sendCommand" command="FORMA 1382 %p" label="MomieKoala" />
+				<item type="sendCommand" command="FORMA 1383 %p" label="MiniKoala des cimetieres" />
+				<item type="sendCommand" command="FORMA 1439 %p" label="PapyKoala" />
+				<item type="sendCommand" command="FORMA 1440 %p" label="Kool Allah Rider" />
+				<item type="sendCommand" command="FORMA 1445 %p" label="Koalak Piwate" />
+				<item type="sendCommand" command="FORMA 1446 %p" label="Koalak Marsupial" />
+				<item type="sendCommand" command="FORMA 1447 %p" label="Koalak de la mort qui tue" />
+				<item type="sendCommand" command="FORMA 1449 %p" label="Pekeuala" />
+			</item>
+		</item>
+		<item type="menu" label="Protectores del Mundo">
+			<item type="sendCommand" command="FORMA 8012 %p" label="Summens" />
+			<item type="sendCommand" command="FORMA 8013 %p" label="Hecate" />
+			<item type="sendCommand" command="FORMA 8014 %p" label="Silouate" />
+			<item type="sendCommand" command="FORMA 8015 %p" label="Maimane" />
+			<item type="sendCommand" command="FORMA 8016 %p" label="Brumaire" />
+			<item type="sendCommand" command="FORMA 8017 %p" label="Djaul" />
+			<item type="sendCommand" command="FORMA 8018 %p" label="Ulgrude" />
+			<item type="sendCommand" command="FORMA 8019 %p" label="Pouchecot" />
+			<item type="sendCommand" command="FORMA 8020 %p" label="Rosal" />
+			<item type="sendCommand" command="FORMA 8021 %p" label="Raval" />
+			<item type="sendCommand" command="FORMA 8022 %p" label="Silvosse" />
+			<item type="sendCommand" command="FORMA 8023 %p" label="Jiva" />
+		</item>
+	</item>
+</commands>

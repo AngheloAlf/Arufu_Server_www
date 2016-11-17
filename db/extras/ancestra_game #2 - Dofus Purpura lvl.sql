@@ -1,0 +1,1 @@
+INSERT INTO `item_template` (`id`, `type`, `name`, `level`, `statsTemplate`, `pod`, `panoplie`, `prix`, `condition`, `armesInfos`) VALUES ('20001', '23', 'Dofus Purpuea Lvl', '6', '3EA#1#0#2#0d0+1', '5', '-1', '100000000', '', '');
