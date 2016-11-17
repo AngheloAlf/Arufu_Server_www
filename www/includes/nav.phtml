@@ -13,11 +13,11 @@
 
     <div class="s_fond_menu">
         <ul>
-            <li ><a href="index.php" title="">Inicio</a></li>
-            <li ><a href="descargas.php" title="">Descargas</a></li>
-            <li ><a href="cuentas.php" title="">Cuentas</a></li>
-            <li ><a href="ranking.php" title="">Ranking</a></li>
-            <li ><a href="soporte.php" title="">Soporte</a></li>
+            <li ><a href="<?php echo getHost(); ?>home/" title="">Inicio</a></li>
+            <li ><a href="<?php echo getHost(); ?>descargas/" title="">Descargas</a></li>
+            <li ><a href="<?php echo getHost(); ?>cuentas/" title="">Cuentas</a></li>
+            <li ><a href="<?php echo getHost(); ?>ranking/" title="">Ranking</a></li>
+            <li ><a href="<?php echo getHost(); ?>soporte/" title="">Soporte</a></li>
         </ul>
     </div>
 
@@ -51,6 +51,7 @@
                         <?php
                         /*$tchar = mysql_query("SELECT * FROM personnages");
                         echo mysql_num_rows($tchar);*/
+                        echo (new Personajes())->getCantidadPersonajes();
                         ?>
                     </strong>
                 </li>
@@ -58,24 +59,40 @@
             <br/>
             <br/>
             <span>
-                Servidor:
+                Servidor Realm:
             </span>
             <br/>
             <br/>
 
             <?php
-                if(getServerStatus("127.0.0.1", 5555)){
-                    echo '<img src="images/on.png">';
-                }
-                else{
-                    echo '<img src="images/off.png">';
-                }
+            if(getServerStatus("127.0.0.1", 444)){
+                echo '<img src="'.getHost().'images/on.png">';
+            }
+            else{
+                echo '<img src="'.getHost().'images/off.png">';
+            }
+            ?>
+            <br/>
+            <br/>
+            <span>
+                Servidor Game:
+            </span>
+            <br/>
+            <br/>
+
+            <?php
+            if(getServerStatus("127.0.0.1", 5555)){
+                echo '<img src="'.getHost().'images/on.png">';
+            }
+            else{
+                echo '<img src="'.getHost().'images/off.png">';
+            }
             ?>
         </div>
     </div>
 
     <div class="s_bas_menu"></div><!-- FIN MENU -->
-    <a href="config.rar"><img src="images/telechargement.png" alt=""/></a><br />
-    <a href="cuentas.php"><img src="images/inscription.png" alt=""/></a><br />
-    <a href="inicio.php"><img src="images/forum.png" alt=""/></a><br />
+    <a href="<?php echo getHost(); ?>descargas/"><img src="<?php echo getHost(); ?>images/telechargement.png" alt=""/></a><br />
+    <a href="<?php echo getHost(); ?>cuentas/"><img src="<?php echo getHost(); ?>images/inscription.png" alt=""/></a><br />
+    <!--<a href="inicio.php"><img src="images/forum.png" alt=""/></a><br />-->
     <!-- FIN COLONNE DE GAUCHE -->

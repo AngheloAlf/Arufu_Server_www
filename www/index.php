@@ -7,6 +7,8 @@
 
 require("sv/common.php");
 require("models/Accounts.php");
+require("models/Personajes.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -33,8 +35,3 @@ require("models/Accounts.php");
     </body>
 
 </html>
-
-<?php
-
-
-?>
