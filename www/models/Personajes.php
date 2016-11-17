@@ -35,5 +35,20 @@ class Personajes extends dbConnect {
         return $returnValue;
     }
 
+    public function getPersonajesOrdenadosNivel(){
+        $dbconn = new mysqli($this->getHost(), $this->getUser(), $this->getPass(), $this->getGame());
+        $sql = "SELECT * FROM {$this->table} ORDER BY xp DESC";
+        $result = $dbconn->query($sql);
+        $returnValue = null;
+        if(!is_bool($result)){
+            $returnValue = $result->fetch_all(MYSQLI_ASSOC);
+        }
+        else{
+            $returnValue = $result;
+        }
+        $dbconn->close();
+        return $returnValue;
+    }
+
 }
 ?>

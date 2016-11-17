@@ -1,0 +1,61 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Anghelo
+ * Date: 17-11-2016
+ * Time: 19:06
+ */
+
+?>
+
+<div class="haut_ng">
+
+</div><!-- GRAND CADRE-->
+
+<div class="fond_ng">
+    <div align=center>
+        <span>Ranking</span>
+        <br/>
+        <br/>
+
+        <table>
+            <tr>
+                <th>
+                    Personaje
+                </th>
+                <th>
+                    Nivel
+                </th>
+                <th>
+                    Experiencia
+                </th>
+            </tr>
+            <?php
+            foreach((new Personajes())->getPersonajesOrdenadosNivel() as $key => $value){
+                echo "<tr>";
+                    echo "<td>";
+                        echo $value["name"];
+                    echo "</td>";
+                    echo "<td>";
+                        echo $value["level"];
+                    echo "</td>";
+                    echo "<td>";
+                        echo $value["xp"];
+                    echo "</td>";
+                echo "</tr>";
+            }
+            ?>
+        </table>
+
+        <br/>
+        
+    </div>
+</div>
+
+<div class="bas_ng">
+
+</div> <!-- FIN GRAND CADRE-->
+
+<div class="separateur">
+
+</div>
