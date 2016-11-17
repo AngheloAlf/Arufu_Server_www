@@ -30,6 +30,48 @@
         <?php
         //include('mods/status.php');
         ?>
+        <div style="text-align: center;">
+            <span>
+                Estadisticas del servidor
+            </span>
+            <br/>
+            <br/>
+            <ul>
+                <li>
+                    <strong>Cuentas Creadas :
+                        <?php
+                        /*$tcount = mysql_query("SELECT * FROM accounts");
+                        echo mysql_num_rows($tcount);*/
+                        echo (new Accounts())->getAccountSum();
+                        ?>
+                    </strong>
+                </li>
+                <li>
+                    <strong>Personajes Creados :
+                        <?php
+                        /*$tchar = mysql_query("SELECT * FROM personnages");
+                        echo mysql_num_rows($tchar);*/
+                        ?>
+                    </strong>
+                </li>
+            </ul>
+            <br/>
+            <br/>
+            <span>
+                Servidor:
+            </span>
+            <br/>
+            <br/>
+
+            <?php
+                if(getServerStatus("127.0.0.1", 5555)){
+                    echo '<img src="images/on.png">';
+                }
+                else{
+                    echo '<img src="images/off.png">';
+                }
+            ?>
+        </div>
     </div>
 
     <div class="s_bas_menu"></div><!-- FIN MENU -->

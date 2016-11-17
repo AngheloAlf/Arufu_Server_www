@@ -5,9 +5,11 @@
  * Time: 19:30
  */
 
-
+require("sv/common.php");
+require("models/Accounts.php");
 ?>
 
+<!DOCTYPE html>
 <html>
     <head>
         <?php include("includes/head.phtml"); ?>
