@@ -25,23 +25,37 @@ require("models/Personajes.php");
                 </div>
 
                 <div id="right"><!-- Columna central -->
-                    <?php
-                    //include("url/home.phtml");
-                    if($ruta = getRutaActual()){
 
-                        if(file_exists("url/".$ruta.".phtml")){
-                            include("url/".$ruta.".phtml");
+                    <div class="haut_ng"><!-- GRAND CADRE-->
+
+                    </div>
+
+                    <div class="fond_ng">
+                        <?php
+                        if($ruta = getRutaActual()){
+
+                            if(file_exists("url/".$ruta.".phtml")){
+                                include("url/".$ruta.".phtml");
+                            }
+                            else{
+                                echo "not found";
+                                //TODO: 404
+                            }
                         }
                         else{
-                            echo "not found";
-                            //TODO: 404
+                            include("url/home.phtml");
                         }
-                    }
-                    else{
-                        include("url/home.phtml");
-                    }
+                        ?>
+                    </div>
 
-                    ?>
+                    <div class="bas_ng">
+
+                    </div>
+
+
+                    <div class="separateur">
+
+                    </div>
                 </div>
             </div>
 
