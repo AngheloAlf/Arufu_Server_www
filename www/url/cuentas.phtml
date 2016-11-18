@@ -20,14 +20,14 @@
     <br/>
 
     <div style="text-align: center; color:black;">
-        <form action="<?php echo getHost(); ?>crearCuenta/" method="POST">
+        <form action="<?php echo getHost(); ?>crearCuenta/" method="POST" onsubmit="return crearCuenta()">
             <table>
                 <tr>
                     <td>
                         Nombre de cuenta:
                     </td>
                     <td>
-                        <input type="text" name="username" title="username">
+                        <input type="text" id="username" name="username" title="username">
                     </td>
                 </tr>
                 <tr>
@@ -35,7 +35,7 @@
                         Contraseña:
                     </td>
                     <td>
-                        <input type="password" name="pass" title="pass">
+                        <input type="password" id="pass" name="pass" title="pass">
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@
                         Repita contraseña:
                     </td>
                     <td>
-                        <input type="text" name="pass_confirm" title="pass_confirm">
+                        <input type="password" id="pass_confirm" name="pass_confirm" title="pass_confirm">
                     </td>
                 </tr>
                 <tr>
@@ -51,7 +51,7 @@
                         eMail:
                     </td>
                     <td>
-                        <input type="text" name="email" title="email">
+                        <input type="text" id="email" name="email" title="email">
                     </td>
                 </tr>
                 <tr>
@@ -59,7 +59,7 @@
                         Apodo:
                     </td>
                     <td>
-                        <input type="text" name="pseudo" title="pseudo">
+                        <input type="text" id="pseudo" name="pseudo" title="pseudo">
                     </td>
                 </tr>
                 <tr>
@@ -67,7 +67,7 @@
                         Pregunta secreta:
                     </td>
                     <td>
-                        <input type="text" name="question" title="question">
+                        <input type="text" id="question" name="question" title="question">
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +75,7 @@
                         Respuesta secreta:
                     </td>
                     <td>
-                        <input type="text" name="reponse" title="reponse">
+                        <input type="text" id="reponse" name="reponse" title="reponse">
                     </td>
                 </tr>
             </table>

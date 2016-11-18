@@ -9,6 +9,8 @@ require("sv/common.php");
 require("models/Accounts.php");
 require("models/Personajes.php");
 
+//TODO: Integrar angular
+
 ?>
 
 <!DOCTYPE html>
