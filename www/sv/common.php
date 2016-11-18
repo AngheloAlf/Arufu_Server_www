@@ -6,6 +6,10 @@
  * Time: 16:37
  */
 
+function redirect($direccion){
+    echo '<meta http-equiv="refresh" content="0; url='.$direccion.'" />';
+}
+
 function getHost(){
     return "http://localhost/test/www/";
 }

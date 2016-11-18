@@ -50,15 +50,19 @@ class Accounts extends dbConnect{
         if($pass != $pass2){
             return false;
         }
-        $sql = "INSERT INTO {$this->table} (account, pass, email, pseudo, question, response) VALUES('{$accountName}', '{$pass}', '{$email}', '{$pseudo}', '{$question}', '{$response}')";
-        $returnValue = $dbconn->query($sql);
+        $returnValue = false;
+        $sql = "SELECT * FROM {$this->table} WHERE account='{$accountName}' OR pseudo='$pseudo'";
+        if(mysqli_num_rows($dbconn->query($sql)) == 0){
+            $sql2 = "INSERT INTO {$this->table} (account, pass, email, pseudo, question, reponse) VALUES('{$accountName}', '{$pass}', '{$email}', '{$pseudo}', '{$question}', '{$response}')";
+            $returnValue = $dbconn->query($sql2);
+        }
         $dbconn->close();
         return $returnValue;
     }
 
     public function getAccountSum(){
         $dbconn = new mysqli($this->getHost(), $this->getUser(), $this->getPass(), $this->getRealm());
-        $sql = "SELECT guid FROM {$this->table}";
+        $sql = "SELECT * FROM {$this->table}";
         $returnValue = mysqli_num_rows($dbconn->query($sql));
         $dbconn->close();
         return $returnValue;

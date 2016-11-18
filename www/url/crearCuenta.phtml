@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Anghelo
+ * Date: 18-11-2016
+ * Time: 10:29
+ */
+
+?>
+
+<div style="text-align: center;">
+
+    <?php
+    if(!empty($_POST)){
+        $cuentas = new Accounts();
+        if($cuentas->createAccount($_POST["username"], $_POST["pass"], $_POST["pass_confirm"], $_POST["email"], $_POST["pseudo"], $_POST["question"], $_POST["reponse"])){
+            echo "<span>Cuenta creada!</span>";
+        }
+        else{
+            echo "<span>Error</span>";
+        }
+    }
+    else{
+        redirect(getDirecction()."cuentas/");
+    }
+    ?>
+
+</div>
