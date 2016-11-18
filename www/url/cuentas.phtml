@@ -14,97 +14,74 @@
 <br/>
 <div align="center">
     <span>
-        Cuentas <?php echo "titre"//$titre; ?>:
+        Creacion de cuentas:
     </span>
     <br/>
     <br/>
 
-
-    <form action="<?php echo getHost(); ?>crearCuenta/" method="POST">
-        <ul>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Cuenta:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="text" name="username">
-                </p>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Contraseña:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="password" name="pass">
-                </p>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Repite Contraseña:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="password" name="pass_confirm">
-                </p>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *eMail:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="text" name="email"><br />
-                </p>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Apodo:
-                    </font>
-                </div>
-                <div class="Style10">
-                    <p align="center">
-                        <input type="text" name="pseudo">
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Pregunta Secreta:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="text" name="question">
-                </p>
-            </li>
-            <li>
-                <div align="center">
-                    <font color="black">
-                        *Respuesta Secreta:
-                    </font>
-                </div>
-                <p align="center">
-                    <input type="text" name="reponse">
-                    <br/>
-                    <span style="font-size:xx-small;">
-
-                    </span>
-                </p>
-            </li>
+    <div style="text-align: center; color:black;">
+        <form action="<?php echo getHost(); ?>crearCuenta/" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        Nombre de cuenta:
+                    </td>
+                    <td>
+                        <input type="text" name="username" title="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Contraseña:
+                    </td>
+                    <td>
+                        <input type="password" name="pass" title="pass">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Repita contraseña:
+                    </td>
+                    <td>
+                        <input type="text" name="pass_confirm" title="pass_confirm">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        eMail:
+                    </td>
+                    <td>
+                        <input type="text" name="email" title="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Apodo:
+                    </td>
+                    <td>
+                        <input type="text" name="pseudo" title="pseudo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pregunta secreta:
+                    </td>
+                    <td>
+                        <input type="text" name="question" title="question">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Respuesta secreta:
+                    </td>
+                    <td>
+                        <input type="text" name="reponse" title="reponse">
+                    </td>
+                </tr>
+            </table>
             <br/>
-            <li>
-                <center>
-                    <input type="submit" value="Enviar" name="ok">
-                </center>
-            </li>
-        </ul>
-    </form>
+            <input type="submit" value="Enviar" name="ok">
+        </form>
+    </div>
     <br />
 </div>
