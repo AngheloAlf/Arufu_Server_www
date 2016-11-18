@@ -1,9 +1,7 @@
-/*copyright by kitgraphiquegratuit.org*/  
 
 body,html   {background:url(../images/fond.jpg);background-attachment: fixed;margin:0;padding:0}
 #conteneur  {margin:0 auto 0 auto;position:relative;width:960px;}		
 #contenu    {background:url(../images/fond_conteneur.png);margin:0 auto 0 auto;position:relative;width:960px;}
-#header     {width:960px;height:173px;background:url(../images/header.png);}
 #evaluation	a{width:140px;height:140px;position:absolute;right:10px;outline:none}
 #pied       {width:960px;height:121px;background:url(../images/pied.png) no-repeat top;clear:both}
 #left       {width: 235px;float: left;color:#000;margin:0 0 0 20px;text-align:center}	 	 
@@ -48,4 +46,3 @@ form				{color:#3b3b3b;text-decoration:none;outline:none;font:12px "trebuchet ms
 #copyright          {float:right;font:bold 11px "trebuchet ms";color:#8d8d8d;margin:82px 24px 0 0;text-decoration:none;outline:none;}
 #copyright a        {font:bold italic 11px "trebuchet ms";color:#8d8d8d;text-decoration:none;}		 
 #copyright a:hover  {color:#ff6f00;}
-
