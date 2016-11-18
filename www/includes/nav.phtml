@@ -7,92 +7,92 @@
 
 ?>
 
-    <div class="s_haut_menu">
-    Menu
-    </div><!-- DEBUT MeNu -->
+<div class="s_haut_menu">
+Menu
+</div><!-- DEBUT MeNu -->
 
-    <div class="s_fond_menu">
+<div class="s_fond_menu">
+    <ul>
+        <li ><a href="<?php echo getHost(); ?>home/" title="">Inicio</a></li>
+        <li ><a href="<?php echo getHost(); ?>descargas/" title="">Descargas</a></li>
+        <li ><a href="<?php echo getHost(); ?>cuentas/" title="">Cuentas</a></li>
+        <li ><a href="<?php echo getHost(); ?>ladder/" title="">Ranking</a></li>
+        <!--<li ><a href="<?php echo getHost(); ?>soporte/" title="">Soporte</a></li>-->
+    </ul>
+</div>
+
+<div class="s_bas_menu">
+
+</div><!-- FIN MENU -->
+
+<div class="s_haut_menu">Servidor</div><!-- DEBUT MENU -->
+<div class="s_fond_menu">
+    <?php
+    //include('mods/status.php');
+    ?>
+    <div style="text-align: center;">
+        <span>
+            Estadisticas del servidor
+        </span>
+        <br/>
+        <br/>
         <ul>
-            <li ><a href="<?php echo getHost(); ?>home/" title="">Inicio</a></li>
-            <li ><a href="<?php echo getHost(); ?>descargas/" title="">Descargas</a></li>
-            <li ><a href="<?php echo getHost(); ?>cuentas/" title="">Cuentas</a></li>
-            <li ><a href="<?php echo getHost(); ?>ranking/" title="">Ranking</a></li>
-            <!--<li ><a href="<?php echo getHost(); ?>soporte/" title="">Soporte</a></li>-->
+            <li>
+                <strong>Cuentas Creadas :
+                    <?php
+                    /*$tcount = mysql_query("SELECT * FROM accounts");
+                    echo mysql_num_rows($tcount);*/
+                    echo (new Accounts())->getAccountSum();
+                    ?>
+                </strong>
+            </li>
+            <li>
+                <strong>Personajes Creados :
+                    <?php
+                    /*$tchar = mysql_query("SELECT * FROM personnages");
+                    echo mysql_num_rows($tchar);*/
+                    echo (new Personajes())->getCantidadPersonajes();
+                    ?>
+                </strong>
+            </li>
         </ul>
-    </div>
+        <br/>
+        <br/>
+        <span>
+            Servidor Realm:
+        </span>
+        <br/>
+        <br/>
 
-    <div class="s_bas_menu">
-
-    </div><!-- FIN MENU -->
-
-    <div class="s_haut_menu">Servidor</div><!-- DEBUT MENU -->
-    <div class="s_fond_menu">
         <?php
-        //include('mods/status.php');
+        if(getServerStatus("127.0.0.1", 444)){
+            echo '<img src="'.getHost().'images/on.png">';
+        }
+        else{
+            echo '<img src="'.getHost().'images/off.png">';
+        }
         ?>
-        <div style="text-align: center;">
-            <span>
-                Estadisticas del servidor
-            </span>
-            <br/>
-            <br/>
-            <ul>
-                <li>
-                    <strong>Cuentas Creadas :
-                        <?php
-                        /*$tcount = mysql_query("SELECT * FROM accounts");
-                        echo mysql_num_rows($tcount);*/
-                        echo (new Accounts())->getAccountSum();
-                        ?>
-                    </strong>
-                </li>
-                <li>
-                    <strong>Personajes Creados :
-                        <?php
-                        /*$tchar = mysql_query("SELECT * FROM personnages");
-                        echo mysql_num_rows($tchar);*/
-                        echo (new Personajes())->getCantidadPersonajes();
-                        ?>
-                    </strong>
-                </li>
-            </ul>
-            <br/>
-            <br/>
-            <span>
-                Servidor Realm:
-            </span>
-            <br/>
-            <br/>
+        <br/>
+        <br/>
+        <span>
+            Servidor Game:
+        </span>
+        <br/>
+        <br/>
 
-            <?php
-            if(getServerStatus("127.0.0.1", 444)){
-                echo '<img src="'.getHost().'images/on.png">';
-            }
-            else{
-                echo '<img src="'.getHost().'images/off.png">';
-            }
-            ?>
-            <br/>
-            <br/>
-            <span>
-                Servidor Game:
-            </span>
-            <br/>
-            <br/>
-
-            <?php
-            if(getServerStatus("127.0.0.1", 5555)){
-                echo '<img src="'.getHost().'images/on.png">';
-            }
-            else{
-                echo '<img src="'.getHost().'images/off.png">';
-            }
-            ?>
-        </div>
+        <?php
+        if(getServerStatus("127.0.0.1", 5555)){
+            echo '<img src="'.getHost().'images/on.png">';
+        }
+        else{
+            echo '<img src="'.getHost().'images/off.png">';
+        }
+        ?>
     </div>
+</div>
 
-    <div class="s_bas_menu"></div><!-- FIN MENU -->
-    <a href="<?php echo getHost(); ?>descargas/"><img src="<?php echo getHost(); ?>images/telechargement.png" alt=""/></a><br />
-    <a href="<?php echo getHost(); ?>cuentas/"><img src="<?php echo getHost(); ?>images/inscription.png" alt=""/></a><br />
-    <!--<a href="inicio.php"><img src="images/forum.png" alt=""/></a><br />-->
-    <!-- FIN COLONNE DE GAUCHE -->
+<div class="s_bas_menu"></div><!-- FIN MENU -->
+<a href="<?php echo getHost(); ?>descargas/"><img src="<?php echo getHost(); ?>images/telechargement.png" alt=""/></a><br />
+<a href="<?php echo getHost(); ?>cuentas/"><img src="<?php echo getHost(); ?>images/inscription.png" alt=""/></a><br />
+<!--<a href="inicio.php"><img src="images/forum.png" alt=""/></a><br />-->
+<!-- FIN COLONNE DE GAUCHE -->
