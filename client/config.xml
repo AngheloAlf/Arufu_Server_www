@@ -4,13 +4,16 @@
 	<rdelay value="3000"/>
 	<rcount value="10"/>
 
-	<conf name="En linea">
+	<conf name="Oficial">
 		<connserver name="Oficial" ip="213.248.126.11" port="443" />
+		<dataserver url="data/" type="local" priority="1" />
+		<dataserver url="http://staticns.ankama.com/dofus/gamedata/dofus/" priority="1" />
+		<dataserver url="http://gamedata.ankama-games.com/dofus/" priority="0" />
+	</conf>
+	<conf name="Localhost">
 		<connserver name="Localhost" ip="127.0.0.1" port="444" />
 		<dataserver url="data/" type="local" priority="1" />
 		<dataserver url="http://127.0.0.1/dofus/" priority="3" />
-		<dataserver url="http://staticns.ankama.com/dofus/gamedata/dofus/" priority="1" />
-		<dataserver url="http://gamedata.ankama-games.com/dofus/" priority="0" />
 	</conf>
 	
 	<conf name="En ligne (TEST)" type="test">
