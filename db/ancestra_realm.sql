@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-11-12 00:12:47
+Date: 2016-11-19 15:34:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,24 +20,24 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE `accounts` (
-  `guid` int(11) NOT NULL AUTO_INCREMENT,
+  `guid` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `account` varchar(30) NOT NULL,
   `pass` varchar(50) NOT NULL,
   `level` int(11) NOT NULL DEFAULT '0',
   `subscription` int(11) NOT NULL DEFAULT '0',
   `email` varchar(100) NOT NULL,
-  `lastIP` varchar(15) NOT NULL,
-  `lastConnectionDate` varchar(100) NOT NULL,
+  `lastIP` varchar(15) NOT NULL DEFAULT '',
+  `lastConnectionDate` varchar(100) NOT NULL DEFAULT '',
   `question` varchar(100) NOT NULL DEFAULT 'DELETE?',
   `reponse` varchar(100) NOT NULL DEFAULT 'DELETE',
   `pseudo` varchar(30) NOT NULL,
   `banned` tinyint(3) NOT NULL DEFAULT '0',
-  `curIP` varchar(15) NOT NULL,
+  `curIP` varchar(15) NOT NULL DEFAULT '',
   `logged` int(1) NOT NULL DEFAULT '0',
-  `giftID` varchar(100) NOT NULL COMMENT 'giftID1;giftID2 ...',
+  `giftID` varchar(100) NOT NULL DEFAULT '' COMMENT 'giftID1;giftID2 ...',
   PRIMARY KEY (`guid`),
   UNIQUE KEY `account` (`account`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of accounts
