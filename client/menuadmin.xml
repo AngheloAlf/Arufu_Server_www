@@ -1,22 +1,20 @@
 <commands>
 	<item type="startup" label="StartUp">
 		<item type="sendChat" command="/console" />
-		<item type="sendCommand" command="/debug" />
-		<item type="sendChat" command="/debug" />
-	
-
-
+		<!--<item type="sendCommand" command="/debug" />
+		<item type="sendChat" command="/debug" />-->
    </item>
-        <item type="static" label="MenuAdministrador" />
+
+    <item type="static" label="Menu de administrador" />
 	<item type="static" label="Acciones Sobre el Jugador" />
 	<item type="menu" label="Advertir">
 		<item type="sendChat" label="Aviso 1" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
 		<item type="sendChat" label="Aviso 2" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
-                <item type="sendChat" label="Aviso 3" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
-                <item type="sendChat" label="Aviso De Canal Comercio!" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+        <item type="sendChat" label="Aviso 3" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
+        <item type="sendChat" label="Aviso De Canal Comercio!" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
 		<item type="sendChat" label="Aviso De Canal Canal Reclutamiento !" command="/w %p DofuRuano Server: dofuruano.sytes.net" />
-
-</item>
+	</item>
+	
 	<item type="menu" label="Informaciones">
 		<item type="static" label="Nombre Del Jugador: %p" command="%p" />
 		<item type="static" label="Nombre Del Gremio: %g" command="%g" />
@@ -44,7 +42,7 @@
 		<item type="sendCommand" label="10 Minutos" command="MUTE %p 600" />
 		<item type="sendCommand" label="1 Hora" command="MUTE %p 3600" />
 		<item type="sendCommand" label="Infinitivamente Asta Nuevo Aviso" command="MUTE %p 0" />
-		<!--item type="sendCommand" label="Empecher de parler pour une duree donnee" command="Mute %p %s" />DofuRuano Server: dofuruano.sytes.net<!--%s = nom du serv-->
+		<!--item type="sendCommand" label="Empecher de parler pour une duree donnee" command="Mute %p %s" />DofuRuano Server: dofuruano.sytes.net<!-%s = nom du serv-->
 		<item type="sendCommand" label="Desactivar El Silencio A un Jugador" command="DESMUTE %p" />
 		<item type="static" label="Alagos" />
 		<item type="sendChat" label="Anunciar Un Alago" command="DofuRuano Server: dofuruano.sytes.net %p !" />
@@ -687,13 +685,13 @@
 				</item>
 			</item>
 		</item>
-		<!--item type="static" label="Objets" /> <!--@todo itemSelector & all ? Non, ITEM ne marche pas sur cible (Ancestra) ...-- >
+		<!--item type="static" label="Objets" /> <!-@todo itemSelector & all ? Non, ITEM ne marche pas sur cible (Ancestra) ...-- >
 		<item type="menu" label="Faire la commande boutique">
 			<item type="sendCommand" label="Donner une dinde Squelette" command="ITEM XXX 1 %p" />
 		</item-->
 	</item>
 	<item type="menu" label="Teletransportar">
-		<item type="sendCommand" label="Ir al mapa del jugador" command="IRDONDE %p" />
+		<item type="sendCommand" label="Ir al mapa del jugador" command="GONAME %p" />
 		<item type="sendCommand" label="Hacer venir a un jugador" command="TRAER %p" />
 		<item type="menu" label="Par map">
 			<item type="static" label="Zaaps" />
@@ -753,7 +751,7 @@
 		</item>
 		<item type="static" label="Endroits speciaux" />
 		<item type="sendCommand" label="Aller a l'enclos Brakmarien" command="TELEPORT 9352 140 %p" />
-		<item type="sendCommand" label="Aller au zoneShop" command="TELEPORT 11105 138 %p" />
+		<item type="sendCommand" label="Ir a la zona shop" command="TELEPORT 10114 310 %p" />
 	</item>
 	<item type="static" label="Outils" />
 	<item type="menu" label="General">
@@ -802,8 +800,8 @@
 				<item type="prepareCommand" label="POINTSPRITES (retire 1 pointSprite au TipsManager)" command="/POINTSPRITES $1" />
 				<item type="prepareCommand" label="POINTSPICTO (retire 1 pointPicto au TipsManager)" command="/POINTSPICTO $1" />
 				<item type="menu" label="Commandes SaveTheWorld">
-				<!-- Commandes de save, si  dofus.Constants.SAVING_THE_WORLD est à True uniquement.
-				Décommenté vu que en menuDebug ! -->
+				<!-- Commandes de save, si  dofus.Constants.SAVING_THE_WORLD est ï¿½ True uniquement.
+				Dï¿½commentï¿½ vu que en menuDebug ! -->
 					<item type="sendCommand" label="Executer la sauvegarder du monde" command="/SAVETHEWORLD" />
 					<item type="sendCommand" label="Arreter la sauvegarder du monde" command="/STOPSAVETHEWORLD" />
 					<item type="sendCommand" label="gotonext SAVETHEWORLD" command="/SAVETHEWORLD" />
@@ -822,8 +820,8 @@
 		</item>
 		<item type="menu" label="UI">
 			<item type="menu" label="Partie 1">
-				<item type="sendCommand" label="PlayerShopModifier" command="/ui PlayerShopModifier" />
-				<item type="sendCommand" label="TaxCollectorStorage" command="/ui TaxCollectorStorage" />
+				<!--<item type="sendCommand" label="PlayerShopModifier" command="/ui PlayerShopModifier" />
+				<item type="sendCommand" label="TaxCollectorStorage" command="/ui TaxCollectorStorage" />-->
 				<item type="sendCommand" label="PlayerShop" command="/ui PlayerShop" />
 				<item type="sendCommand" label="NpcShop" command="/ui NpcShop" />
 				<item type="sendCommand" label="Inventory" command="/ui Inventory" />
@@ -1022,7 +1020,7 @@
 		<item type="sendCommand" label="Rendre son apparence" command="DEFORMA %p" />
 	</item>
 	<!--item type="sendChat" label="guess" command="%s" /-->
-	<item type="menu" label="Cambiar el tamaño">
+	<item type="menu" label="Cambiar el tamaï¿½o">
 		<item type="sendCommand" label="1%" command="SIZE 1 %p" />
 		<item type="sendCommand" label="25%" command="SIZE 25 %p" />
 		<item type="sendCommand" label="50%" command="SIZE 50 %p" />
@@ -1060,8 +1058,8 @@
 				<item type="sendCommand" command="FORMA 73 %p" label="Eniripsa (joueur, mode tombe)" />
 				<item type="sendCommand" command="FORMA 82 %p" label="Iop (joueur, mode creature)" />
 				<item type="sendCommand" command="FORMA 83 %p" label="Iop (joueur, mode tombe)" />
-				<item type="sendCommand" command="FORMA 92 %p" label="Crâ (joueur, mode creature)" />
-				<item type="sendCommand" command="FORMA 93 %p" label="Crâ (joueur, mode tombe)" />
+				<item type="sendCommand" command="FORMA 92 %p" label="Crï¿½ (joueur, mode creature)" />
+				<item type="sendCommand" command="FORMA 93 %p" label="Crï¿½ (joueur, mode tombe)" />
 				<item type="sendCommand" command="FORMA 102 %p" label="Sadida (joueur, mode creature)" />
 				<item type="sendCommand" command="FORMA 103 %p" label="Sadida (joueur, mode tombe)" />
 				<item type="sendCommand" command="FORMA 112 %p" label="Sacrieur (joueur, mode creature)" />
@@ -1142,7 +1140,7 @@
 				<item type="sendCommand" command="FORMA 1500 %p" label="Epouvantail" />
 				<item type="sendCommand" command="FORMA 1507 %p" label="Krak enneige" />
 				<item type="sendCommand" command="FORMA 1516 %p" label="pantalon du papa nowel" />
-				<item type="sendCommand" command="FORMA 1524 %p" label="Glaçon perso" />
+				<item type="sendCommand" command="FORMA 1524 %p" label="Glaï¿½on perso" />
 				<item type="sendCommand" command="FORMA 1525 %p" label="Trool Mage" />
 				<item type="sendCommand" command="FORMA 1526 %p" label="Trool Guerrier" />
 				<item type="sendCommand" command="FORMA 1529 %p" label="Serpentin tropical" />
@@ -1254,7 +1252,7 @@
 				<item type="sendCommand" command="FORMA 1326 %p" label="bouftoutou (ghost)" />
 				<item type="sendCommand" command="FORMA 1327 %p" label="AbraKadabra (ghost)" />
 				<item type="sendCommand" command="FORMA 1330 %p" label="Panda (ghost)" />
-				<item type="sendCommand" command="FORMA 1331 %p" label="Fantome de familier Fëanor" />
+				<item type="sendCommand" command="FORMA 1331 %p" label="Fantome de familier Fï¿½anor" />
 				<item type="sendCommand" command="FORMA 1332 %p" label="Fantome de familier Ross" />
 			</item>
 			<item type="menu" label="Non classe">
@@ -1447,7 +1445,7 @@
 			<item type="menu" label="Protectores de minerales">
 				<item type="sendCommand" command="FORMA 1389 %p" label="KrakBoule des recoltes" />
 			</item>
-			<item type="menu" label="Protectores de Leñador">
+			<item type="menu" label="Protectores de Leï¿½ador">
 				<item type="sendCommand" command="FORMA 1391 %p" label="Oliviolet" />
 				<item type="sendCommand" command="FORMA 1392 %p" label="Bambou" />
 				<item type="sendCommand" command="FORMA 1393 %p" label="Bambou sombre" />
@@ -1883,7 +1881,7 @@
 			<item type="menu" label="Dragodinde">
 				<item type="sendCommand" command="FORMA 1108 %p" label="Dragodinde" />
 			</item>
-			<item type="menu" label="Château d'Allister">
+			<item type="menu" label="Chï¿½teau d'Allister">
 				<item type="sendCommand" command="FORMA 1109 %p" label="Wa Wabbit" />
 				<item type="sendCommand" command="FORMA 9016 %p" label="Forin" />
 				<item type="sendCommand" command="FORMA 9023 %p" label="Vendeur Sram" />
@@ -1946,7 +1944,7 @@
 				<item type="sendCommand" command="FORMA 1407 %p" label="Hibou buveur" />
 				<item type="sendCommand" command="FORMA 1408 %p" label="Gros corbac en cage" />
 			</item>
-			<item type="menu" label="Champiñones">
+			<item type="menu" label="Champiï¿½ones">
 				<item type="sendCommand" command="FORMA 1209 %p" label="Maitre Bolet" />
 				<item type="sendCommand" command="FORMA 1335 %p" label="Champ Arach" />
 				<item type="sendCommand" command="FORMA 1565 %p" label="Champi" />
@@ -2247,9 +2245,9 @@
 				<item type="sendCommand" command="FORMA 1515 %p" label="petit papa Lutin nowell" />
 				<item type="sendCommand" command="FORMA 1517 %p" label="corps du papa nowel" />
 				<item type="sendCommand" command="FORMA 1518 %p" label="Tofu Surpwise" />
-				<item type="sendCommand" command="FORMA 1519 %p" label="Glaçon Kitsune" />
-				<item type="sendCommand" command="FORMA 1520 %p" label="Glaçon Wabbit" />
-				<item type="sendCommand" command="FORMA 1521 %p" label="Glaçon Bwak" />
+				<item type="sendCommand" command="FORMA 1519 %p" label="Glaï¿½on Kitsune" />
+				<item type="sendCommand" command="FORMA 1520 %p" label="Glaï¿½on Wabbit" />
+				<item type="sendCommand" command="FORMA 1521 %p" label="Glaï¿½on Bwak" />
 				<item type="sendCommand" command="FORMA 1522 %p" label="Piti cado de nowell" />
 				<item type="sendCommand" command="FORMA 1523 %p" label="Mini-Nuite" />
 			</item>
@@ -2400,7 +2398,7 @@
 				<item type="sendCommand" command="FORMA 1636 %p" label="Disciple du Kimbo" />
 			</item>
 		</item>
-		<item type="menu" label="~ Montaña de los Koalaks">
+		<item type="menu" label="~ Montaï¿½a de los Koalaks">
 			<item type="menu" label="Crocodailles">
 				<item type="sendCommand" command="FORMA 1159 %p" label="Krokdur" />
 				<item type="sendCommand" command="FORMA 1162 %p" label="Soldat reptile" />
@@ -2415,7 +2413,7 @@
 				<item type="sendCommand" command="FORMA 1370 %p" label="Totem" />
 				<item type="sendCommand" command="FORMA 1450 %p" label="Skunk" />
 			</item>
-			<item type="menu" label="Montaña de los Koalaks">
+			<item type="menu" label="Montaï¿½a de los Koalaks">
 				<item type="sendCommand" command="FORMA 1356 %p" label="Cooloss" />
 				<item type="sendCommand" command="FORMA 1357 %p" label="Sadidette saphir emeraude rubis jade" />
 				<item type="sendCommand" command="FORMA 1363 %p" label="warko marron" />
