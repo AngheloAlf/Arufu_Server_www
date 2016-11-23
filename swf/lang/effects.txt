@@ -43,3 +43,5 @@ E[1016] = {d: "+#1{~1~2 a }#2 PM dependiendo del nivel", c: 23, o: "+", j: true}
 E[1017] = {d: "Bonus de PM cada #1{~1~2 a }#2 nivel(es)", c: 23, o: "+", j: true};
 E[1028] = {d: "+#1{~1~2 a }#2 criaturas invocables dependiendo del nivel", c: 26, o: "+", j: true};
 E[1029] = {d: "Bonus de criaturas invocables cada #1{~1~2 a }#2 nivel(es)", c: 26, o: "+", j: true};
+E[1020] = {d: "+#1{~1~2 a }#2 a los daños dependiendo del nivel", c: 16, o: "+", j: true};
+E[1021] = {d: "Bonus de daños cada #1{~1~2 a }#2 nivel(es)", c: 16, o: "+", j: true};
