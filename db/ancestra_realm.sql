@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-11-19 15:34:28
+Date: 2016-11-23 00:15:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -37,11 +37,13 @@ CREATE TABLE `accounts` (
   `giftID` varchar(100) NOT NULL DEFAULT '' COMMENT 'giftID1;giftID2 ...',
   PRIMARY KEY (`guid`),
   UNIQUE KEY `account` (`account`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of accounts
 -- ----------------------------
+INSERT INTO `accounts` VALUES ('18', 'Test', 'Test', '4', '0', 'Test@test.test', '127.0.0.1', '2016~11~22~21~21', 'Test', 'Test', 'Test', '0', '', '0', '');
+INSERT INTO `accounts` VALUES ('17', 'Anghelo95', 'Alf', '4', '0', 'angheloalf95@gmail.com', '127.0.0.1', '2016~11~23~00~14', 'Arf', 'Arufu', 'Arufu', '0', '127.0.0.1', '1', '');
 
 -- ----------------------------
 -- Table structure for banip
@@ -70,7 +72,7 @@ CREATE TABLE `gameservers` (
   `ServerPassword` text NOT NULL,
   `key` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of gameservers
