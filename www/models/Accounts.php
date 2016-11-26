@@ -24,8 +24,7 @@ class Accounts extends dbConnect{
     /**
      * @param string $table
      */
-    public function setTable($table)
-    {
+    public function setTable($table){
         $this->table = $table;
     }
 
