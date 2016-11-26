@@ -19,7 +19,12 @@ function getDirecction(){
 }
 
 function getRutaActual(){
-    return explode("/", $_SERVER['REQUEST_URI'])[count(explode("/", getDirecction())) - 1];
+    $ruta = array();
+    $requestUrl = explode("/", $_SERVER['REQUEST_URI']);
+    for($i = count(explode("/", getDirecction())) - 1; $i < count($requestUrl); $i++){
+        array_push($ruta, $requestUrl[$i]);
+    }
+    return $ruta;
 }
 
 function getServerStatus($ip, $puerto){
