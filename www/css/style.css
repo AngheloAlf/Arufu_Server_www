@@ -1,5 +1,6 @@
 
 body,html   {background:url(../images/fond.jpg);background-attachment: fixed;margin:0;padding:0}
+#header     {background:url(../images/header.png);}
 #conteneur  {margin:0 auto 0 auto;position:relative;width:960px;}		
 #contenu    {background:url(../images/fond_conteneur.png);margin:0 auto 0 auto;position:relative;width:960px;}
 #evaluation	a{width:140px;height:140px;position:absolute;right:10px;outline:none}

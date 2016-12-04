@@ -14,14 +14,14 @@ function getHost(){
     return "http://localhost/test/www/";
 }
 
-function getDirecction(){
+function getDirection(){
     return "/test/www/";
 }
 
 function getRutaActual(){
     $ruta = array();
     $requestUrl = explode("/", $_SERVER['REQUEST_URI']);
-    for($i = count(explode("/", getDirecction())) - 1; $i < count($requestUrl); $i++){
+    for($i = count(explode("/", getDirection())) - 1; $i < count($requestUrl); $i++){
         array_push($ruta, $requestUrl[$i]);
     }
     return $ruta;
