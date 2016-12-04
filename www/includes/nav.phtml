@@ -13,11 +13,11 @@ Menu
 
 <div class="s_fond_menu">
     <ul>
-        <li ><a href="<?php echo getHost(); ?>home/" title="">Inicio</a></li>
-        <li ><a href="<?php echo getHost(); ?>descargas/" title="">Descargas</a></li>
-        <li ><a href="<?php echo getHost(); ?>cuentas/" title="">Cuentas</a></li>
-        <li ><a href="<?php echo getHost(); ?>ladder/" title="">Ladder</a></li>
-        <!--<li ><a href="<?php echo getHost(); ?>soporte/" title="">Soporte</a></li>-->
+        <li ><a href="<?php echo getDirection(); ?>home/" title="">Inicio</a></li>
+        <li ><a href="<?php echo getDirection(); ?>descargas/" title="">Descargas</a></li>
+        <li ><a href="<?php echo getDirection(); ?>cuentas/" title="">Cuentas</a></li>
+        <li ><a href="<?php echo getDirection(); ?>ladder/" title="">Ladder</a></li>
+        <!--<li ><a href="<?php echo getDirection(); ?>soporte/" title="">Soporte</a></li>-->
     </ul>
 </div>
 
@@ -28,7 +28,6 @@ Menu
 <div class="s_haut_menu">Servidor</div><!-- DEBUT MENU -->
 <div class="s_fond_menu">
     <?php
-    //include('mods/status.php');
     ?>
     <div style="text-align: center;">
         <span>
@@ -40,8 +39,6 @@ Menu
             <li>
                 <strong>Cuentas Creadas :
                     <?php
-                    /*$tcount = mysql_query("SELECT * FROM accounts");
-                    echo mysql_num_rows($tcount);*/
                     echo (new Accounts())->getAccountSum();
                     ?>
                 </strong>
@@ -49,8 +46,6 @@ Menu
             <li>
                 <strong>Personajes Creados :
                     <?php
-                    /*$tchar = mysql_query("SELECT * FROM personnages");
-                    echo mysql_num_rows($tchar);*/
                     echo (new Personajes())->getCantidadPersonajes();
                     ?>
                 </strong>
@@ -66,10 +61,10 @@ Menu
 
         <?php
         if(getServerStatus("127.0.0.1", 444)){
-            echo '<img src="'.getHost().'images/on.png">';
+            echo '<img src="'.getDirection().'images/on.png">';
         }
         else{
-            echo '<img src="'.getHost().'images/off.png">';
+            echo '<img src="'.getDirection().'images/off.png">';
         }
         ?>
         <br/>
@@ -82,17 +77,17 @@ Menu
 
         <?php
         if(getServerStatus("127.0.0.1", 5555)){
-            echo '<img src="'.getHost().'images/on.png">';
+            echo '<img src="'.getDirection().'images/on.png">';
         }
         else{
-            echo '<img src="'.getHost().'images/off.png">';
+            echo '<img src="'.getDirection().'images/off.png">';
         }
         ?>
     </div>
 </div>
 
 <div class="s_bas_menu"></div><!-- FIN MENU -->
-<a href="<?php echo getHost(); ?>descargas/"><img src="<?php echo getHost(); ?>images/telechargement.png" alt=""/></a><br />
-<a href="<?php echo getHost(); ?>cuentas/"><img src="<?php echo getHost(); ?>images/inscription.png" alt=""/></a><br />
+<a href="<?php echo getDirection(); ?>descargas/"><img src="<?php echo getDirection(); ?>images/telechargement.png" alt=""/></a><br />
+<a href="<?php echo getDirection(); ?>cuentas/"><img src="<?php echo getDirection(); ?>images/inscription.png" alt=""/></a><br />
 <!--<a href="inicio.php"><img src="images/forum.png" alt=""/></a><br />-->
 <!-- FIN COLONNE DE GAUCHE -->
