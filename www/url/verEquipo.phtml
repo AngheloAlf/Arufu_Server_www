@@ -1,0 +1,28 @@
+<?php
+/*
+ * User: Anghelo
+ * Date: 29-11-2016
+ * Time: 23:03
+ */
+
+?>
+
+
+<div align=center ng-app='verItems' ng-controller='verItemsCtrl'>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Nivel</th>
+        </tr>
+        <tr ng-repeat="item in itemsList">
+            <td> </td>
+            <td>{{item.name}}</td>
+            <td>{{item.type}}</td>
+            <td>{{item.level}}</td>
+        </tr>
+    </table>
+</div>
+
+<script src="<?php echo getDirection(); ?>js/angularScripts/verEquipo.js"></script>

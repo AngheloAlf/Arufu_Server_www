@@ -14,15 +14,18 @@ function loadAndShowData($ruta, $subRuta, $general, $especifico){
         else{
             echo $general();
         }
+        return true;
     }
+    return false;
 }
 
 function parseAngularRoute($ruta){
     if($ruta[0] != "angular" || !$ruta[1]){
-        redirect(getDirecction());
+        redirect(getDirection());
+        return true;
     }
     else{
-        loadAndShowData($ruta, "items", 'getAllItems', 'getItemByconditions');
+        return loadAndShowData($ruta, "items", 'getAllItems', 'getItemByconditions');
     }
 }
 

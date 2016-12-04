@@ -14,10 +14,11 @@ include("angular/angularRouteCtrl.php");
 //TODO: Integrar angular
 
 $ruta = getRutaActual();
-if($ruta[0] == "angular"){
-    parseAngularRoute($ruta);
+$angularParsed = false;
+if($ruta[0] == "angular" && $ruta[1]){
+    $angularParsed = parseAngularRoute($ruta);
 }
-else {
+else if(!$angularParsed){
     ?>
 
     <!DOCTYPE html>
@@ -43,7 +44,7 @@ else {
                             <?php
                             if($ruta[0]){
                                 if(file_exists("url/".$ruta[0].".phtml")){
-                                    include("url/".$ruta.".phtml");
+                                    include("url/".$ruta[0].".phtml");
                                 }
                                 else{
                                     echo "not found";
