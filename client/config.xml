@@ -13,7 +13,7 @@
 	<conf name="Localhost">
 		<connserver name="Localhost" ip="127.0.0.1" port="444" />
 		<dataserver url="data/" type="local" priority="1" />
-		<dataserver url="http://127.0.0.1/dofus/" priority="3" />
+		<dataserver url="http://127.0.0.1/alfus/clientSwf/" priority="3" />
 	</conf>
 	
 	<conf name="En ligne (TEST)" type="test">

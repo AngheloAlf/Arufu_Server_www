@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-11-23 00:15:32
+Date: 2016-12-05 11:06:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -42,8 +42,8 @@ CREATE TABLE `accounts` (
 -- ----------------------------
 -- Records of accounts
 -- ----------------------------
-INSERT INTO `accounts` VALUES ('18', 'Test', 'Test', '4', '0', 'Test@test.test', '127.0.0.1', '2016~11~22~21~21', 'Test', 'Test', 'Test', '0', '', '0', '');
-INSERT INTO `accounts` VALUES ('17', 'Anghelo95', 'Alf', '4', '0', 'angheloalf95@gmail.com', '127.0.0.1', '2016~11~23~00~14', 'Arf', 'Arufu', 'Arufu', '0', '127.0.0.1', '1', '');
+INSERT INTO `accounts` VALUES ('18', 'Test', 'Test', '4', '0', 'Test@test.test', '127.0.0.1', '2016~11~23~20~15', 'Test', 'Test', 'Test', '0', '', '0', '');
+INSERT INTO `accounts` VALUES ('17', 'Anghelo95', 'Alf', '4', '0', 'angheloalf95@gmail.com', '127.0.0.1', '2016~12~04~13~31', 'Arf', 'Arufu', 'Arufu', '0', '', '0', '');
 
 -- ----------------------------
 -- Table structure for banip
@@ -72,9 +72,26 @@ CREATE TABLE `gameservers` (
   `ServerPassword` text NOT NULL,
   `key` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=904 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of gameservers
 -- ----------------------------
 INSERT INTO `gameservers` VALUES ('1', '127.0.0.1', '5555', '0', '127.0.0.1', 'ancestra_game', 'root', '', 'server1');
+
+-- ----------------------------
+-- Table structure for rss
+-- ----------------------------
+DROP TABLE IF EXISTS `rss`;
+CREATE TABLE `rss` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) NOT NULL,
+  `icono` varchar(255) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `noticia` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of rss
+-- ----------------------------

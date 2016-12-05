@@ -11,11 +11,11 @@ function redirect($direccion){
 }
 
 function getHost(){
-    return "http://localhost/test/www/";
+    return "http://localhost/alfus/";
 }
 
 function getDirection(){
-    return "/test/www/";
+    return "/alfus/";
 }
 
 function getRutaActual(){
