@@ -77,7 +77,7 @@ CREATE TABLE `gameservers` (
 -- ----------------------------
 -- Records of gameservers
 -- ----------------------------
-INSERT INTO `gameservers` VALUES ('1', '127.0.0.1', '5555', '0', '127.0.0.1', 'ancestra_game', 'root', '', 'server1');
+INSERT INTO `gameservers` VALUES ('1', '127.0.0.1', '5555', '0', '127.0.0.1', 'alfus_server', 'root', '', 'server1');
 
 -- ----------------------------
 -- Table structure for rss
