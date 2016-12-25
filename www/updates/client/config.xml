@@ -12,6 +12,8 @@
 	</conf>
 	<conf name="Localhost">
 		<connserver name="444" ip="127.0.0.1" port="444" />
+		<connserver name="443" ip="127.0.0.1" port="443" />
+		<connserver name="5555" ip="127.0.0.1" port="5555" />
 		<dataserver url="data/" type="local" priority="1" />
 		<dataserver url="http://127.0.0.1/dofus/" priority="3" />
 	</conf>
